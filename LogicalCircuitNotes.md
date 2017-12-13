@@ -1,6 +1,6 @@
 # Overview
 
-Notes on Logiical Circuits.
+Notes on Logical Circuits.
 
 # References
 
