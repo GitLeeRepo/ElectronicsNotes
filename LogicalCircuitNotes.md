@@ -11,3 +11,4 @@ Notes on Logiical Circuits.
 
 * [Logisim Beginner's Tutorial](https://www.youtube.com/watch?v=cMz7wyY_PxE&t=186s)
 
+# Concepts and Terminology
