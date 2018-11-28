@@ -1,0 +1,22 @@
+Circuit: * D:\Users\traek_000\Documents\Electronics\LTSpice\CommonEmitterAmp.asc
+
+Direct Newton iteration for .op point succeeded.
+
+Date: Tue Aug 26 00:10:40 2014
+Total elapsed time: 0.033 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 8434
+traniter = 8427
+tranpoints = 2833
+accept = 2116
+rejected = 717
+matrix size = 13
+fillins = 0
+solver = Normal
+Matrix Compiler1: 710 bytes object code size  0.2/0.1/[0.1]
+Matrix Compiler2: off  [0.1]/0.2/0.1
+
+

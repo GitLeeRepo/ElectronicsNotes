@@ -1,0 +1,74 @@
+; Installation inf for the Test Measure Devices Controller
+;
+; (c) Copyright 2009 Test Measure Devices Controller
+;
+
+[Version]
+Signature="$CHICAGO$"
+Class=USB
+ClassGUID={36FC9E60-C465-11CF-8056-444553540000}
+provider=%MSFT%
+DriverVer=10/23/2006
+
+[SourceDisksNames]
+1="brus Installation Disk",,,
+
+[SourceDisksFiles]
+brus.sys = 1
+brus.inf = 1
+
+[Manufacturer]
+%MfgName%=test Measure
+
+[test Measure]
+%USB\VID_F4ED&PID_EE37.DeviceDesc%=brus.Dev, USB\VID_F4ED&PID_EE37
+
+
+;[PreCopySection]
+;HKR,,NoSetupUI,,1
+
+[DestinationDirs]
+brus.Files.Ext = 10,System32\Drivers
+brus.Files.Inf = 10,INF
+
+[brus.Dev]
+CopyFiles=brus.Files.Ext, brus.Files.Inf
+AddReg=brus.AddReg
+
+[brus.Dev.NT]
+CopyFiles=brus.Files.Ext, brus.Files.Inf
+AddReg=brus.AddReg
+
+[brus.Dev.NT.Services]
+Addservice = brus, 0x00000002, brus.AddService
+
+[brus.AddService]
+DisplayName    = %brus.SvcDesc2%
+ServiceType    = 1                  ; SERVICE_KERNEL_DRIVER
+StartType      = 3                  ; SERVICE_DEMAND_START
+ErrorControl   = 1                  ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %10%\System32\Drivers\brus.sys
+LoadOrderGroup = Base
+
+[brus.AddReg]
+HKR,,DevLoader,,*ntkern
+HKR,,NTMPDriver,,brus.sys
+HKLM,"System\Currentcontrolset\Services\brus\Parameters","MaximumTransferSize",0x10001,4096
+HKLM,"System\Currentcontrolset\Services\brus\Parameters","DebugLevel",0x10001,2
+HKLM,"System\Currentcontrolset\services\brus\Parameters","BulkUsbEnable",0x10001,0
+
+[brus.Files.Ext]
+brus.sys
+
+[brus.Files.Inf]
+brus.Inf
+
+
+;---------------------------------------------------------------;
+
+[Strings]
+MSFT="Test Measure"
+MfgName="Test Measure"
+USB\VID_F4ED&PID_EE37.DeviceDesc="Test Measure Devices Controller"
+brus.SvcDesc2="Test and Measure Devices Controller"
+

@@ -1,0 +1,33 @@
+$ 1 5.0E-6 16.13108636308289 57 5.0 50
+a 848 400 992 400 0 15.0 -15.0 1000000.0
+w 848 320 848 384 2
+w 992 400 992 320 0
+r 848 320 960 320 0 20000.0
+w 848 416 848 464 0
+w 848 384 800 384 2
+w 800 384 800 352 0
+r 800 352 736 352 0 10000.0
+R 736 352 688 352 0 0 200.0 4.0 0.0 0.0 0.5
+O 992 400 1040 400 1
+R 688 432 640 432 0 0 40.0 10.0 0.0 0.0 0.5
+r 688 432 688 496 0 2200.0
+r 688 496 688 576 0 2200.0
+g 688 576 688 624 0
+w 688 496 848 496 2
+w 848 496 848 464 0
+w 960 320 992 320 2
+x 125 149 1418 155 0 24 Through the negative feedback the inverting (-) voltage of 4V is brought up and equal to the 5V non-inverting (+) voltage.
+x 126 190 1158 196 0 24 This 5V added to the 2V drop over the 20k resistor equals the 7V output. (refer to formula below)
+x 130 235 1111 241 0 24 Because the non-invertining (+) is greater than the inverting (-) the output voltage is positive
+x 126 268 1108 274 0 24 If the inverting was 7.5V the output would be 0V, and greater than 7.5V it would be negative
+x 122 316 542 322 0 24 When non-inverting is less thing it is its
+x 122 354 512 360 0 24 input V + the combined voltage drop
+x 117 397 446 403 0 24 across the 10K & 20K resistors
+x 121 435 501 441 0 24 When it is greater then subtract the
+x 113 472 507 478 0 24 combined (10K & 20K) voltage drops
+x 119 527 362 533 0 24 OpAmp Gain Formula:
+x 117 567 653 573 0 24 AV (gain) = RF/R1 + 1, ie (20K/10K + 1) + 5V = 7V
+x 117 607 516 613 0 24 RF is the 20K resistor in this example
+x 118 640 310 646 0 24 and R1 is the 10K
+o 8 64 0 34 10.0 9.765625E-5 0 -1
+o 9 64 0 34 10.0 9.765625E-5 1 -1

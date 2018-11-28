@@ -1,0 +1,49 @@
+$ 1 5.0E-6 10.20027730826997 50 5.0 50
+v 416 368 416 176 0 0 40.0 10.0 0.0 0.0 0.5
+w 416 176 608 176 1
+r 608 176 608 224 0 1000.0
+r 608 320 608 368 0 4000.0
+w 416 368 608 368 0
+w 608 272 720 272 2
+w 608 368 720 368 1
+v 720 736 720 544 0 0 40.0 8.0 0.0 0.0 0.5
+w 416 736 528 736 0
+w 416 640 528 640 2
+w 224 736 416 736 0
+r 416 640 416 736 0 4000.0
+r 416 544 416 640 0 1000.0
+w 224 544 416 544 1
+v 224 736 224 544 0 0 40.0 10.0 0.0 0.0 0.5
+r 720 272 720 368 0 2000.0
+O 720 736 656 736 1
+O 720 544 656 544 1
+O 416 176 352 176 1
+O 416 368 352 368 1
+O 224 544 176 544 1
+O 224 736 176 736 1
+w 720 544 800 544 1
+r 800 544 912 544 0 800.0
+r 912 544 912 736 0 2000.0
+w 912 736 720 736 0
+x 509 35 726 41 0 24 Thevenin's Theorem
+x 296 71 998 77 0 24 Takes a complex circuit and isolates the part you are interested in
+x 297 106 765 112 0 24 The rest as treated as a Thevenin black box
+x 858 408 1390 414 0 24 The Thevenin resistance is the 1K resistor and 4K
+x 856 438 1320 444 0 24 resistor in parallel: (1/1000+1/4000)^-1=800
+x 135 494 571 500 0 24 The black box after removing the resistor
+x 1024 600 1291 606 0 24 The Thevenin volatage is
+x 1028 639 1358 645 0 24 2000R/(800R+2000R)*8V=5.7V
+x 1027 674 1388 680 0 24 using the voltage divider equation
+O 912 544 960 544 1
+x 1028 728 1286 734 0 24 The Thevenin Current is
+x 1028 753 1300 759 0 24 8V/(800R+2000R)=2.9mA
+x 679 507 946 513 0 24 Isolated circuit of interest
+x 892 185 1291 191 0 24 The isolated part is reduced to a load
+x 897 216 1252 222 0 24 and a voltage (5.7V and 2K here)
+x 1023 491 1384 497 0 24 The 8V and 800 ohm here are the
+x 1023 521 1353 527 0 24 black box's source voltage and
+x 1023 546 1226 552 0 24 internal resistance.
+x 509 692 602 698 0 24 800 ohm
+x 133 522 580 528 0 24 The 1K and 8K are treated as if in parallel
+w 608 224 608 272 1
+w 608 272 608 320 1

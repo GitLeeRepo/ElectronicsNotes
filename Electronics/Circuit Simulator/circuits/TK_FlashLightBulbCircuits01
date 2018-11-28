@@ -1,0 +1,106 @@
+$ 1 5.0E-6 10.20027730826997 50 5.0 50
+v 80 336 80 208 0 0 40.0 3.0 0.0 0.0 0.5
+w 80 208 336 208 2
+w 336 208 336 240 1
+r 336 240 336 272 0 1.8
+w 336 272 336 304 0
+w 336 304 416 304 1
+w 416 304 416 336 2
+r 416 336 416 384 0 8.23
+w 416 384 416 416 1
+w 416 416 336 416 0
+w 336 304 336 336 2
+w 336 416 336 384 1
+r 336 336 336 384 0 82.0
+w 336 416 80 416 1
+w 80 416 80 336 0
+w 528 416 528 336 0
+w 784 416 528 416 1
+r 784 336 784 384 0 82.0
+w 784 416 784 384 1
+w 784 304 784 336 2
+w 864 416 784 416 0
+w 864 384 864 416 1
+r 864 336 864 384 0 8.23
+w 864 304 864 336 2
+w 784 304 864 304 1
+w 784 272 784 304 0
+r 784 240 784 272 0 3.9
+w 784 208 784 240 1
+w 528 208 784 208 2
+v 528 336 528 208 0 0 40.0 3.75 0.0 0.0 0.5
+x 536 14 786 20 0 24 Flashlight Bulb Circuits
+x 483 49 854 55 0 24 that stay within 1/2W resistor limits
+x 847 254 916 260 0 24 .423W
+x 695 375 764 381 0 24 .074W
+x 385 251 454 257 0 24 .188W
+x 243 373 312 379 0 24 .071W
+x 1143 375 1212 381 0 24 .043W
+x 1295 254 1364 260 0 24 .897W
+v 976 336 976 208 0 0 40.0 3.75 0.0 0.0 0.5
+w 976 208 1232 208 2
+w 1232 208 1232 240 1
+r 1232 240 1232 272 0 3.9
+w 1232 272 1232 304 0
+w 1232 304 1312 304 1
+w 1312 304 1312 336 2
+r 1312 336 1312 384 0 8.23
+w 1312 384 1312 416 1
+w 1312 416 1232 416 2
+w 1232 304 1232 336 2
+w 1232 416 1232 384 1
+r 1232 336 1232 384 0 82.0
+w 1232 416 976 416 1
+w 976 416 976 336 0
+w 1376 384 1376 416 1
+r 1376 336 1376 384 0 8.23
+w 1376 304 1376 336 2
+w 1312 304 1376 304 2
+w 1312 416 1376 416 0
+x 970 127 1384 133 0 24 c) Two bulbs in Parellel - 3.75V source
+x 970 171 1399 177 0 24 increases current and exceeds watt limit
+x 79 142 322 148 0 24 a) One bulb 3V source
+x 526 181 729 187 0 24 (the 8.2 Ohm load)
+x 527 144 804 150 0 24 b) One bulb 3.75V source
+x 82 179 285 185 0 24 (the 8.2 Ohm load)
+x 527 464 929 470 0 24 d) Two bulbs in Series - 3.75V source
+x 526 501 858 507 0 24 decreases current and wattage
+x 695 695 764 701 0 24 .103W
+x 847 574 916 580 0 24 .177W
+v 528 656 528 528 0 0 40.0 3.75 0.0 0.0 0.5
+w 528 528 784 528 2
+w 784 528 784 560 1
+r 784 560 784 592 0 3.9
+w 784 592 784 624 0
+w 784 624 864 624 1
+w 864 624 864 656 2
+r 864 656 864 672 0 8.23
+w 864 704 864 736 1
+w 864 736 784 736 0
+w 784 624 784 656 2
+w 784 736 784 704 1
+r 784 656 784 704 0 82.0
+w 784 736 528 736 1
+w 528 736 528 656 0
+r 864 688 864 704 0 8.2
+w 864 672 864 688 2
+x 50 481 461 487 0 24 The load was calculated from the bulb
+x 53 511 359 517 0 24 data (2.47V/300mA=8.2ohm)
+x 52 545 475 551 0 24 The 82 ohm resistor was determined by
+x 50 577 376 583 0 24 the 10% rule (10% of 8.2 load)
+x 50 614 477 620 0 24 The first resistor (1.8 for a and 3.9 for b)
+x 50 647 434 653 0 24 was determined by the voltage drop
+x 52 678 457 684 0 24 of that resistor divided by total current
+x 53 713 464 719 0 24 That Volt drop is source volt - load volt
+x 970 504 1348 510 0 24 The total current is the load current
+x 972 537 1412 543 0 24 + the current accross the 82 ohm resistor
+x 484 84 959 90 0 24 bulb load respresent by the 8.2 ohm resistor
+x 973 597 1424 603 0 24 In the actual circuits the bulbs dimmed for
+x 972 627 1451 633 0 24 the parallel bulbs, and much more for Series
+x 972 658 1454 664 0 24 circuit, due to the reduced current across the
+x 972 688 1465 694 0 24 individual bulbs, even though the total current
+x 973 720 1425 726 0 24 increased in the case of the parallel circuit
+x 973 748 1483 754 0 24 with a very hot 3.9 ohm resistor (limit exceeded)
+x 76 40 475 46 0 24 This version doesn't recalc the Series
+x 77 67 365 73 0 24 & Parallel, refer to ver 2 for
+x 77 92 230 98 0 24 those updates

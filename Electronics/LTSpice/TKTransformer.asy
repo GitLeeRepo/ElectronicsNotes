@@ -1,0 +1,16 @@
+Version 4
+SymbolType BLOCK
+RECTANGLE Normal -92 -2 -134 -29
+SYMATTR Prefix T
+PIN -128 -32 BOTTOM 8
+PINATTR PinName p1
+PINATTR SpiceOrder 1
+PIN -96 -32 BOTTOM 8
+PINATTR PinName p2
+PINATTR SpiceOrder 2
+PIN -128 0 TOP 8
+PINATTR PinName s1
+PINATTR SpiceOrder 3
+PIN -96 0 TOP 8
+PINATTR PinName s2
+PINATTR SpiceOrder 4
