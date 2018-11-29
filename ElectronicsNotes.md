@@ -132,6 +132,8 @@ The variables represent:
 
 # Current
 
+* **Current** is defined as the **amount of charge q(electrons)** that passes a **fixed point** as a **function of time**. Mathematically, **current** is **equal to the amount of charge per unit of time**.  The equation is **i = dq/dt**.
+
 * **Current** -- in **electronics** it is generally referring to **conventional current** in which the **holes** flow from **positive** to **negative**.  It is **measured** in **amperes**.  Refer to **conventional current**, **electron current** and **holes** for more details.
 
 * **Conventional Current** -- refers to the **flow of holes** along a **conductor** from **positive to negative**.  This contrasts with **electron current** which refers to the flow of **electrons** in the **opposite direction** from **negative to positive**.  Generally, by convention, when we are referring to **current** in **electronics we are referring to **conventional current**.
@@ -142,3 +144,64 @@ The variables represent:
 
 
 ![Current01.png](images/Current01.png)
+
+# Voltage
+
+* **Voltage** is what helps us to **move the charge** through a **conductor** by using **pressure/force**.
+
+* The **difference** between the **charge** at the **source** and at the **ground** is the **potential energy (U)** which is the **basis of voltage**.
+
+* **Voltage mathematical definition: V=U/q0**, where **U** is the **potential energy in joules** and **q0** is the **charge in coulombs**.
+
+* This equation results in **1V = 1J/1C**, where **J = Joules** and **C = Coulombs**
+
+## Generation of Voltage
+
+There are a number of ways to **generate voltage**, but most are based on either **chemicals**, **magnetic fields**, or **photo-electric effect**.
+
+### Batteries
+
+* **Chemical Batteries** are devices that use **chemicals (wet or dry)** to **create an accumulation of charge** and hence a **voltage**.
+
+* The **positive** side of the **battery** is the **Anode**.
+
+* The **negative** side of the **battery** is the **Cathode**.
+
+* The **amount** of **charge** in a **battery** is often on the **label**.  For example, a **1.5V (actual 1.2V) Ni-MH battery** might show **2400mAh**, which means it can **supply 2400mA** for **one hour**.  This is **not** a very **accurate** way of representing the amount stored, since if you drained it by **2400mA** it would become **ineffective before one hour**, because it does **not maintain the full charge** over time .  A more accurate way would be to use **watt/hours** which accounts for the **drop in voltage over time**.
+
+* The **amount of energy stored** is **proportional to the size** of the **battery**.  This  is why a **AAA battery** does **not** hold as much as much **charge** as a **AA** battery.  While a **1.2V Ni-MH AA battery** might have **2400mAh** and equivalent **AAA battery** might only have **800mAh**.
+
+* **9V rectangular batteries**, which have the **two connectors** at the **top**, are actually made up of **6 1.5V cells wired in series** to produce the **9V**.
+
+* **Batteries** have an **internal resistor** that supplies a **small amount of resistance**, which prevents it from being an **ideal battery**. When you **measure** the **voltage** on a **meter** it is **unloaded**, which means there is **very little current**, since the **current** is proportional to the **load/resistance**.  So because the **battery** only has a **very small amount** of **resistance** the **voltage** will **drop very little** when the **meter** is connected, so you are getting a **fairly accurate approximation of the ideal voltage**.
+
+* If you **measure** the **current** directly between the **leads** of a **1.5V battery**, you are going to get a **high current** (in the **5A to 9A** range) for a **short time** and then the **current** is going to **start dropping fairly rapidly** as it **heats up** causing **more resistance**.  If you leave it connected for to long you will eventually **damage the battery**.
+
+# Semiconductors
+
+* **Semiconductors** are **neither good conductors** or **good insulators**, they are **neutral**. 
+
+* **Doping agents** are **atoms** that introduced to make it **good** at either **conducting** or **insulating**.
+
+* **Phosphorus** a **N-type dopant** is added, which has **5 electrons** compared to the **4 electrons** of the **silicon** in their **valence shells**.  This causes the **overall charge** to become **slightly negative**.  This creates an **N-type semiconductor**
+
+* **Boron** a **P-type dopant** is added, which has **3 electrons** compared to the **4 electrons** of **silicon** in their **valence shells**.  This causes the **overall charge** to become **slightly positive**. This creates an **P-type semiconductor**
+
+## Semiconductor Materials
+
+* **Silicon (Si)** -- has **4 electrons** in its **valence shell** when it is **neutral**
+* **Born (B)** -- has **3 electrons** in its **valence shell** and is used as a **P-type dopant**
+* **Phosphorus (P)** has **5 electrons** in its **valence shell** and is used as a **N-type dopant**
+
+## Devices and Their Approximate Current Needs
+
+Device/System               | Average Current Drain
+----------------------------|----------------------
+Single Gate in a uProcessor | 10nA
+Single Gate in a TTL Chip   | 5mA
+Light Emitting Diode        | 20mA
+Digital TTL Chip            | 30mA
+LCD Calculator              | 50mA
+27" TV                      | 2A
+Personal Computer           | 5A
+Hair Dryer                  | 10A
