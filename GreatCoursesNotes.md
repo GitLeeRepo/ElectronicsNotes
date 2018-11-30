@@ -128,11 +128,11 @@ With a **120V 20A circuit** you can have a **minimum resistance** of **6 ohms** 
 
 The **voltage** across a **1.8kΩ** with a **current** of **5mA** would be **9V  (5mA \* 1.8kΩ0)**
 
-## Lecture 02 - Circuits and Symbols
+# Lecture 02 - Circuits and Symbols
 
 An **electronic circuit** is an assemblage of interconnected electronic components.
 
-### Electronic Symbols
+## Electronic Symbols
 
 ![ch02-02-CircuitsAndSymbols](images/GreatCourses/ch02/ch02-02-CircuitsAndSymbols.png) 
 
@@ -207,7 +207,44 @@ It is important to note that **not all connections** exhibit **series** or **par
 
 ![ch02-10-CircuitsAndSymbols](images/GreatCourses/ch02/ch02-10-CircuitsAndSymbols.png) 
 
-### Summary
+## Summary
 
 ![ch02-11-CircuitsAndSymbols](images/GreatCourses/ch02/ch02-11-CircuitsAndSymbols.png) 
+
+# Lecture 03 -- Instruments and Measurements
+
+With **electrical measuring instruments** it is important to **minimize its impact on the circuit**
+
+When **measuring** keep in mind that:
+
+* **Voltage** is a **difference** of **energy** between **two points**.  When **connecting** a **voltmeter** you are connecting it in **parallel** to the **component** you are **measuring voltage across**.
+* **Current** is a **flow** of **energy** through a **conductor**. When **connecting** an **ammeter** you are connecting it in **series** in the **circuit** you are **measuring current through**.
+
+## Measuring Voltage with a Voltmeter
+
+![ch03-01-InstrumentsAndMeasurements.png](images/GreatCourses/ch03/ch03-01-InstrumentsAndMeasurements.png)
+
+The **2 kΩ resister** gets **2/3** of the **voltage**, while the **1 kΩ resister** gets **1/3** of the **voltage**
+
+The **voltmeter** has to go **across** or in **parallel** with what you are trying to **measure**.
+
+If a **voltmeter draws current** it will**lower the voltage** and thus **impact the circuit**.  An **ideal voltmeter** would have **infinite resistance**.  A **good voltmeter** will have **a lot more resistance** than the **circuit itself** so that a **minimal current** flows through the **meter**.  **Digital voltmeters** typically have between **1 mΩ to 10mΩ** of **resistance**, which is **much better** than the **resistance** on an **analog meter**, which might only have **20kΩ** of **resistance**.
+
+### Measuring voltage across resistors
+
+![ch03-02-InstrumentsAndMeasurements.png](images/GreatCourses/ch03/ch03-02-InstrumentsAndMeasurements.png)
+
+Note that while the **voltage varies** between the **two resistors**, the **current remains the same** throughout this **circuit**.
+
+## Measuring Current through an Ammeter
+
+An **ammeter measures current through itself**.  The **current** comes **in one lead**, goes through the **meter**, and then **out the other lead**.  You have to **break the circuit** and put the **ammeter in series** with the **component** you are **measuring.
+
+![ch03-03-InstrumentsAndMeasurements.png](images/GreatCourses/ch03/ch03-03-InstrumentsAndMeasurements.png)
+
+The **ideal ammeter** should have **zero resistance** to **not impact** the **measurement**.  In practices, it should be **much less** than the **rest of the circuit**.
+
+**Important:** because an **ammeter** has **very little resistance**, you should **never** try to **measure across the terminals of a battery**, and you should **never** measure a **circuit** with **minimal resistance**, otherwise you **risk damaging** the **meter**, or at a minimum **blowing the fuse**.  Bottom line is **don't ever** put an **ammeter** across a **voltage source**.
+
+## Measuring Resistance
 
