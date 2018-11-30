@@ -14,7 +14,8 @@ tbd
 
 ### Notes in this repository
 
-* [ElectronicNotes](https://github.com/GitLeeRepo/ElectronicNotes/blob/master/ElectronicNotes.md#overview)
+* [ElectronicNotes](https://github.com/GitLeeRepo/ElectronicsNotes/blob/master/ElectronicsNotes.md#overview)
+
 
 
 ### Notes in Other Repositories

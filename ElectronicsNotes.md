@@ -18,7 +18,7 @@ tbd
 
 ### Notes in this repository
 
-* [GreatCoursesNotes](https://github.com/GitLeeRepo/ElectronicNotes/blob/master/GreatCoursesNotes.md#overview)
+* [GreatCoursesNotes](https://github.com/GitLeeRepo/ElectronicsNotes/blob/master/GreatCoursesNotes.md#overview)
 
 
 ### Notes in Other Repositories
