@@ -18,21 +18,18 @@ tbd
 
 ### Notes in this repository
 
-tbd
+* [GreatCoursesNotes](https://github.com/GitLeeRepo/ElectronicNotes/blob/master/GreatCoursesNotes.md#overview)
+
 
 ### Notes in Other Repositories
 
 * [NotesGuidelines](https://github.com/GitLeeRepo/NotesGuidlines/blob/master/NotesGuidelines.md#overview)
 
-# Contents
+# Table of Contents
 
 tbd
 
 # Concepts and Terminology
-
-tbd
-
-# Digital and Analog Electronics
 
 * **Analog Electronics** -- involves **smoothly varying signals**.  **Signals** that can take on **varying voltages** or other characteristics. On a **scope** they are represented by **sine waves** and other **continuously varying wave types**.
 * **CMOS chip** -- **Complimentary Metal Oxide Semiconductor** -- an **Integrated Circuit package**
@@ -45,6 +42,8 @@ tbd
 * **Holes** -- create when an **electron** in a **conductor** moves to the **next atom**.  If the **current** is viewed as moving from **positive to negative**, say from **left to right**, the **holes** move in the **opposite** direction, from **right to left**.  The flow of **electrons** is referred to as **electron current** with the flow of the **holes** referred to as **conventional current**.
 * **Insulators** -- **resist** **electrical charge**.  They are made of materials whose **electrons** are **tightly bound** to their **outer shell (valence shell)** and don't flow easily from on **atom** to the next.
 * **TTL chip** -- **Transistor Transistor Logic**
+
+# Digital and Analog Electronics
 
 ## Analog Electronics
 
