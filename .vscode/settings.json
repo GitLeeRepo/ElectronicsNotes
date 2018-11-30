@@ -3,6 +3,9 @@
         "cmos",
         "eprom",
         "logisim",
+        "mosfet",
+        "spdt",
+        "spst",
         "wolfsom"
     ]
 }
