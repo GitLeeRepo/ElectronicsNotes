@@ -133,11 +133,11 @@ An **electronic circuit** is an assemblage of interconnected electronic componen
 
 ### Electronic Symbols
 
-[ch02-02-CircuitsAndSymbols](images/GreatCourses/ch02/ch02-02-CircuitsAndSymbols.png) 
+![ch02-02-CircuitsAndSymbols](images/GreatCourses/ch02/ch02-02-CircuitsAndSymbols.png) 
 
 ### Simple Circuit
 
-[ch02-01-CircuitsAndSymbols](images/GreatCourses/ch02/ch02-01-CircuitsAndSymbols.png) 
+![ch02-01-CircuitsAndSymbols](images/GreatCourses/ch02/ch02-01-CircuitsAndSymbols.png) 
 
 ## Voltage Sources
 
@@ -154,12 +154,11 @@ An **ideal battery** has **no resistance** and produces exactly the **same volta
 
 **V-I Characteristics** -- **voltage-current** characteristics.
 
-[ch02-03-CircuitsAndSymbols](images/GreatCourses/ch02/ch02-03-CircuitsAndSymbols.png) 
+![ch02-03-CircuitsAndSymbols](images/GreatCourses/ch02/ch02-03-CircuitsAndSymbols.png) 
 
 It is a **vertical line** since the **voltage remains constant** regardless of the **current**.
 
-[ch02-04-CircuitsAndSymbols](images/GreatCourses/ch02/ch02-04-CircuitsAndSymbols.png) 
- - Image of resistor VI -- with 
+![ch02-04-CircuitsAndSymbols](images/GreatCourses/ch02/ch02-04-CircuitsAndSymbols.png) 
  
  The **slope** of the **straight diagonal line** being **1 for the 1 ohm resistor**.  With a **2 ohm resistor** the **slope** would be **1/2** since the **voltage** is the **x-axis** and **current** is the **y-axis**.  This reflects the fact that there is **less current** with **more resistance**.
 
@@ -167,9 +166,9 @@ It is a **vertical line** since the **voltage remains constant** regardless of t
 
 When **modeling real batteries** you depict them as having an **internal resistor** connected **in series**.  **Real batteries** don't actually have **internal resistors** inside, but instead it represents the **internal resistance** based on the **material** from which the **battery is made**, and the **speed** of the **chemical reactions** in the **battery**.
 
-[ch02-07-CircuitsAndSymbols](images/GreatCourses/ch02/ch02-07-CircuitsAndSymbols.png) 
+![ch02-07-CircuitsAndSymbols](images/GreatCourses/ch02/ch02-07-CircuitsAndSymbols.png) 
 
-Real Battery image -- the **real battery** when connected to a **circuit with resistance** forms a **voltage divider** (see the following section), with the **voltage** across the circuit's **resistor** being proportional to its own resistance compared to the **internal resistance**.
+The **real battery** when connected to a **circuit with resistance** forms a **voltage divider** (see the following section), with the **voltage** across the circuit's **resistor** being proportional to its own resistance compared to the **internal resistance**.
 
 **Bigger batteries** have **lower internal resistance** and can therefore supply **more current**.  A **12V car battery** is able to supply a lot **more current** than two **6 volt lantern batteries in series** due to its size, along with other internal properties. 
 
@@ -181,28 +180,23 @@ Real Battery image -- the **real battery** when connected to a **circuit with re
 
 When their are **two resistors** in **series** the **resistance is the sum** of the two resistors.
 
-[ch02-05-CircuitsAndSymbols](images/GreatCourses/ch02/ch02-05-CircuitsAndSymbols.png) 
-
- -- Series Resistor image
+![ch02-05-CircuitsAndSymbols](images/GreatCourses/ch02/ch02-05-CircuitsAndSymbols.png) 
 
 #### Voltage Divider
 
 A **voltage divider** circuit consists of **two resistors** in **series**.  It **divides the voltages in proportion to the resistances**.  The **current** remains **constant** across the **resistors** but the **voltage** is **proportional** to the **value of the resistor**.  If both **resistors** are the **same value** the **voltage** will be **divided in half**.  A **6V battery** on a circuit will show **3V** when measured **across each resistor**.
 
-[ch02-06-CircuitsAndSymbols](images/GreatCourses/ch02/ch02-06-CircuitsAndSymbols.png) 
- -- Voltage divider image
+![ch02-06-CircuitsAndSymbols](images/GreatCourses/ch02/ch02-06-CircuitsAndSymbols.png) 
 
 You have to be careful that your **circuits** provide enough **load** for the **battery** since **too little resistance** places all the **voltage** across the **internal resistances** of the **battery**, which is why connecting the **two terminals** without any **resistance** will cause the **battery** to become **very hot** and it will eventually **fail**.
 
 ### Parallel Connections
 
-[ch02-08-CircuitsAndSymbols](images/GreatCourses/ch02/ch02-08-CircuitsAndSymbols.png) 
- -- Parallel connection image
+![ch02-08-CircuitsAndSymbols](images/GreatCourses/ch02/ch02-08-CircuitsAndSymbols.png) 
 
 **Parallel resistors** are like adding an extra lane on a highway, the **resistance** to the **flow** goes **down**.  With **resistors** the **resistance** value goes **down**.
 
-[ch02-09-CircuitsAndSymbols](images/GreatCourses/ch02/ch02-09-CircuitsAndSymbols.png) 
- -- Parallel connection image
+![ch02-09-CircuitsAndSymbols](images/GreatCourses/ch02/ch02-09-CircuitsAndSymbols.png) 
 
 While a **series connection** is often called a **voltage divider**, a **parallel connection** can be considered a **current divider**.
 
@@ -210,10 +204,9 @@ While a **series connection** is often called a **voltage divider**, a **paralle
 
 It is important to note that **not all connections** exhibit **series** or **parallels** characteristics.
 
-[ch02-10-CircuitsAndSymbols](images/GreatCourses/ch02/ch02-10-CircuitsAndSymbols.png) 
+![ch02-10-CircuitsAndSymbols](images/GreatCourses/ch02/ch02-10-CircuitsAndSymbols.png) 
 
 ### Summary
 
-[ch02-11-CircuitsAndSymbols](images/GreatCourses/ch02/ch02-11-CircuitsAndSymbols.png) 
- -- Summary Image
+![ch02-11-CircuitsAndSymbols](images/GreatCourses/ch02/ch02-11-CircuitsAndSymbols.png) 
 
