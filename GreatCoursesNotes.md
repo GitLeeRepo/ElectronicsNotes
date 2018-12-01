@@ -248,3 +248,16 @@ The **ideal ammeter** should have **zero resistance** to **not impact** the **me
 
 ## Measuring Resistance
 
+![ch03-04-InstrumentsAndMeasurements.png](images/GreatCourses/ch03/ch03-04-InstrumentsAndMeasurements.png)
+
+When **measuring resistance** the **ohmmeter** provides a **known current** and then it **measures the voltage**, and then through **Ohm's Law** it calculates the **resistance**.
+
+Because the **ohmmeter** generates its **own current** you **do not** want to **measure resistance** while the **resistor** is **in the circuit**, since it would run the **current** through the rest of the **circuit**.
+
+## The Oscilloscope
+
+The **oscilloscope** measures **voltage as a function of time**.  It displays **voltage vs time** on a **screen**.
+
+The original **oscilloscopes** used a **cathode ray tube** to display the image.
+
+Today's **oscilloscopes** can **measure time intervals** in **billionths of a second**.  They are actually **computers** that **simulate** the same patterns on the **screen** as the old **CRts**, using a **flat screen display**.

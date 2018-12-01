@@ -1,8 +1,0 @@
-* D:\Users\traek_000\Documents\Electronics\LTSpice\Simple01.asc
-R1 N001 N002 1k
-R2 N002 N003 1k
-R3 N003 0 1k
-V1 N001 0 6V
-.op
-.backanno
-.end

@@ -19,6 +19,8 @@ tbd
 ### Notes in this repository
 
 * [GreatCoursesNotes](https://github.com/GitLeeRepo/ElectronicsNotes/blob/master/GreatCoursesNotes.md#overview)
+* [CircuitSimulators](https://github.com/GitLeeRepo/ElectronicsNotes/blob/master/CircuitSimulators.md#overview)
+* [EquipmentNotes](https://github.com/GitLeeRepo/ElectronicsNotes/blob/master/EquipmentNotes.md#overview)
 
 
 ### Notes in Other Repositories
@@ -175,6 +177,26 @@ There are a number of ways to **generate voltage**, but most are based on either
 * **Batteries** have an **internal resistor** that supplies a **small amount of resistance**, which prevents it from being an **ideal battery**. When you **measure** the **voltage** on a **meter** it is **unloaded**, which means there is **very little current**, since the **current** is proportional to the **load/resistance**.  So because the **battery** only has a **very small amount** of **resistance** the **voltage** will **drop very little** when the **meter** is connected, so you are getting a **fairly accurate approximation of the ideal voltage**.
 
 * If you **measure** the **current** directly between the **leads** of a **1.5V battery**, you are going to get a **high current** (in the **5A to 9A** range) for a **short time** and then the **current** is going to **start dropping fairly rapidly** as it **heats up** causing **more resistance**.  If you leave it connected for to long you will eventually **damage the battery**.
+
+#### Batteries in Series and Parallel
+
+* **Batteries in Series** -- used to increase the **voltage** -- **4 1.5V batteries in series** is **6V**.
+
+* **Batteries in Parallel** -- used to increase the **current** -- **4 1.5V batteries in parallel** remains only **1.5V**, but the **current** is **4 times greater**.  If the **circuit resistance** is **1 KΩ** the **total current** would be **24 mA** since the **6 mA** of a **1.5V** system is **multiplied by 4**, or it will last **4 times longer in time** if the **current is the same**.  Keep in mind though that there are **variations** in each **batteries voltage, resistance, and remaining charge**, so the **4 times** is only a **rough estimation**.
+
+You have to be **very careful** when configuring **batteries** not to get the **polarities mixed up**, otherwise you can **burn out the circuit and/or battery**.  In addition, on **high current batteries** such as **car batteries** and **lithium ion (cell phones)** can hurt you through **shock or explosion**.
+
+Note that if the **batteries** are **loose** and the **same terminals are touching**, this is **not a problem**.  The **problem occurs** when these **batteries** are placed **in a circuit with a load**.
+
+#### Battery Reliability
+
+If you **push a battery too hard** by giving it a **load that exceeds** its capabilities.  Also, note that if the **resistance** in the circuit is **too low**, the battery voltage will also **start dropping**, but in this case you are **overheating the battery** which is causing **more resistance**.
+
+# Ground
+
+**Ground** is a **reference point** from which to **evaluate voltages**.  In **many circuits** it is typically **0 V**, but it doesn't have to be.  **Every circuit must have a ground**.  
+
+With **batteries ground** is typically the **negative terminal** of the **battery**, although it might be a **combination** of the **negative terminal** of the **battery** and the **frame** of the **enclosure**.  For example, **automobiles** typically use both the **negative terminal** of the **battery** and the **frame of the car** as the ground, with the **two connected to each other**.
 
 # Semiconductors
 
