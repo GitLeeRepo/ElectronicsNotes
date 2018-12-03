@@ -4,7 +4,9 @@ Notes on various Circuit Simulators
 
 # References
 
-*[LTspice]
+* [LTspice]
+* [CircuitSimulator Java App](https://www.falstad.com/circuit/) -- this is web based.  I have an older executable jar file of this.  The older local version is in the [repository](https://github.com/GitLeeRepo/ElectronicsNotes/tree/master/Electronics/Circuit%20Simulator)
+
 
 ## YouTube Refences
 
@@ -161,3 +163,7 @@ By **default** it is a **DC voltage source**, but if you click on the **Advanced
 ## Things to watch out for
 
 * If your result shows **negative current** where you are expecting **positive**, then you probably have the **component** positioned **backwards**.
+
+# CircuitSimulator
+
+* [CircuitSimulator Java App](https://www.falstad.com/circuit/) -- this is web based.  I have an older executable jar file of this.  The older local version is in the [repository](https://github.com/GitLeeRepo/ElectronicsNotes/tree/master/Electronics/Circuit%20Simulator)

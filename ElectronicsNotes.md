@@ -4,7 +4,11 @@ Notes on electronics
 
 # References
 
-tbd
+## Suppliers
+
+* [SparkFun](https://www.sparkfun.com/)
+* [Mouser](https://www.mouser.com/)
+* [Jameco](https://www.jameco.com/)
 
 ## Udemy
 
@@ -41,8 +45,12 @@ tbd
 * **Digital Electronics** -- involves a **fixed voltage** that varies between **on/off** states.  On a **scope** they are represented by **square waves** that are either **on** or **off**.  In reality, **digital electronics** is built on **analog electronics** it is just a **model** that sits on top of it.
 * **Electron Current** -- refers to the **flow of electrons** along a **conductor** from **negative to positive**.  This contrasts with **conventional current** which refers to the flow of **holes** in the **opposite direction** from **positive to negative**.  Generally, by convention, when we are referring to **current** in **electronics we are referring to **conventional current**.
 * **EPROM** -- **Erasable Programmable Read Only Memory**
+* **Gain** -- a measure of the ability of a **two-port circuit (often an amplifier)** to **increase the power or amplitude of a signal** from the **input to the output port** by **adding energy** converted from some **power supply** to the **signal**. It is usually defined as the **mean ratio** of the **signal amplitude** or **power** at the **output port** to the amplitude or power at the input port. It is often expressed using the **logarithmic decibel (dB) units** ("dB gain"). A **gain greater than one** (greater than zero dB), that is **amplification**, is the defining property of an **active component** or circuit, while a **passive circuit** will have a **gain of less than one**.
 * **Holes** -- create when an **electron** in a **conductor** moves to the **next atom**.  If the **current** is viewed as moving from **positive to negative**, say from **left to right**, the **holes** move in the **opposite** direction, from **right to left**.  The flow of **electrons** is referred to as **electron current** with the flow of the **holes** referred to as **conventional current**.
 * **Insulators** -- **resist** **electrical charge**.  They are made of materials whose **electrons** are **tightly bound** to their **outer shell (valence shell)** and don't flow easily from on **atom** to the next.
+* **Line level** -- the specified **strength** of an **audio signal** used to **transmit analog sound** between **audio components** such as CD and DVD players, television sets, audio amplifiers, and mixing consoles.  **Line level** it is **between weaker audio signals sources** and **stronger signals**, such **loudspeakers**. ([Wikipedia/edited](https://en.wikipedia.org/wiki/Line_level))
+* **Op-amp** -- **Operational Amplifier** -- have **two inputs**, ""inverting (-)** and **non-inverting (+)**, along with **one output**.  The **polarity** of the **signal** is **reversed** between the **inverting input** and the **output**.  The **signal** at the **non-inverting input retains its polarity*** at the **output**. (paraphrasing from "Timer, Op Amp, & Optoelectronic Circuits & Projects** by Forrest M. Mims III)
+* **Pitch** -- the **distance** between **component pins**.
 * **TTL chip** -- **Transistor Transistor Logic**
 
 # Digital and Analog Electronics
@@ -144,7 +152,22 @@ The variables represent:
 * **Holes** -- create when an **electron** in a **conductor** moves to the **next atom**.  If the **current** is viewed as moving from **positive to negative**, say from **left to right**, the **holes** move in the **opposite** direction, from **right to left**.  The flow of **electrons** is referred to as **electron current** with the flow of the **holes** referred to as **conventional current**.
 
 
-![Current01.png](images/Current01.png)
+![Current01.png](images/Current/Current01.png)
+
+## Current Sourcing and Sinking
+
+From: [current-sourcing-sinking](https://startingelectronics.org/articles/current-sourcing-sinking/)
+
+* A **current source** is when a **load** is **connected to a device** so that the **device supplies current to the load** (sources current) then the configuration is said to be **current sourcing**. An example is a series resistor and LED connected between a microcontroller pin and GND. When the microcontroller pin is switched high (logic 1) then the microcontroller will source current to the load. In this configuration a logic 1 will supply power to the load (switch the LED on) and a logic 0 will switch power to the load off (switch the LED off).
+
+* **Current sinking** is When a **load** is **connected to a device** so that **current flows from the power supply through the load and into the device**, then the configuration is said to be **current sinking**. When current flows into the device, it is said to be sinking current.
+
+![Current02.png](images/Current/Current02.png)
+
+Another view
+
+![Current03.png](images/Current/Current03.png)
+
 
 # Voltage
 
@@ -226,3 +249,50 @@ LCD Calculator              | 50mA
 27" TV                      | 2A
 Personal Computer           | 5A
 Hair Dryer                  | 10A
+
+
+# Typical Component Characteristics
+
+## LED
+
+Refer to:
+
+* [All about LEDs](https://learn.adafruit.com/all-about-leds/what-is-an-led) --image from this site
+
+* Current only flows in **one direction** from **anode (positive)** to **cathode (negative)**.  They **won't work** when plugged in **backwards**.
+
+* The **longer lead** on an **LED** indicates the **positive lead**
+
+* **Anode** is the **positive lead**
+
+* **Cathode** is the **negative lead**
+
+![LED01.png](images/Components/LED/LED01.png)
+
+* **Forward voltage** is the amount of **voltage** absorbed by the **LED**.  Since **Kirchhoff's Voltage Law** shows that the total amount of **voltage absorbed** by a circuit must be **equal** to the **voltage provided**. So if an **LED** has an average **forward voltage** of **2.2V** and its placed on a **9V sourced circuit**, a **resistor** must be added to the **circuit** to **absorb** the **remaining 6.8V**.  Assuming a **20mA current**, according to **Ohms Law** we need a **340Ω resistor (6.8/.02)** 
+
+# Miscellaneous Tips
+
+## Use a Capacitor after Battery Input
+
+* placing a **capacitor** after the **battery input connection** will help to **smooth out the power** as load is put on a **battery** and as the battery **depletes**.  An **electrolytic capacitor (can like enclosure)** is the best type for this, with **4.7uF** typical for a **4.5 volt DC** that is under **500mA**.
+
+
+# Audio -- Side Notes (move later to a more audio specific document)
+
+## Typical Electrical Specs
+
+* **Speakers** -- **4 to 8 ohm**
+* **Line level** -- the specified **strength** of an **audio signal** used to **transmit analog sound** between **audio components** such as CD and DVD players, television sets, audio amplifiers, and mixing consoles.  **Line level** it is **between weaker audio signals sources** and **stronger signals**, such **loudspeakers**. ([Wikipedia/edited](https://en.wikipedia.org/wiki/Line_level))
+
+Use	               |Nominal level | Nominal level, Vrms | Peak amplitude, Vpk |Peak-to-peak amplitude, Vpp
+-------------------|--------------|---------------------|---------------------|----------------------------
+Professional audio | +4 dBu       | 1.228               | 1.736               | 3.472
+Consumer audio     | −10 dBV      | 0.316               | 0.447               | 0.894
+
+## Current vs Voltage in Loudspeakers
+
+Normal commercial **loudspeakers** are meant to be **driven** with a **voltage signal**, **not a current signal**
+
+
+

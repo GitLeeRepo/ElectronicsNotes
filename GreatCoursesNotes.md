@@ -261,3 +261,192 @@ The **oscilloscope** measures **voltage as a function of time**.  It displays **
 The original **oscilloscopes** used a **cathode ray tube** to display the image.
 
 Today's **oscilloscopes** can **measure time intervals** in **billionths of a second**.  They are actually **computers** that **simulate** the same patterns on the **screen** as the old **CRts**, using a **flat screen display**.
+
+# Lecture 04 -- AC vs DC
+
+With **DC** you have a **steady voltage and curent**, whereas with **AC** you get a **time varying voltage and current**.
+
+## AC
+
+### Advantages of AC
+
+* **Rotating generators** naturally produce **AC**
+* It is **easy** to **transform change voltages** in **AC**
+* **AC voltages** can be **stepped up** to **100s of thousands of volts** for **long distance transmission**.
+* **AC** is used in **audio signals** which also **vary in time**
+
+### Sine Waves
+
+The **varying AC current** produces a **sine wave**.  **Sine waves** themselves can be **combined** to produce more **complex wave forms**.
+
+![ch04-01-ACvsDC.png](images/GreatCourses/ch04/ch04-01-ACvsDC.png)
+
+**Frequency** and **period** both represent **time**, but are **inverses of each other**.
+
+**Amplitude** and **frequency (or period)** are the **two** things that **characterize AC signals**
+
+When you talk about **120V, 60Hz AC power** this means **120V rms** (the **peak** is actually about **170V**)
+
+## DC
+
+### Advantages of DC
+
+* **Electronic circuits** generally prefer **DC** voltage.
+
+## Converting AC to DC
+
+Because we use many **appliances** and **gadgets** that use **DC**, we need to be able **convert AC to DC**.  In addition, most **modern DC devices** use fairly **low voltages** and **currents**.  They often can be run on either **battery** or through **DC transformed** from **AC**.
+
+### Components of a Power Supply used to Convert AC to DC
+
+* **Transformer** -- steps the **voltage** **up** or **down**
+* **Diode** -- only allows electricity to **flow** in **one direction**
+* **capacitor** -- used here in a **power supply** to **smooth out** the **voltages**
+
+In addition a **voltage regulator** is also **often used** in **power supply**. It's job is to keep the **voltage at a fixed level** according to its specification.
+
+#### Transformer
+
+![ch04-02-ACvsDC.png](images/GreatCourses/ch04/ch04-02-ACvsDC.png)
+
+**Electromagnetic induction** is where a **changing current** in **one circuit** will **induce**  a **changing current** in **another circuit**.  The **intermediator** between the **two separate currents** is the **magnetic field**.
+
+
+
+If you have the **same number of turns** on **both sides** you will get the **same voltage** on both sides.  **Isolated circuits** use **isolation transformers** like this, such as in **medical devices** and other **devices** that need this kind of **isolation**.
+
+When you **step up voltage** with a **transformer** you get **stepped down current**.  The **high transmission power lines** have small relative  **currents**.
+
+#### Diode
+
+**Diodes** are a **one way** valve for electrical **current**.
+
+![ch04-03-ACvsDC.png](images/GreatCourses/ch04/ch04-03-ACvsDC.png)
+
+An **ideal diode** is like a **short circuit**, if you introduce power **huge amounts of current will flow**.
+
+![ch04-04-ACvsDC.png](images/GreatCourses/ch04/ch04-04-ACvsDC.png)
+
+A **real diode** has a **slight curve** in its graph as the **curent increases**.
+
+The **diode** looks kind of like a **resistor**, but only has **one bar** on the **end** to indicate which way **current flows**.
+
+#### Capacitor
+
+![ch04-05-ACvsDC.png](images/GreatCourses/ch04/ch04-05-ACvsDC.png)
+
+A **capacitor** is used in a **power supply** to **smooth out** the **voltages**. After the **diode** gets the current to flow in **one direction** the **diode flattens** this **half sign wave** into a fairly **straight line**.  There is a small bump at the **peak voltage** called **ripple**, for which you need to determine **how much ripple** your circuit can **tolerate** to determine how good of a power supply you need.
+
+The **capacitor** needs to **hold** the **voltage** long enough for the **negative part of the cycle to complete**.  You need a **large enough capacitor** to hold this voltage.
+
+#### Full Power Supply
+
+All **three** of the above **components (transformer, diode, capacitor)** are present in the **power supply**.
+
+![ch04-06-ACvsDC.png](images/GreatCourses/ch04/ch04-06-ACvsDC.png)
+
+#### Voltage Regulator
+
+A **voltage regulator** is an **integrated circuit** that looks similar to a **transistor** in that it has **3 leads**.  It actually consists of **multiple transistors internally**.  It's job is to keep the **voltage at a fixed level** according to its specification.
+
+After going through a **voltage regulator** you should see very little **ripple** in the **output signal**.
+
+This diagram shows an **improved power supply** with the **voltage regulator added**:
+
+![ch04-07-ACvsDC.png](images/GreatCourses/ch04/ch04-07-ACvsDC.png)
+
+# Lecture 05 -- Filter Capacitors
+
+* **Filter Circuits** -- used to process **different frequencies**.  You can use them to **filter out** certain **frequencies ranges** which can be useful for different things, including removing **noise**.
+
+On **audio equipment** the **treble**, **bass**, and **Equalizer** settings are used to **filter frequencies**.
+
+## Capacitors
+
+**Capacitors** are the components that allows us to **filter signals**.
+
+**Capacitors** **store charge**.
+
+![ch05-01-FilterCapacitors.png](images/GreatCourses/ch05/ch05-01-FilterCapacitors.png)
+
+**Charge** has a different relations to **voltage** in a **capacitor** than it does in a **resistor**.  In a **resistor** **current** is directly proportional to the **voltage**.  In a **capacitor**, the **current leading to the capacitor** (**current doesn't flow through a capacitor**) is dependent on how **rapidly** the **current** is **changing**.
+
+* In a **resistor** -- **current** is **directly proportional** to **voltage**
+* With a **capacitor** -- **current** is **dependent** on how **rapidly** the **current changes**.
+
+![ch05-02-FilterCapacitors.png](images/GreatCourses/ch05/ch05-02-FilterCapacitors.png)
+
+Note below how the **current** is **leading**** the **voltage** by a 90 degrees (quarter cycle).
+
+![ch05-03-FilterCapacitors.png](images/GreatCourses/ch05/ch05-03-FilterCapacitors.png)
+
+In **capacitors** **current leads voltage**.  It reaches its **peak** before **voltage**, since as it is **charging** from a **zero voltage** **current** is at its **maximum** and when **voltage** is at its **maximum** **current** is **no longer flowing** since it is fully charged.
+
+![ch05-04-FilterCapacitors.png](images/GreatCourses/ch05/ch05-04-FilterCapacitors.png)
+
+Note here how the **higher frequencies** leads to **higher currents** and **shorter periods**.  With **high frequencies** there is a **lower resistance**, and vice versa.  
+
+If the **frequency** is **very high** the **capacitor** acts like a **wire/short circuit**.  For example, to remove **noise** you place a **capacitor** to **filter high frequencies** with a **connection/short/shunt** to **ground** for those **frequencies**.
+
+In contrast a **very low frequency capacitor** acts like an **open circuit** where **no current** can **flow**.
+
+**Capacitive reactance** (X subscript c) is the **amount of resistance** a **capacitor** is providing.  It is **proportional** to **1/fC** with **fC** being the **frequency \* capacitance**.
+
+The **key takeaway** from this section is that **current** responds to the **rate of change** in **voltage**.
+
+## Filters
+
+### Low Pass Filters
+
+The following diagram compares a **voltage divider resistor** circuit, with a similar **capacitor** circuit.
+
+![ch05-05-FilterCapacitors.png](images/GreatCourses/ch05/ch05-05-FilterCapacitors.png)
+
+The **capacitor** version of the **voltage divider** circuit is **sort of** like the **resistor** version, but the **relationship is more complicated** and is **dependent on frequency**.
+
+![ch05-06-FilterCapacitors.png](images/GreatCourses/ch05/ch05-06-FilterCapacitors.png)
+
+The above is a **low pass filter** because the **low frequencies** continue to the **output** while the **high frequencies** are **shorted to ground**.  Therefore at **high frequencies** it is acting like a **voltage divider**.
+
+This particular type of **low pass circuit** is **good at removing noise**.
+
+### High Pass Filters
+
+![ch05-07-FilterCapacitors.png](images/GreatCourses/ch05/ch05-07-FilterCapacitors.png)
+
+The above **high pass filter** the **capacitor** acts like a **big resistor** at **low frequencies** and an **open circuit (wire)** to **high frequencies** allowing them to pass through to the **output**.
+
+### Comparing High and Low Pass Filters
+
+![ch05-08-FilterCapacitors.png](images/GreatCourses/ch05/ch05-08-FilterCapacitors.png)
+
+Note that the **frequency** is using a **logarithmic scale**
+
+For the **low frequencies** in the above diagram, there is **very little variation** until just before it gets to **159Hz** when it starts to **fall off rapidly**.  By the time you get up to **10kHz** in the **output** you have almost **no voltage**.
+
+### Band Filter
+
+You get a **band filter** when you put a **low pass** and **high pass** filter **together**.
+
+![ch05-09-FilterCapacitors.png](images/GreatCourses/ch05/ch05-09-FilterCapacitors.png)
+
+This allows you to only **pass signals** within a particular **bandwidth**.
+
+**Bandwidth** determines **how much signal** you can carry on a **signal path**. Think of each **bit** as a **voltage peak** so at **higher frequencies** you get more **peaks/bits** in a given **time**, which in communications is **1 second** (the analogy is mine, not from the instructor)
+
+### Filter Application -- Audio
+
+![ch05-10-FilterCapacitors.png](images/GreatCourses/ch05/ch05-10-FilterCapacitors.png)
+
+A **woofer** can't vibrate very fast at high frequencies, but because it is bigger it is well suited to **low frequencies**.
+
+The smaller **tweeter** can vibrate much more rapidly, which makes it good for **high frequencies**.
+
+The **high** and **low pass filters** divide the **signals** appropriately between the two types of **speakers**
+
+### Notch Filters
+
+**Notch filters** remove a **very narrow band of frequencies**
+
+![ch05-11-FilterCapacitors.png](images/GreatCourses/ch05/ch05-11-FilterCapacitors.png)
+
