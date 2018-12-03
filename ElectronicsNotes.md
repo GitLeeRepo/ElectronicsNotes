@@ -42,6 +42,7 @@ tbd
 * **Conductors** -- carry **electrical charge**.  They are made of materials such as **copper**, **gold**, **silver**, and **aluminum**.  These materials have **electrons** that are **loosely** bound to the **outer shell (valence shell)** of their **atoms**, so those **electrons** can be easily moved as **current**, which is pushed by a **voltage** force.
 * **Conventional Current** -- refers to the **flow of holes** along a **conductor** from **positive to negative**.  This contrasts with **electron current** which refers to the flow of **electrons** in the **opposite direction** from **negative to positive**.  Generally, by convention, when we are referring to **current** in **electronics we are referring to **conventional current**.
 * **Current** -- in **electronics** it is generally referring to **conventional current** in which the **holes** flow from **positive** to **negative**.  It is **measured** in **amperes**.  Refer to **conventional current**, **electron current** and **holes** for more details.
+* **Current Source** -- A **current source** is an electronic circuit that **delivers or absorbs an electric current** which is **independent of the voltage** across it.  There are **two types**. An **independent current source (or sink)** delivers a **constant current**. A **dependent current source** delivers a current which is **proportional** to some other **voltage** or **current** in the circuit. **Current-stable nonlinear implementation** is implemented by **active electronic components** (**transistors**) having **current-stable nonlinear output** characteristic when driven by **steady input quantity (current or voltage)**. These circuits behave as **dynamic resistors changing their present resistance to compensate current variations**. For example, if the **load increases its resistance**, the **transistor decreases** its present **output resistance** (and vice versa) to keep up a **constant total resistance in the circuit**. ([Wikipedia](https://en.wikipedia.org/wiki/Current_source))
 * **Digital Electronics** -- involves a **fixed voltage** that varies between **on/off** states.  On a **scope** they are represented by **square waves** that are either **on** or **off**.  In reality, **digital electronics** is built on **analog electronics** it is just a **model** that sits on top of it.
 * **Electron Current** -- refers to the **flow of electrons** along a **conductor** from **negative to positive**.  This contrasts with **conventional current** which refers to the flow of **holes** in the **opposite direction** from **positive to negative**.  Generally, by convention, when we are referring to **current** in **electronics we are referring to **conventional current**.
 * **EPROM** -- **Erasable Programmable Read Only Memory**
@@ -131,13 +132,24 @@ The variables represent:
 
 ## Ohm's Law
 
-* **I = V/R**
 * **V = IR**
+* **I = V/R**
 * **R = V/I**
 
-## Other Calculations
+### Current Calculation in a Series Circuit
 
-* **P = VI**
+When calculating **current** in a circuit with **multiple resistors** that are **in series**, simply **add all resistances** and then apply **Ohm's Law** to determine your **current**, **I = V/R**.
+
+## Power Calculations
+
+**Power** is **work** which is **energy expended**.
+
+* **P = VI** -- **voltage times current equals power**.  This is **true** for **DC** when everything is **in phase**.
+* **P = (V^2)/R** -- using **substitution** from **Ohm's Law** where  **(V^2)/R** comes from **I = V/R** so **P = V\*V/R = (V^2)/R**.  Note this is **important** because **power** is not **proportional** to voltage, but to **voltage squared**, which is why it is **important** to **lower voltage** in systems.  Over the years **voltage** in circuits went from typically being **12V** to **5V**, **3.3V**, **1.8V**, **1.5V**, and **1.2V** systems.
+
+### Definition of Power
+
+* **dW = V \* dQ/dt** -- the **change** in **power** is **equal** to the **change** in **current** per the **Unit time**. This is equivalent to the **P = VI** derivation.
 
 # Current
 
@@ -221,6 +233,22 @@ If you **push a battery too hard** by giving it a **load that exceeds** its capa
 
 With **batteries ground** is typically the **negative terminal** of the **battery**, although it might be a **combination** of the **negative terminal** of the **battery** and the **frame** of the **enclosure**.  For example, **automobiles** typically use both the **negative terminal** of the **battery** and the **frame of the car** as the ground, with the **two connected to each other**.
 
+# Controlled Sources (Sourcing and Sinking)
+
+**Controlled sources** in which **one source controls another** is the basis for many of electronic circuits, such as **amplifiers** 
+
+* **Voltage Controlled Voltage Source (VCVS)** 
+* **Current Controlled Voltage Source (CCVS)** 
+* **Voltage Controlled Current Source (VCCS)** 
+* **Current Controlled Current Source (CCCS)** 
+
+* **Current Source** -- A **current source** is an electronic circuit that **delivers or absorbs an electric current** which is **independent of the voltage** across it.  There are **two types**. An **independent current source (or sink)** delivers a **constant current**. A **dependent current source** delivers a current which is **proportional** to some other **voltage** or **current** in the circuit. **Current-stable nonlinear implementation** is implemented by **active electronic components** (**transistors**) having **current-stable nonlinear output** characteristic when driven by **steady input quantity (current or voltage)**. These circuits behave as **dynamic resistors changing their present resistance to compensate current variations**. For example, if the **load increases its resistance**, the **transistor decreases** its present **output resistance** (and vice versa) to keep up a **constant total resistance in the circuit**. ([Wikipedia](https://en.wikipedia.org/wiki/Current_source))
+
+## Sourcing as related to Power
+
+![Current03.png](images/VoltageCurrentSources/VoltageCurrentSources01.png)
+
+
 # Semiconductors
 
 * **Semiconductors** are **neither good conductors** or **good insulators**, they are **neutral**. 
@@ -253,11 +281,21 @@ Hair Dryer                  | 10A
 
 # Typical Component Characteristics
 
-## LED
+## Resistors
 
-Refer to:
+### Resistor Color Code
 
-* [All about LEDs](https://learn.adafruit.com/all-about-leds/what-is-an-led) --image from this site
+![Current03.png](images/Components/Resistor/ResistorColorCode01.png)
+
+## Diodes and LEDs
+
+**LEDs** are **diodes** that **emit light (Light Emitting Diodes)** and so they both share **common properties**.
+
+
+### Common Properties
+
+TBD -- Decide how to merge/combine with diode and LED entry
+
 
 * Current only flows in **one direction** from **anode (positive)** to **cathode (negative)**.  They **won't work** when plugged in **backwards**.
 
@@ -267,9 +305,60 @@ Refer to:
 
 * **Cathode** is the **negative lead**
 
+* **Forward voltage** is the amount of **voltage** absorbed by the **LED/diode**.  Since **Kirchhoff's Voltage Law** shows that the total amount of **voltage absorbed** by a circuit must be **equal** to the **voltage provided**. So if an **LED** has an average **forward voltage** of **2.2V** and its placed on a **9V sourced circuit**, a **resistor** must be added to the **circuit** to **absorb** the **remaining 6.8V**.  Assuming a **20mA current**, according to **Ohms Law** we need a **340Ω resistor (6.8/.02)** 
+
+* The **diode/LED** will try to **maintain its forward voltage** with the **current varying accordingly**. This is one of the **properties** of **diodes** that make them useful in being able to help **regulate voltage amounts**.
+
+## Diode
+
+TBD -- Decide how to merge/combine with diode and LED entry
+
+## LED
+
+Refer to:
+
+* [All about LEDs](https://learn.adafruit.com/all-about-leds/what-is-an-led) --image from this site
+
+### TBD Decide how to merge/combine with diode and common entry
+
+* Current only flows in **one direction** from **anode (positive)** to **cathode (negative)**.  They **won't work** when plugged in **backwards**.
+
+* The **longer lead** on an **LED** indicates the **positive lead (anode)** and the **"bulb"** has a **flat side** which indicates the **negative lead (cathode)**.
+
+* **Anode** is the **positive lead**
+
+* **Cathode** is the **negative lead**
+
 ![LED01.png](images/Components/LED/LED01.png)
 
 * **Forward voltage** is the amount of **voltage** absorbed by the **LED**.  Since **Kirchhoff's Voltage Law** shows that the total amount of **voltage absorbed** by a circuit must be **equal** to the **voltage provided**. So if an **LED** has an average **forward voltage** of **2.2V** and its placed on a **9V sourced circuit**, a **resistor** must be added to the **circuit** to **absorb** the **remaining 6.8V**.  Assuming a **20mA current**, according to **Ohms Law** we need a **340Ω resistor (6.8/.02)** 
+
+* **Typical forward voltages** for cheaper off the shelf **LEDs** is in the range of **2.1 to 2.5 V**, I have some that are **3.1 to 3.3 V**.
+
+* In general **green** requires more **forward voltage** than **red** because **green** is a **higher frequency** than **red**, with **blue** being **higher** than **green** (picture the **spectrum order**)
+
+* **Continuous Current** -- typically in the range of **10mA to 20mA ? (verify)**
+
+* **Luminous Intensity** -- measure in **mcd** -- TBD
+
+## Op Amps (a.k.a., op-amps, opamps)
+
+Refer to:
+
+* [Handbook Of Operational Amplifier Applications](pdf/HandbookOfOperationalAmplifierApplications.pdf) -- Texas Instrument
+* [Op Amps for Everyone](pdf/OpAmpsForEveryone.pdf) -- Texas Instruments
+
+
+### Overview of Op Amps
+
+* **Op amp** -- **Operational Amplifier** -- have **two inputs**, ""inverting (-)** and **non-inverting (+)**, along with **one output**.  The **polarity** of the **signal** is **reversed** between the **inverting input** and the **output**.  The **signal** at the **non-inverting input retains its polarity*** at the **output**. (paraphrasing from "Timer, Op Amp, & Optoelectronic Circuits & Projects** by Forrest M. Mims III)
+
+* **Op amps** can be thought of as **virtual amplifiers**, in that they contain numerous **amplification components (transistors, etc)** on a **single chip**.
+
+* **Op amps** try to behave like an **ideal amplifier** and under the correct circumstances they **sort of behave like one**, to a degree.  A **theoretical ideal amplifier** would be able to output **infinite current**, have **infinite input impedance**, **zero output impedance**. In reality they have varying **limits** on all these things.  For example, it may only be able to **output 1A or less**.
+
+*  In the **ideal op amp** both the **inverted** and **non-inverted currents are zero** and the **difference between the two is zero**.  In reality, the **inputs** will have **small currents** and there will be **small differences between them**.  In reality, the **more ideal the op amp**, the **more expensive it is**.
+
 
 # Miscellaneous Tips
 
