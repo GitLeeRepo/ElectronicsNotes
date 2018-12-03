@@ -277,6 +277,14 @@ Refer to:
 
 * placing a **capacitor** after the **battery input connection** will help to **smooth out the power** as load is put on a **battery** and as the battery **depletes**.  An **electrolytic capacitor (can like enclosure)** is the best type for this, with **4.7uF** typical for a **4.5 volt DC** that is under **500mA**.
 
+# Circuit Examples
+
+## Voltage Regulator
+
+Circuit I created in CircuitLab with lots of meters to show what's going on.  The **50MΩ resistor** is equivalent to my **Fluke** which is allowing only a miniscule amount of **current**:
+
+![VoltageDivider01.png](images/Voltage/VoltageDivider01.png)
+
 
 # Audio -- Side Notes (move later to a more audio specific document)
 
