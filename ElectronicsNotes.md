@@ -25,6 +25,7 @@ tbd
 * [GreatCoursesNotes](https://github.com/GitLeeRepo/ElectronicsNotes/blob/master/GreatCoursesNotes.md#overview)
 * [CircuitSimulators](https://github.com/GitLeeRepo/ElectronicsNotes/blob/master/CircuitSimulators.md#overview)
 * [EquipmentNotes](https://github.com/GitLeeRepo/ElectronicsNotes/blob/master/EquipmentNotes.md#overview)
+* [PartsNotes](https://github.com/GitLeeRepo/ElectronicsNotes/blob/master/PartsNotes.md#overview)
 
 
 ### Notes in Other Repositories
@@ -370,9 +371,66 @@ Refer to:
 
 * **Op amps** can be thought of as **virtual amplifiers**, in that they contain numerous **amplification components (transistors, etc)** on a **single chip**.
 
-* **Op amps** try to behave like an **ideal amplifier** and under the correct circumstances they **sort of behave like one**, to a degree.  A **theoretical ideal amplifier** would be able to output **infinite current**, have **infinite input impedance**, **zero output impedance**. In reality they have varying **limits** on all these things.  For example, it may only be able to **output 1A or less**.
+* **Op amps** try to behave like an **ideal amplifier** and under the correct circumstances, by obeying the rules, they **sort of behave like one**, to a degree, for example, you can't generate more voltage than the power input voltage, and you can't generate more **current** than the **datasheet** indicates it can produce.   In other words, you can't break the laws of physics.
+
+* A **theoretical ideal amplifier** would be able to output **infinite current**, have **infinite input impedance**, **zero output impedance**. In reality they have varying **limits** on all these things.  For example, it may only be able to **output 1A or less**, depending on the inputs.
 
 *  In the **ideal op amp** both the **inverted** and **non-inverted currents are zero** and the **difference between the two is zero**.  In reality, the **inputs** will have **small currents** and there will be **small differences between them**.  In reality, the **more ideal the op amp**, the **more expensive it is**.
+
+* If a **datasheet** indicates an **op amp** can source **500mA**, don't push it to the envelope since it may behave erratically.  As you approach the limits it will not behave **linearly**.  You should probably only push it up to **300mA** or so.  If you need **500mA** get an **op amp** that can source **1A**.
+
+## Noninverting Op Amp
+
+From: [Op Amps for Everyone](pdf/OpAmpsForEveryone.pdf) -- Texas Instruments
+
+
+The **noninverting op amp** has the **input signal** connected to its **noninverting input**, thus its **input source** sees an **infinite impedance**. There is **no input offset voltage** because **VOS = VE = 0**, hence the negative input must be at the same voltage as the positive input. The op amp output drives current into RF until the negative input is at the voltage,VIN. This action causes VIN to appear across RG.
+
+![OpAmp01.png](images/Components/OpAmp/OpAmp01.png)
+Figure 3.2
+
+Note the above does not show the **positive and negative power inputs**.  Also note that **RF** and **RG** are often referred to as **R1** and **R2** in other references.
+
+The **voltage divider rule** is used to **calculate VIN**; **VOUT is the input to the voltage divider**,and **VIN is the output of the voltage divider**. Since **no current** can flow into **either op amp lead**, use of the voltage divider rule is allowed. Equation 3–1 is written with the aid of the voltage divider rule, and algebraic manipulation yields Equation 3–2 in the form of a gain parameter.
+
+![OpAmp02.png](images/Components/OpAmp/OpAmp02.png)
+Equation 3-1 and 3-2
+
+
+When **RG becomes very large with respect to RF**, (RF/RG)⇒0 and Equation 3–2 reduces
+to:
+
+**VOut = 1**
+
+## Inverting Op Amp
+
+From: [Op Amps for Everyone](pdf/OpAmpsForEveryone.pdf) -- Texas Instruments
+
+The **noninverting input** of the **inverting op amp** circuit is **grounded**. One assumption made is that the **input error voltage is zero**, so the **feedback** keeps **inverting the input** of the op amp at a **virtual ground (not actual ground but acting like ground)**. The **current flow** in the **input leads** is **assumed to be zero**, hence the **current flowing through RG equals the current flowing through RF**. Using **Kirchoff’s law**, we write Equation 3–4; and the minus sign is inserted because this is the inverting input. Algebraic manipulation gives Equation 3–5.
+
+![OpAmp03.png](images/Components/OpAmp/OpAmp03.png)
+Figure 3.3
+
+Note the above does not show the **positive and negative power inputs**.  Also note that **RF** and **RG** are often referred to as **R1** and **R2** in other references.
+
+![OpAmp04.png](images/Components/OpAmp/OpAmp04.png)
+Equation 3-4 and 3-5
+
+* If **RF** and **RG** are the **same**, the **output voltage** will be the **input voltage inverted**, since you are multiplying it by **-1**.
+
+* The **RF** and **RG resistors** are typical set from **1k** to **10s of k**
+
+## Op Amp Characteristics/Properties
+
+Note that many of the examples here use the **LM796 op amp**, which is a **good quality op amp** (around $1.53 for a single one, which is more expensive than cheaper varieties)
+
+* **Current Input Bias** -- the **amount of current** going into and out of the **inputs**, which in the **ideal op amp** we want to be **zero**.  On the **LM796 op amp** it is **0.1pA**.
+
+* **Gain Bandwidth Product (GBP)** -- the **gain** times the **bandwidth**.  So if you want to **amplify a signal by a factor of 1**, and the **GBP** is **17MHz** (the GBP on the **LM796**), then the **highest signal** you can process is **17MHz**. If on the other hand you want to **multiply the gain** by **17**, then the **highest signal** you can process is **1MHz**.
+
+* **Slew Rate** -- often measure in **micro volts per second**, is how **fast** it can **adjust** to **changes in signals**.  You have to make sure whatever **signal** you are trying to process is **within the slew rate**.
+
+* **Voltage Input Offset** -- the **differential voltage between the two inputs**.  In the **ideal op amp** this is **zero**.  On the **LM796
 
 
 # Miscellaneous Tips
