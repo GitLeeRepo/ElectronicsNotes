@@ -230,12 +230,6 @@ Cofufu 0307  | DIP Inductor Assorted Kit 22 | 1uH to 1mH 0.25W | 220pcs assorted
 
 # Transistors
 
-Model/Part # | Type/Name                     | Quantity
--------------|-------------------------------|----------
-9014         | NPN Transistor                | 2
-9015         | PNP Transistor                | 2
-UTC UF630L   | Power FET Mosfet              | 1
-
 ## BPJ -- Bipolar Junction
 
 Model/Part # | Type/Name                      | Quantity
@@ -267,6 +261,7 @@ J310G        | 700 MHz n-channel JFET VHF/UHF | 6
 Model/Part # | Type/Name                         | Quantity
 -------------|-----------------------------------|----------
 2n7000G      | 1GHz n-channel 10ns switch MOSFET | 6
+UTC UF630L   | Power FET Mosfet                  | 1
 
 ## Programable Unijunction Transistor
 
@@ -279,6 +274,13 @@ Model/Part # | Type/Name                         | Quantity
 Model/Part # | Type/Name                         | Quantity
 -------------|-----------------------------------|----------
 1N914        | General Purpose Switching         | 1
+
+## Pre-amplification
+
+Model/Part # | Type/Name                     | Quantity
+-------------|-------------------------------|----------
+9014         | NPN Pre-Amp Transistor        | 2
+9015         | PNP Pre-Amp Transistor        | 2
 
 # Diodes
 

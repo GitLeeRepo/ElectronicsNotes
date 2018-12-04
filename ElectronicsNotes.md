@@ -299,9 +299,40 @@ Hair Dryer                  | 10A
 
 ## Resistors
 
+* **Resistors** drop **voltages** as the **current** passes through them.
+
+* **Resistors** are used to **control voltages and currents**
+
 ### Resistor Color Code
 
 ![Current03.png](images/Components/Resistor/ResistorColorCode01.png)
+
+## Capacitors
+
+Refer to the [PartsNotes](https://github.com/GitLeeRepo/ElectronicsNotes/blob/master/PartsNotes.md#overview) document for a lot more info on **capacitors**.
+
+**Capacitors store electrical charge**
+
+Here are some **symbols** for both the **polarized** and **non-polarized** types:
+
+![CapacitorTypes01.png](images/Components/Capacitor/CapacitorTypes01.png)
+
+* A **capacitor** consists of two **plates**, separated by a **dielectric**, which could be **air**, **paper**, or among many other **materials**.
+
+![CapacitorTypes02.png](images/Components/Capacitor/CapacitorTypes02.png)
+
+
+### Ceramic
+
+**Ceramic capacitors** are **non-polarized**. They are the **most commonly used capacitor** in electronics. The are made from a **ceramic material** from which their **dielectric** is made. Ceramic capacitors are usually **both physically and capacitance-wise small**. It’s hard to find a ceramic capacitor much larger than **10µF**.
+
+### Electrolytic
+
+**Electrolytic capacitors** are great because they can pack a lot of capacitance into a relatively small volume. If you need a capacitor in the **range of 1µF-1mF**, you’re most likely to find it in an electrolytic form. They’re especially **well suited to high-voltage** applications because of their **relatively high maximum voltage ratings**.
+
+**Aluminum electrolytic capacitors**, the **most popular** of the electrolytic family, usually look like little **tin cans**, with both leads extending from the bottom.
+
+**Electrolytic** caps are usually **polarized**. They have a **positive pin – the anode** – and a **negative pin called the cathode**. When voltage is applied to an electrolytic cap, the **anode** must be at a **higher voltage** than the **cathode**. The **cathode** of an **electrolytic** capacitor is usually **identified with a ‘-’ marking**, and a **colored strip** on the case. The leg of the **anode** might also be **slightly longer** as another indication. If **voltage** is applied in **reverse** on an **electrolytic** cap, they’ll **fail spectacularly** (making a pop and bursting open), and permanently. After popping an electrolytic will **behave like a short circuit**.
 
 ## Diodes and LEDs
 
@@ -379,6 +410,8 @@ Refer to:
 
 * If a **datasheet** indicates an **op amp** can source **500mA**, don't push it to the envelope since it may behave erratically.  As you approach the limits it will not behave **linearly**.  You should probably only push it up to **300mA** or so.  If you need **500mA** get an **op amp** that can source **1A**.
 
+* It is **important** to realize that the **inputs** shown on **op amp diagrams** **are NOT where you connect the power supply**.  On the actual **hardware** there will be **separate pins** for the **power supplies negative and positive inputs**.  Sometimes **diagrams** or **circuit simulators** will show the **power supply** connections on the **sides of the triangle**, but many times they do not.  In the case of **circuit simulators** you can usually right-click or double-click to bring up a **properties box** to enter the **positive and negative power supply voltages**.
+
 ## Noninverting Op Amp
 
 From: [Op Amps for Everyone](pdf/OpAmpsForEveryone.pdf) -- Texas Instruments
@@ -435,9 +468,17 @@ Note that many of the examples here use the **LM796 op amp**, which is a **good 
 
 # Miscellaneous Tips
 
-## Use a Capacitor after Battery Input
+### Use a Capacitor after Battery Input
 
 * placing a **capacitor** after the **battery input connection** will help to **smooth out the power** as load is put on a **battery** and as the battery **depletes**.  An **electrolytic capacitor (can like enclosure)** is the best type for this, with **4.7uF** typical for a **4.5 volt DC** that is under **500mA**.
+
+### Drawing more current quickly
+
+* When you need to more **quickly draw a current**, run a connection to **ground** with a **.1uF capacitor** to **draw current from**, with a **100kΩ resistor** to add a load to the **power supply**. ([Udemy Electronics Course](https://www.udemy.com/crash-course-electronics-and-pcb-design/learn/v4/overview) by Andre LaMothe around 55 minutes in on the bonus Op Amp video)
+
+### Use only half the power rating of a resistor
+
+* It is better to over design your system, and spend a little more, by making sure your **resister's power rating** is **twice your requirements**.  For example, if you need a **110mW of load on the resister**, don't use a **1/4W resistor** but use **1/2W resistors** to provide a **bigger buffer**.  Your circuits will be much more reliable if your circuit periodically gets more **voltage** than you anticipated.
 
 # Circuit Examples
 
