@@ -1,10 +1,10 @@
 # Overview
 
-Notes on the **Modern Electronics** course on **Great Courses** by **Richard Wolfsom**.
+**Chapter1 through 6** notes on the **Modern Electronics** course on **Great Courses** by **Richard Wolfsom**.
 
 # References
 
-tbd
+* [Course Guide PDF](pdf/ModernElectronicsGreatCourses.pdf)
 
 ## YouTube Refences
 
@@ -15,6 +15,7 @@ tbd
 ### Notes in this repository
 
 * [ElectronicNotes](https://github.com/GitLeeRepo/ElectronicsNotes/blob/master/ElectronicsNotes.md#overview)
+* [GreatCoursesNotesCh07-12](https://github.com/GitLeeRepo/ElectronicsNotes/blob/master/GreatCoursesNotesCh07-12.md#overview)
 
 
 
@@ -450,3 +451,142 @@ The **high** and **low pass filters** divide the **signals** appropriately betwe
 
 ![ch05-11-FilterCapacitors.png](images/GreatCourses/ch05/ch05-11-FilterCapacitors.png)
 
+# Lecture 06 -- Semiconductors
+
+**Silicon**, which is the 2nd most abundant element after oxygen, is at the heart of **semiconductors**
+
+**Semiconductors** are between **insulators** and **conductors** in their **conductivity**.
+
+A **hole** is the absence of an **electron** that was dislodged from a **silicon atom**.  It acts like a **positive** charge carriers.  The tendencies of **electrons** is to move **towards the positive side** occupying a **hole** on that side.  This causes the **hole** to move towards the **negative side**.  This movement of **holes** is referred to as **conventional current**.
+
+In a **pure silicon** there are **equal** numbers of **electrons** and **holes**.  Normal **thermal** conditions cause **electrons** to become dislodged.  As the **temperature** goes up **silicon** becomes more **conductive** and the **resistance** goes down.  In the absence of **thermal** characteristics **silicon** is a **weak conductor** because of the balance between **electrons** and **holes**.  This **thermal** processes is **random** so there is no specific flow.
+
+Because **resistance** goes down as the **temperature** goes up, **silicon** makes a good **temperature sensor**.
+
+**Semiconductors** start with as **pure** of a **silicon** that it is feasible to create, and then it adds **very small amounts of impurities** known as **dopants**, with the process known as **doping**.
+
+**Doping** determines the **dominant charge carrier**.  This determines whether almost all the **current** is **carried by electrons or by holes**.  
+
+Specific types of **internal components** within the **semiconductor**, such as **resistors** and its electrical **properties**, can be created by apply **specific amounts of dopant**.
+
+**Phosphorus** with **5 electrons** and **Boron** with **3 electrons** are two common elements used in **doping silicon** which has **4 electrons**.  
+
+* **N-Type semiconductor** --  Because **phosphorus**, with its **5 electrons**, introduces more **free electrons**, the **negative electrons** become the **dominant carriers of charge**. This creates an **N-Type semiconductor** when **phosphorus** is introduced.  This **doesn't** mean the **material** itself becomes **negative**, but that there are more structures to carry a **negative charge**.
+* **P-Type semiconductor** -- Because **boron**, with its **3 electrons**, introduces more **holes**, with their **positive carrier** characteristics, these **holes** become the **dominant charge carrier**, creating a **P-type semiconductor**. This **doesn't** mean the **material** itself becomes **positive**, but that there are more structures to carry a **positive charge**.
+
+The **P-type** and **N-type** materials are put in **close proximity** to introduce electrical characteristics.
+
+The **PN Junction** is where the **P-type** and **N-type** materials are placed next to each other, with the **junction** being the area in between**.  This is the **essence** of **semiconductor electronics**.
+
+![ch06-01-FilterCapacitors.png](images/GreatCourses/ch06/ch06-01-Semiconductors.png)
+
+## Reverse Bias Circuit
+
+![ch06-02-FilterCapacitors.png](images/GreatCourses/ch06/ch06-02-Semiconductors.png)
+
+In a **reverse bias** configuration **current can't flow** because the **depletion zone** has **very few free charges**.  It functions more like an **open circuit**.
+
+## Forward Bias Circuit
+
+![ch06-03-FilterCapacitors.png](images/GreatCourses/ch06/ch06-03-Semiconductors.png)
+
+In the **forward bias** configuration **current flows freely** because the **depletion zone is minimized**.  In this case it functions as a **closed circuit**.
+
+## Diodes
+
+The contrast between the **forward and reverse bias** creates a condition where **current can only flow in one direction**.  This forms the basis of the **diode**, which when an **AC current** is applied only allows the **current** to flow in **one direction**.  The **Diodes** themselves form the basis of **transistors**.
+
+### LED -- Light Emitting Diode
+
+The **energy emitted**, from the movement and recombining of **electrons** into **holes**, is in the form of **light** along with some **heat**.
+
+![ch06-05-FilterCapacitors.png](images/GreatCourses/ch06/ch06-04-Semiconductors.png)
+
+
+The **P-type** material is **very thin** when compared to the **N-type** material, to the point of being **transparent to light**.
+
+### Photovoltaic Cell
+
+A **photovoltaic cell** is basically an **LED in reverse**.  It takes **light energy** and **converts it to electrical energy**.
+
+![ch06-05-FilterCapacitors.png](images/GreatCourses/ch06/ch06-05-Semiconductors.png)
+
+In this case the **N-Type** material is **thin** so **light can get through it**.
+
+### Zener Diodes
+
+With **normal diodes** the **current** is **blocked** from flowing in **one direction**, but with **zener diodes** you can **conduct current** in the **reverse direction** due to **zener breakdown**.  This makes them good for **voltage regulation**.
+
+![ch06-06-FilterCapacitors.png](images/GreatCourses/ch06/ch06-06-Semiconductors.png)
+
+Above the **zener diode maintains 3 volts** in **both** the **positive** and **negative** polarizations, with either **positive** or **negative current** flowing once the **3V threshold**  is reached, but **below** that **no current flows**
+
+So a **zener diode**:
+
+* Conducts in **reverse direction** due to the **zener breakdown**
+* Maintains a **constant voltage**, almost without regard to **current**, once it reaches the **zener breakdown** stage.
+* When you **remove the voltage** the **zener diode** will return to its **normal state**.  The **breakdown process does not damage the diode**.  A **normal diode** would be **damaged** when the **breakdown occurs**.
+* A **3V zener diode** will **break down** once it reaches **3 volts** and will continue to **maintain the 3V** until you drop below **3V**.  
+* So at **3 volts and above** in this example, it is a **closed circuit** through which current will flow at a **constant 3V**, but when it **falls below 3V** it becomes an **open circuit** in which **no current flows**.
+* They are often used in **power supplies** to provide a **reference voltage**
+
+## Project Solutions
+
+Simulate each circuit below. At the input, use a voltage function generator producing a **10-V p-p**, **1-kHz triangle wave**. Look at both the **input** and **output** with **time domain simulation**. Describe in words what each circuit does.
+
+![ch06-07-FilterCapacitors.png](images/GreatCourses/ch06/ch06-07-Semiconductors.png)
+
+These circuits are **very useful**:
+* Circuits that **clamp and lift a waveform above zero** 
+* Circuits that **clip a voltage to keep in from going above a certain level**
+* Circuits that **shape a waveform to make a different waveform** (e.g., triangle to sine like)
+
+## Diode Clamp
+
+![ch06-11-FilterCapacitors.png](images/GreatCourses/ch06/ch06-11-Semiconductors.png)
+
+The **resulting Time Domain Simulation**:
+
+![ch06-11-FilterCapacitors.png](images/GreatCourses/ch06/ch06-12-Semiconductors.png)
+
+## Diode Clip
+
+From my **CircuitLab diagram**:
+
+![ch06-08-FilterCapacitors.png](images/GreatCourses/ch06/ch06-08-Semiconductors.png)
+
+The **resulting Time Domain Simulation**:
+
+Set with these parameters:
+* Start Time = 0
+* Stop Time = 1s
+* Step = 997u s (0.000997s)
+
+![ch06-09-FilterCapacitors.png](images/GreatCourses/ch06/ch06-09-Semiconductors.png)
+
+Note how the **output** is limited to **+/- 4V**
+
+**Circuit with zener diode instead**:
+
+![ch06-10-FilterCapacitors.png](images/GreatCourses/ch06/ch06-10-Semiconductors.png)
+
+From my **CircuitLab diagram**:
+
+![ch06-13-FilterCapacitors.png](images/GreatCourses/ch06/ch06-13-Semiconductors.png)
+
+## Diode Shaper
+
+From my **CircuitLab diagram**:
+
+![ch06-14-FilterCapacitors.png](images/GreatCourses/ch06/ch06-14-Semiconductors.png)
+
+The **resulting Time Domain Simulation**:
+
+Set with these parameters:
+* Start Time = 0
+* Stop Time = 1s
+* Step = 997u s (0.000997s)
+
+![ch06-09-FilterCapacitors.png](images/GreatCourses/ch06/ch06-15-Semiconductors.png)
+
+Note how the **shape** line is similar to the **input**, but with less **amplitude**.  It is not **clipped** like the **output**.

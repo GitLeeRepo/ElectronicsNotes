@@ -83,3 +83,8 @@ Purchased: **2014-07-12**
 ## Radioshack Electronics Learning Lab
 
 Purchased: **approx 2014-07**
+
+# Equipment under Consideration for Purchase
+
+
+* [PB-503-Digital-Workstation Proto Board](https://www.amazon.com/Global-Specialties-PB-503-Digital-Workstation-x/dp/B005S3SC0E) -- a more sophisticated version of my **Radio Shack Proto Board**, but much more expensive a just over $400. Refer also to the [PB-503_20160712_manual](pdf/PB-503_20160712_manual.pdf)
