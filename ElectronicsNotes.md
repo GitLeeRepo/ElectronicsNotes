@@ -565,6 +565,19 @@ Circuit I created in CircuitLab with lots of meters to show what's going on.  Th
 
 # Audio -- Side Notes (move later to a more audio specific document)
 
+## Audio Frequencies
+
+From: [Wikipedia](https://en.wikipedia.org/wiki/Audio_frequency)
+
+Frequency (Hz)   | Octave     |Description
+-----------------|------------|-------------------------
+16 to 32         | 1st        | The lower human threshold of hearing, and the lowest pedal notes of a pipe organ.
+32 to 512        | 2nd to 5th |	Rhythm frequencies, where the lower and upper bass notes lie.
+512 to 2,048     | 6th to 7th | Defines human speech intelligibility, gives a horn-like or tinny quality to sound.
+2,048 to 8,192   | 8th to 9th | Gives presence to speech, where labial and fricative sounds lie.
+8,192 to 16,384  |10th        | Brilliance, the sounds of bells and the ringing of cymbals and sibilance in speech.
+16,384 to 32,768 |11th        | Beyond brilliance, approaching and just passing the upper human threshold of hearing
+
 ## Typical Electrical Specs
 
 * **Speakers** -- **4 to 8 ohm**
