@@ -578,6 +578,12 @@ Frequency (Hz)   | Octave     |Description
 8,192 to 16,384  |10th        | Brilliance, the sounds of bells and the ringing of cymbals and sibilance in speech.
 16,384 to 32,768 |11th        | Beyond brilliance, approaching and just passing the upper human threshold of hearing
 
+Piano:
+
+* Lowest C note on a standard 88-key piano is **32.7 H**
+* Highest note on a standard 88-key piano is **1.19 kH**
+
+
 ## Typical Electrical Specs
 
 * **Speakers** -- **4 to 8 ohm**
