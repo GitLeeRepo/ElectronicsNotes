@@ -45,7 +45,7 @@ As shown in the diagram above, the **controlling circuit** and the **controlled 
 
 * **FET -- Field Effect Transistors** are **voltage controlled**.  They are easier to understand.  They are used in **digital electronics** for **switching**. They will be covered in more detail later in the course.
 
-* **BJT -- Bipolar Junction Transistors** are **current controlled**. The are **gradually being obsoleted by FETs**.  They are still **widely used** in **amplifiers and audio amplifiers**.
+* **BJT -- Bipolar Junction Transistors** are **current controlled**. They are **gradually being obsoleted by FETs**.  They are still **widely used** in **amplifiers and audio amplifiers**.
 
 ## FET -- Field Effect Transistors
 
@@ -93,3 +93,58 @@ The **arrow** in the **symbol** above, being on the **right and pointing down**,
 For the **P-channel MOSFET symbol** the **arrow on the right points up**:
 
 ![ch07-06-CircuitsAndSymbols](images/GreatCourses/ch07/ch07-06-Transistors.png) 
+
+### JFET -- Junction Field Effect Transistor
+
+![ch07-07-CircuitsAndSymbols](images/GreatCourses/ch07/ch07-07-Transistors.png) 
+
+Below is an example of a **cylindrical JFET**:
+
+![ch07-08-CircuitsAndSymbols](images/GreatCourses/ch07/ch07-08-Transistors.png) 
+
+Below you can see that **current flows in the N-Channel** when **no voltage** is applied to the **P-terminal**:
+
+![ch07-09-CircuitsAndSymbols](images/GreatCourses/ch07/ch07-09-Transistors.png) 
+
+But when a **charge is applied to the P-terminal** the **current is stopped (turned off)** in the **N-channel** or the **amount of resistance to current is varied** through **varying amounts of voltage**.
+
+![ch07-10-CircuitsAndSymbols](images/GreatCourses/ch07/ch07-10-Transistors.png) 
+
+## BPJ -- Bipolar Junction Transistor
+
+* **BJT -- Bipolar Junction Transistors** are **current controlled**. They are **gradually being obsoleted by FETs**.  They are still **widely used** in **amplifiers and audio amplifiers**.
+
+![ch07-11-CircuitsAndSymbols](images/GreatCourses/ch07/ch07-11-Transistors.png) 
+
+Notice in the above the the **P-type** region is **very narrow** so the **current can flow across it**.  With just this connection **current will flow** from the **battery to the base through the emitter and back to the battery**.
+
+![ch07-13-CircuitsAndSymbols](images/GreatCourses/ch07/ch07-13-Transistors.png) 
+
+* The above adds a **controlled circuit** on the right, with the **controlling circuit** on the left.  Assume a **bigger battery** on the right.  **Current will cross the base into the collector**
+* The **collector to base** connection is **reverse biased** with the **battery point the reversed way**.
+* The **emitter**gets its name from the fact that it **emits free electrons**, some of which will be **drawn into the collector to make a current**.
+* The **collector current** is much **bigger than the base current**, with **100 times the current being typical**.
+* The **collector current** is **bigger by a factor of Beta** in the equation, with **Beta** typically being on the order of **100 or so**.  
+* **Beta** is the **current gain**.
+* On the **symbol the arrow shows the base current flowing out the emitter**.
+
+![ch07-14-CircuitsAndSymbols](images/GreatCourses/ch07/ch07-14-Transistors.png) 
+
+* The **BJT** type of **transistor multiplies currents**.
+* The **current** on the **base** controls **how much current can flow through the collector** through the **equation** picture above.
+* The above assumes a **base current of 0.6mA** and a **Beta of 100**, therefore the **collector current is 100 times the base current**.
+
+![ch07-15-CircuitsAndSymbols](images/GreatCourses/ch07/ch07-15-Transistors.png) 
+
+The above shows a **PNP BJT**, which is the **complement** of the **NPN BJT** that we looked at in detail above. Everything is **reversed (batteries, current)** from the **NPN BJT**.
+
+
+### Application -- BJT Transistor as a Switch
+
+This circuit **lights a light bulb** when **enough current goes to the base** in order to **turn on the transistor**.
+
+![ch07-16-CircuitsAndSymbols](images/GreatCourses/ch07/ch07-16-Transistors.png) 
+
+## Project
+
+![ch07-17-CircuitsAndSymbols](images/GreatCourses/ch07/ch07-17-Transistors.png) 
