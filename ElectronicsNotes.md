@@ -322,6 +322,7 @@ Here are some **symbols** for both the **polarized** and **non-polarized** types
 
 ![CapacitorTypes02.png](images/Components/Capacitor/CapacitorTypes02.png)
 
+Refer to the **Inductors section** for information **contrasting capacitors and inductors**.
 
 ### Ceramic
 
@@ -334,6 +335,78 @@ Here are some **symbols** for both the **polarized** and **non-polarized** types
 **Aluminum electrolytic capacitors**, the **most popular** of the electrolytic family, usually look like little **tin cans**, with both leads extending from the bottom.
 
 **Electrolytic** caps are usually **polarized**. They have a **positive pin – the anode** – and a **negative pin called the cathode**. When voltage is applied to an electrolytic cap, the **anode** must be at a **higher voltage** than the **cathode**. The **cathode** of an **electrolytic** capacitor is usually **identified with a ‘-’ marking**, and a **colored strip** on the case. The leg of the **anode** might also be **slightly longer** as another indication. If **voltage** is applied in **reverse** on an **electrolytic** cap, they’ll **fail spectacularly** (making a pop and bursting open), and permanently. After popping an electrolytic will **behave like a short circuit**.
+
+## Inductors
+
+Refer to [Wikipedia](https://en.wikipedia.org/wiki/Inductor) for more info and **images** of various kinds to **inductors**
+
+**Electromagnetic induction** is where a **changing current** in **one circuit** will **induce**  a **changing current** in **another circuit**.  The **intermediator** between the **two separate currents** is the **magnetic field**.
+
+**inductance** is measured in **henrys**, typically in the **mH to uH range**.  A full **henry** would be a massive amount of **inductance**.
+
+The letter **L** is used to represent **inductance**.
+
+![Inductance01.png](images/Components/Inductor/Inductance01.png)
+
+An **inductor** consists of **wound wire**, either are around an **inductive material**, such as **iron ferrite**, or around **air**
+
+**Inductor in a DC Circuit**:
+
+![InductorInDC01.png](images/Components/Inductor/InductorInDC01.png)
+
+In a **DC circuit** where the **current** is generally stable, **no inductance** will be produced.  There will be inductance when the **inductor** is **charging up/current increasing**.  If however, you were to move an **inductive material** through it, the **movement** would cause a **current to be generated**.  In an **AC** circuit where the current is **continually alternating** a **current is generated**. 
+
+You can **generate a magnetic field** with **currents**.
+
+**Inductor Images** from the  [Wikipedia](https://en.wikipedia.org/wiki/Inductor) page:
+
+![InductorPhotos01.png](images/Components/Inductor/InductorPhotos01.png)
+
+The above photos shows a selection of **low value inductors**.
+
+![InductorPhotos02.png](images/Components/Inductor/InductorPhotos02.png)
+
+The above is a selection of **ferrite core inductors**, with some **transformers** containing **two inductors** in them at the top.
+
+
+**Inductor symbols**:
+
+![InductorSymbols01.png](images/Components/Inductor/InductorSymbols01.png)
+
+**Inductors** are used in:
+
+* **Power supply** circuits
+* **Filters**
+
+In many cases, wherever you can use an **inductor**, you can also use a **capacitor**, and **vice versa**, with the **capacitor** being preferred in many **circuits**, particularly **digital circuits**.
+
+![InductorInDC02.png](images/Components/Inductor/InductorInDC02.png)
+
+In the image above, the **inductor stores charge** in the **magnetic field** when the **switch** is connected to the **battery**.  When the **switch** is changed to the **load side**, the **inductor discharges into it**.  Note how the **current** flows in the **opposite direction** when the **magnetic field collapses**, while the **voltage polarity remains the same**.
+
+The circuit above is referred to as an **RL circuit**, which is a circuit that consists of a **resistor** and an **inductor**, either in **series driven by a voltage source** or in **parallel driven by a current source**.  There are **differential equations** that solve for this type of circuit.
+
+Like a **capacitor**, an **inductor** is a **reactive component** that does **not dissipate power**.
+
+**Inductors** tend to **block high frequencies** and let **low frequencies pass**, while **capacitors** tend to **block low frequencies** and let **high frequencies pass**.
+
+If the **frequency goes up** the **impedance goes up**. **XL = 2pi \* fL** where **XL** (**L** is subscript) is the **reactance** and **fl** being the **frequency \* the inductance**.  Which is similar the the **capacitance equation XC = 1/(2pi \* fC)** (the **inverse of the **inductance**)
+
+**Lenz's law** states that an **inductor** will **generate a voltage to oppose the current with an opposite polarity**.
+
+**Examples of inductors** include:
+
+* **Ferrite beads** -- to **remove noise**
+* **Adjustable inductors** allow you to **change the inductance** through varying the number of times the coil is wound.
+
+
+## Transformers
+
+**Transformers** consist of at least two **inductors**. This is because the **current** and **voltage** are **out of phase by 90 deg**.
+
+If you have the **same number of turns** on **both sides** you will get the **same voltage** on both sides.  **Isolated circuits** use **isolation transformers** like this, such as in **medical devices** and other **devices** that need this kind of **isolation**.
+
+When you **step up voltage** with a **transformer** you get **stepped down current**.  The **high transmission power lines** have small relative  **currents**.
 
 ## Diodes and LEDs
 
