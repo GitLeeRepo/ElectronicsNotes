@@ -228,60 +228,6 @@ Model/Part # | Type/Name                    | Specifications   | Quantity
 -------------|------------------------------|------------------|------------- 
 Cofufu 0307  | DIP Inductor Assorted Kit 22 | 1uH to 1mH 0.25W | 220pcs assorted
 
-# Transistors
-
-## BPJ -- Bipolar Junction
-
-Model/Part # | Type/Name                      | Quantity
--------------|--------------------------------|----------
-2N3904       | NPN General Purpose Transistor | 45
-2N3906       | PNP General Purpose Transistor | 45
-2SC5227A     | 5GHz NPN Epitaxial Planar Tran | 1
-MJE172       | 50MHz 12.5W NPN Power Tran     | 6
-MJE182       | 50MHz 12.5W PNP Power Tran     | 6
-MPSA42       | 300V NPN High Volt Transistor  | 6
-MPSA92       | 300V PNP High Volt Transistor  | 6
-SS9018       | 1GHz NPN Epitaxial Transistor  | 12
-STX618       | 1KV NPN High Volt Switch Tran  | 6
-
-## Darlington Pair
-
-Model/Part # | Type/Name                      | Quantity
--------------|--------------------------------|----------
-KSP13BU      | 125MHz Small Signal Darlington | 9
-
-## JFET -- Junction Field Effect Transistors
-
-Model/Part # | Type/Name                      | Quantity
--------------|--------------------------------|----------
-J310G        | 700 MHz n-channel JFET VHF/UHF | 6
-
-## MOSFET -- Metal-Oxide Semiconductor Field Effect Transistors
-
-Model/Part # | Type/Name                         | Quantity
--------------|-----------------------------------|----------
-2n7000G      | 1GHz n-channel 10ns switch MOSFET | 6
-UTC UF630L   | Power FET Mosfet                  | 1
-
-## Programable Unijunction Transistor
-
-Model/Part # | Type/Name                         | Quantity
--------------|-----------------------------------|----------
-2N6027       | Programable Unijunction Trans     | 5
-
-## General Purpose Switching
-
-Model/Part # | Type/Name                         | Quantity
--------------|-----------------------------------|----------
-1N914        | General Purpose Switching         | 1
-
-## Pre-amplification
-
-Model/Part # | Type/Name                     | Quantity
--------------|-------------------------------|----------
-9014         | NPN Pre-Amp Transistor        | 2
-9015         | PNP Pre-Amp Transistor        | 2
-
 # Diodes
 
 ## General Purpose
@@ -353,6 +299,61 @@ HQ-5G25-7    | 5mm  |Green  | 3 - 3.2V | 20mA    | 25.000 mcd   | 20   | Joe Kno
 HQ-5525-C9   | 5mm  |White  | 3 - 3.2V | 20mA    | 25.000 mcd   | 20   | Joe Knows Electronics
 HQ-5B25-5    | 5mm  |Blue   | 3 - 3.2V | 20mA    | 15.000 mcd   | 20   | Joe Knows Electronics
 HQ-5B25-5    | 5mm  |Blue   | 3 - 3.2V | 20mA    | 15.000 mcd   | 20   | Joe Knows Electronics
+
+# Transistors
+
+## BPJ -- Bipolar Junction
+
+Model/Part # | Type/Name                      | Quantity
+-------------|--------------------------------|----------
+2N3904       | NPN General Purpose Transistor | 45
+2N3906       | PNP General Purpose Transistor | 45
+2SC5227A     | 5GHz NPN Epitaxial Planar Tran | 1
+MJE172       | 50MHz 12.5W NPN Power Tran     | 6
+MJE182       | 50MHz 12.5W PNP Power Tran     | 6
+MPSA42       | 300V NPN High Volt Transistor  | 6
+MPSA92       | 300V PNP High Volt Transistor  | 6
+SS9018       | 1GHz NPN Epitaxial Transistor  | 12
+STX618       | 1KV NPN High Volt Switch Tran  | 6
+
+## Darlington Pair
+
+Model/Part # | Type/Name                      | Quantity
+-------------|--------------------------------|----------
+KSP13BU      | 125MHz Small Signal Darlington | 9
+
+## JFET -- Junction Field Effect Transistors
+
+Model/Part # | Type/Name                      | Quantity
+-------------|--------------------------------|----------
+J310G        | 700 MHz n-channel JFET VHF/UHF | 6
+
+## MOSFET -- Metal-Oxide Semiconductor Field Effect Transistors
+
+Model/Part # | Type/Name                         | Quantity
+-------------|-----------------------------------|----------
+2n7000G      | 1GHz n-channel 10ns switch MOSFET | 6
+UTC UF630L   | Power FET Mosfet                  | 1
+
+## Programable Unijunction Transistor
+
+Model/Part # | Type/Name                         | Quantity
+-------------|-----------------------------------|----------
+2N6027       | Programable Unijunction Trans     | 5
+
+## General Purpose Switching
+
+Model/Part # | Type/Name                         | Quantity
+-------------|-----------------------------------|----------
+1N914        | General Purpose Switching         | 1
+
+## Pre-amplification
+
+Model/Part # | Type/Name                     | Quantity
+-------------|-------------------------------|----------
+9014         | NPN Pre-Amp Transistor        | 2
+9015         | PNP Pre-Amp Transistor        | 2
+
 
 # Voltage Regulators
 

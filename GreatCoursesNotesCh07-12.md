@@ -138,6 +138,29 @@ Notice in the above the the **P-type** region is **very narrow** so the **curren
 
 The above shows a **PNP BJT**, which is the **complement** of the **NPN BJT** that we looked at in detail above. Everything is **reversed (batteries, current)** from the **NPN BJT**.
 
+### Transistor States
+
+Mostly from **Udemy Electronics course**
+
+At the highest level there are **two states**, with the first having **two sub-states**
+
+* **Saturated/Cutoff** -- functions as a **switch**
+  * **Saturated** -- where it is at the **max current**
+  * **Cutoff** -- where the **channel** is **cutoff** through  the **emitter/collector**.
+
+* **Active** -- functions as a **current amplifier**
+
+### Transistor Current Flow
+
+From **Udemy Electronics course**
+
+
+![ch07-18-CircuitsAndSymbols](images/GreatCourses/ch07/ch07-18-Transistors.png) 
+
+The following shows the **current relationships in the different states**:
+
+![ch07-19-CircuitsAndSymbols](images/GreatCourses/ch07/ch07-19-Transistors.png) 
+
 
 ### Application -- BJT Transistor as a Switch
 
