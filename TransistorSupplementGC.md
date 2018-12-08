@@ -8,8 +8,8 @@ tbd
 
 ## YouTube Refences
 
-* [YouTube W2AEW](https://www.youtube.com/watch?v=c6cmkm3UPUI&t=0s&list=PLz-uMW75nraucCLdxaGyuIiIFHk8G3bzE&index=22)) -- **Class of Operation** 
-* [YouTube W2AEW](https://www.youtube.com/watch?v=xR0RfmmRhDw&list=PL4ZSD4omd_Aw-ozOphzFCkhWMtBdyEIrP&index=30)* -- Transistor Current Sources
+* [YouTube W2AEW](https://www.youtube.com/watch?v=c6cmkm3UPUI&t=0s&list=PLz-uMW75nraucCLdxaGyuIiIFHk8G3bzE&index=22)) -- Transistor Bias Point and Class of Operation 
+* [YouTube W2AEW](https://www.youtube.com/watch?v=xR0RfmmRhDw&list=PL4ZSD4omd_Aw-ozOphzFCkhWMtBdyEIrP&index=30) -- Transistor Current Sources
 
 ## My Other Notes
 
@@ -98,7 +98,7 @@ Image 1 of 4 below:
 
 ![ch07-26-CircuitsAndSymbols](images/GreatCourses/ch07/ch07-26-Transistors.png) 
 
-Image 2 of 4 below (note that is B+1 in parenthesis):
+Image 2 of 4 below:
 
 ![ch07-27-CircuitsAndSymbols](images/GreatCourses/ch07/ch07-27-Transistors.png) 
 

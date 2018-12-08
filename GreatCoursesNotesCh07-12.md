@@ -16,6 +16,8 @@ tbd
 
 * [ElectronicNotes](https://github.com/GitLeeRepo/ElectronicsNotes/blob/master/ElectronicsNotes.md#overview)
 * [GreatCoursesNotesCh01-06](https://github.com/GitLeeRepo/ElectronicsNotes/blob/master/GreatCoursesNotesCh01-06.md#overview)
+* [TransistorSupplementGC](https://github.com/GitLeeRepo/ElectronicsNotes/blob/master/TransistorSupplementGC.md#overview)
+
 
 ### Notes in Other Repositories
 
@@ -143,6 +145,10 @@ The above shows a **PNP BJT**, which is the **complement** of the **NPN BJT** th
 This circuit **lights a light bulb** when **enough current goes to the base** in order to **turn on the transistor**.
 
 ![ch07-16-CircuitsAndSymbols](images/GreatCourses/ch07/ch07-16-Transistors.png) 
+
+## Transistor Supplementary Material
+
+Refer to my [TransistorSupplementGC](https://github.com/GitLeeRepo/ElectronicsNotes/blob/master/TransistorSupplementGC.md#overview) notes for additional **transistor information** from other sources.
 
 ## Project
 
