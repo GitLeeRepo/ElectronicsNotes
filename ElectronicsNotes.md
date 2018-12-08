@@ -24,6 +24,7 @@ tbd
 
 * [GreatCoursesNotesCh01-06](https://github.com/GitLeeRepo/ElectronicsNotes/blob/master/GreatCoursesNotesCh01-06.md#overview)
 * [GreatCoursesNotesCh07-12](https://github.com/GitLeeRepo/ElectronicsNotes/blob/master/GreatCoursesNotesCh07-12.md#overview)
+* [TransistorSupplementGC](https://github.com/GitLeeRepo/ElectronicsNotes/blob/master/TransistorSupplementGC.md#overview)
 * [CircuitSimulators](https://github.com/GitLeeRepo/ElectronicsNotes/blob/master/CircuitSimulators.md#overview)
 * [EquipmentNotes](https://github.com/GitLeeRepo/ElectronicsNotes/blob/master/EquipmentNotes.md#overview)
 * [PartsNotes](https://github.com/GitLeeRepo/ElectronicsNotes/blob/master/PartsNotes.md#overview)
@@ -61,11 +62,15 @@ tbd
 
 * **Holes** -- create when an **electron** in a **conductor** moves to the **next atom**.  If the **current** is viewed as moving from **positive to negative**, say from **left to right**, the **holes** move in the **opposite** direction, from **right to left**.  The flow of **electrons** is referred to as **electron current** with the flow of the **holes** referred to as **conventional current**.
 
+* **Impedance** -- the **measure of the opposition that a circuit presents to a current when a voltage is applied**. **Impedance** extends the **concept of resistance to AC circuits**, and possesses **both magnitude and phase**, unlike resistance, which has only magnitude. When a circuit is driven with **direct current (DC)**, there is **no distinction between impedance and resistance**; the latter can be thought of as **impedance with zero phase angle**. The notion of **impedance** is useful for performing **AC analysis** of electrical networks, because it allows **relating sinusoidal voltages and currents by a simple linear law**. **Impedance** is a **complex number**, with the same units as resistance, for which the SI unit is the **ohm (Ω)**. Its **symbol is usually Z**. ([Wikipedia](https://en.wikipedia.org/wiki/Electrical_impedance))
+
 * **Insulators** -- **resist** **electrical charge**.  They are made of materials whose **electrons** are **tightly bound** to their **outer shell (valence shell)** and don't flow easily from on **atom** to the next.
 
 * **Line level** -- the specified **strength** of an **audio signal** used to **transmit analog sound** between **audio components** such as CD and DVD players, television sets, audio amplifiers, and mixing consoles.  **Line level** it is **between weaker audio signals sources** and **stronger signals**, such **loudspeakers**. ([Wikipedia/edited](https://en.wikipedia.org/wiki/Line_level))
 
 * **Op-amp** -- **Operational Amplifier** -- have **two inputs**, ""inverting (-)** and **non-inverting (+)**, along with **one output**.  The **polarity** of the **signal** is **reversed** between the **inverting input** and the **output**.  The **signal** at the **non-inverting input retains its polarity*** at the **output**. (paraphrasing from "Timer, Op Amp, & Optoelectronic Circuits & Projects** by Forrest M. Mims III)
+
+* **Output Impedance** --  of an electrical network is the measure of the **opposition to current flow (impedance)**, both **static (resistance)** and **dynamic (reactance)**, into the **load network** being connected that is internal to the electrical source. The **output impedance** is a measure of the source's **propensity to drop in voltage when the load draws current**. The **output impedance** is sometimes referred to as the **source impedance** or **internal impedance**. In the case of a **nonlinear device**, such as a **transistor**, the term **"output impedance"** usually refers to the **effect upon a small-amplitude signal**, and will **vary with the bias point** of the **transistor**. ([Wikipedia](https://en.wikipedia.org/wiki/Output_impedance))
 
 * **Pitch** -- the **distance** between **component pins**.
 
@@ -538,6 +543,8 @@ Note that many of the examples here use the **LM796 op amp**, which is a **good 
 * **Slew Rate** -- often measure in **micro volts per second**, is how **fast** it can **adjust** to **changes in signals**.  You have to make sure whatever **signal** you are trying to process is **within the slew rate**.
 
 * **Voltage Input Offset** -- the **differential voltage between the two inputs**.  In the **ideal op amp** this is **zero**.  On the **LM796
+
+* When choosing a **resistor** to go **between the power supply and collector terminal**,  a good rule of them is to choose one that **delivers half the supply voltage to the collector**.
 
 
 # Miscellaneous Tips

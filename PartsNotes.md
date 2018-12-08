@@ -376,9 +376,9 @@ Model/Part #     | Type/Name                         | Quantity
 
 Model/Part #     | Type/Name                         | Quantity
 -----------------|-----------------------------------|-----------
-LM324            | Quad Op Amp                      | 5
-LM358AP          | TI - Op Amp                      | 5
-272              | 272 Duel Op Amp                  | 1
+LM324            | Quad Op Amp                       | 5
+LM358AP          | TI - Op Amp                       | 5
+272              | 272 Duel Op Amp                   | 1
 
 
 
