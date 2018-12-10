@@ -463,7 +463,7 @@ Refer to:
 
 * In general **green** requires more **forward voltage** than **red** because **green** is a **higher frequency** than **red**, with **blue** being **higher** than **green** (picture the **spectrum order**)
 
-* **Continuous Current** -- typically in the range of **10mA to 20mA ? (verify)**
+* **Continuous Current** -- typically in the range of **10mA to 20mA ? (verify)**. The **Continuous Forward Current** specification of an **LED** serves to tell you the **maximum current** that an **LED** can be fed continuously without being **damaged** or **destroyed**.  If you provide **more current** to an **LED** than what is specified in the **continuous forward current** value, you risk **blowing** and **destroying** the **LED**. ([learningaboutelectronics.com](http://www.learningaboutelectronics.com/Articles/LED-specifications-continuous-forward-current))
 
 * **Luminous Intensity** -- measure in **mcd** -- TBD
 
