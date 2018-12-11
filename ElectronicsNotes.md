@@ -427,13 +427,18 @@ TBD -- Decide how to merge/combine with diode and LED entry
 
 * The **longer lead** on an **LED** indicates the **positive lead**
 
-* **Anode** is the **positive lead**
+* **Anode** is the **positive lead** -- made from **P-type** material
 
-* **Cathode** is the **negative lead**
+* **Cathode** is the **negative lead** -- made from **N-type** material
 
 * **Forward voltage** is the amount of **voltage** absorbed by the **LED/diode**.  Since **Kirchhoff's Voltage Law** shows that the total amount of **voltage absorbed** by a circuit must be **equal** to the **voltage provided**. So if an **LED** has an average **forward voltage** of **2.2V** and its placed on a **9V sourced circuit**, a **resistor** must be added to the **circuit** to **absorb** the **remaining 6.8V**.  Assuming a **20mA current**, according to **Ohms Law** we need a **340Ω resistor (6.8/.02)** 
 
 * The **diode/LED** will try to **maintain its forward voltage** with the **current varying accordingly**. This is one of the **properties** of **diodes** that make them useful in being able to help **regulate voltage amounts**.
+
+* **Bias**
+  * **Forward Bias** -- when the **power source** is turned on, with the **negative side** connected to the **cathode (N-type material)** and the **positive side** is connected to the **anode (P-type)**, **current** can flow and the **diode/LED** is said to be **forward biased**.
+  * **Reverse Bias** -- when the **power source** is **reversed** and turned on, with the **positive side** connected to the **cathode (N-type material)** and the **negative side** is connected to the **anode (P-type)**, **no current** can flow and the **diode/LED** is said to be **reverse biased**.
+
 
 ## Diode
 
@@ -546,6 +551,67 @@ Note that many of the examples here use the **LM796 op amp**, which is a **good 
 
 * When choosing a **resistor** to go **between the power supply and collector terminal**,  a good rule of them is to choose one that **delivers half the supply voltage to the collector**.
 
+# 555 Timer Microchip
+
+
+* **DIP (Dual Inline Plug )** -- the common form used on **bread boards** and **through hole boards**.
+
+## Pinout
+
+![555Pinout01.png](images/Components/555/555Pinout01.png)
+
+![555Pinout02.png](images/Components/555/555Pinout02.png)
+
+## Functional Diagram
+
+![555Functional01.png](images/Components/555/555Functional01.png)
+
+* **Threshold (pin 6)**  -- **Compares the voltage** applied to the terminal with a **reference voltage of 2/3 Vcc**. The amplitude of voltage applied to this terminal is responsible for the **set state of the flip-flop**.  In an **astable configuration** this will **trigger** when the **capacitor is charged to Vcc**.
+* **Trigger (pin 2)** -- Responsible for **transition of the flip-flop from set to reset**. The output of the timer depends on the amplitude of the external trigger pulse applied to this pin.  In an **astable configuration** this will **trigger**
+
+## 555 Monostable
+
+**Monostable mode** is configured to send out **one pulse** with a configured **timing**.
+
+## 555 Astable
+
+Refer to:
+
+* [555 Astable pg1](http://www.learnabout-electronics.org/Oscillators/osc43.php)
+* [555 Astable pg2](http://www.learnabout-electronics.org/Oscillators/osc44.php)
+
+
+**Astable mode** is configured to send out **continuously repeating pulses** with a certain **frequency** and **duty cycle**.
+
+Image from **CircuitLab**.
+
+![555Astable01.png](images/Components/555/555Astable01.png)
+
+Another view:
+
+![555Astable02.png](images/Components/555/555Astable02.png)
+
+
+* With the **R1**, **R2**, and **C1** values above this circuit will generate a **1kHz square wave**
+
+* **Bigger capacitor** and **resistors** causes a **slower pulse rate (lower frequency)**
+
+* **Smaller capacitor** and **resistors** causes a **faster pulse rate (higher frequency)**
+
+![555AstableChart01.png](images/Components/555/555AstableChart01.png)
+
+
+### Duty Cycle
+
+* **Duty Cycle** is a term that describes the **percentage of each cycle taken up by the active or high period** of the **square wave** (in the case of the 555).
+
+* At **50%** the **high period** takes up **50% of the full cycle**
+
+* At **greater than 50%** the **high period** takes up **more than 50% of the full cycle**
+
+* At **less than 50%** the **high period** takes up **less than 50% of the full cycle**
+
+![555DutyCycle01.png](images/Components/555/555DutyCycle01.png)
 
 # Miscellaneous Tips
 
