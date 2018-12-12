@@ -629,14 +629,60 @@ Another view:
 
 # Digital Logic Circuits
 
+## Boolean Algebra
+
+* Two possible numbers, **1 or 0**
+
+* The **inverse**, referred to as the **compliment** is written with a **line (bar) over the variable**, for example, **A bar**.
+
+* **A AND B** is written algebraically as **A \* B** or as **AB**
+
+* **A OR B** is written algebraically as **A + B**
+
+
 ## Gates
 
 From my **Circuit Simulator applet** circuit:
 
 ![LogicGates01.png](images/Components/Logic/LogicGates01.png)
 
+Note that **all the gates** can be created with a **combination of NAND and NOR gates**
+
+### AND Gate
+
+![LogicAND.png](images/Components/Logic/LogicAND-01.png)
+
+### OR Gate
+
+![LogicOR.png](images/Components/Logic/LogicOR-01.png)
+
+### NOT (Inverter) Gate
+
+Also referred to as the **compliment**.
+
+![LogicNOT.png](images/Components/Logic/LogicNOT-01.png)
+
+### NAND Gate
+
+![LogicNAND.png](images/Components/Logic/LogicNAND-01.png)
+
+### NOR Gate
+
+![LogicNOR.png](images/Components/Logic/LogicNOR-01.png)
+
+### XOR Gate
+
+![LogicXOR.png](images/Components/Logic/LogicXOR-01.png)
+
+### XNOR Gate
+
+![LogicXNOR.png](images/Components/Logic/LogicXNOR-01.png)
 
 ## Flip-Flops
+
+Much of the information is from:
+
+* [Flip-flops](https://www.globalspec.com/learnmore/semiconductors_electronics/digital_logic_devices/flip_flops)
 
 **Flip-flops** are digital **logic devices** that synchronize changes in **output state (1 or 0)** according to a **clocked input**. Because they use **sequential logic**, **flip-flops control and are controlled by other circuitry** in a **specific sequence** that is determined by both a **control clock** and **enable/disenable control signals**.
 
