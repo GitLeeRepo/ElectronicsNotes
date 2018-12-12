@@ -306,6 +306,7 @@ HQ-5B25-5    | 5mm  |Blue   | 3 - 3.2V | 20mA    | 15.000 mcd   | 20   | Joe Kno
 
 Model/Part # | Type/Name                      | Quantity
 -------------|--------------------------------|----------
+2N2222       | NPN General Purpose Transistor | 200
 2N3904       | NPN General Purpose Transistor | 45
 2N3906       | PNP General Purpose Transistor | 45
 2SC5227A     | 5GHz NPN Epitaxial Planar Tran | 1
@@ -415,3 +416,43 @@ Model/Part #     | Type/Name                                | Quantity
 4511             | 7 Segment Decoder                        | 1
 LM339            | Quad Comparator                          | 1
 MCF4001          | Quad Not Gate                            | 1
+
+Model/Part #     | Type/Name                                        | Quantity
+-----------------|--------------------------------------------------|-----------
+74HC00           | quad 2-input NAND gate                           | 1
+74HC02           | quad 2-input NOR gate                            | 1
+74HC04           | hex inverter gate                                | 1   
+74HC05           | hex inverter gate                                | 1
+74HC08           | quad 2-input AND gate                            | 1
+74HC10           | triple 3-input NAND gate                         | 1
+74HC14           | hex inverter gate                                | 1
+74HC21           | dual 4-input AND gate                            | 1
+74HC30           | single 8-input NAND gate                         | 1
+74HC32           | quad 2-input OR gate                             | 1
+74HC74           | dual D positive edge triggered flip-flop         | 1
+74HC125          | quad bus buffer, negative enable                 | 1
+74HC126          | quad bus buffer, positive enable                 | 1
+74HC132          | quad 2-input NAND gate                           | 1
+74HC138          | 3-line to 8-line decoder/demultiplexer,          | 1
+.                | inverting outputs                                | .
+74HC139          | dual 2 to 4-line decoder/demultiplexer,          | 1
+.                | inverting outputs                                | .
+74HC157          | quad 2-line to 1-line data selector/multiplexer, | 1
+.                | non-inverting outputs                            | .
+74HC163          | synchronous presettable 4-bit binary counter,    | 1
+.                | synchronous clear                                | .
+74HC164          | 8-bit parallel-out serial shift register,        | 1
+.                | asynchronous clear                               | .
+74HC165          | 8-bit serial shift register, parallel load,      | 1
+.                | complementary outputs                            | .
+74HC174          | hex D flip-flop, common asynchronous clear       | 1
+74HC244          | octal buffer, non-inverting outputs              | 1
+74HC245          | octal bus transceiver, non-inverting outputs     | 1
+74HC273          | 8-bit register, asynchronous clear               | 1
+74HC373          | octal transparent latch                          | 1
+74HC374          | octal register                                   | 1
+74HC393          | dual 4-bit binary counter                        | 1
+74HC573          | octal D-type transparent latch                   | 1
+74HC574          | octal D-type edge-triggered flip-flop            | 1
+74HC595          | 8-bit shift registers, output latches, parallel  | 1
+.                | outputs                                          | .
