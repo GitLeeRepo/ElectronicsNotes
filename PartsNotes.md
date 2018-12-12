@@ -401,21 +401,21 @@ XFMR ? Mouser    | Xicon Trans Audio & Signal, 1500CT/600CT | 1
 unk. Jameco      | TRANS,WALL,12VAC/1.5A,F,                 | 1
 unk. Jameco      | TRANS,PWR,24VCT/1A                       | 1
 
-# Misc Semiconductors -- Logic Chips
+# Digital Logic Chips
 
 Model/Part #     | Type/Name                                | Quantity
 -----------------|------------------------------------------|-----------
+4001 (MCF4001)   | Quad NOR Gate                            | 1
 4011             | Quad NAND Gate                           | 1
 4013             | Duel D - Flip Flop                       | 1
-4017             | Decode Counter                           | 1
-4029             | Decode Up/Dn Counter                     | 1
+4017             | Decade Counter                           | 1
+4029             | Decade Up/Dn Counter                     | 1
 4046             | Phase Locked Loop                        | 1
 4049             | Hex Inverter                             | 1
 4066             | Quad Analog Switch                       | 1
 4070             | Quad Exclusive Or Gate                   | 1
 4511             | 7 Segment Decoder                        | 1
 LM339            | Quad Comparator                          | 1
-MCF4001          | Quad Not Gate                            | 1
 
 Model/Part #     | Type/Name                                        | Quantity
 -----------------|--------------------------------------------------|-----------

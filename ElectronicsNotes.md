@@ -627,6 +627,29 @@ Another view:
 
 * It is better to over design your system, and spend a little more, by making sure your **resister's power rating** is **twice your requirements**.  For example, if you need a **110mW of load on the resister**, don't use a **1/4W resistor** but use **1/2W resistors** to provide a **bigger buffer**.  Your circuits will be much more reliable if your circuit periodically gets more **voltage** than you anticipated.
 
+# Digital Logic Circuits
+
+## Gates
+
+From my **Circuit Simulator applet** circuit:
+
+![LogicGates01.png](images/Components/Logic/LogicGates01.png)
+
+
+## Flip-Flops
+
+**Flip-flops** are digital **logic devices** that synchronize changes in **output state (1 or 0)** according to a **clocked input**. Because they use **sequential logic**, **flip-flops control and are controlled by other circuitry** in a **specific sequence** that is determined by both a **control clock** and **enable/disenable control signals**.
+
+Several **types of flip-flops** are available:
+
+* **D flip-flops** have **one data input (D)** and **two outputs (Q and Q’)**.
+
+* **S-R flip-flops** have either **set (S) and reset (R) inputs**, or set **(S) and clear (C) inputs**. Depending on the input values, the **two complementary outputs (Q and Q’) change** according to the device’s logical function **at the moment of the clock input’s active transition**. **Active high** and **active low S-R flip-flops** are available.
+
+* **J-K flip-flops**, a **type of S-R device**, define the flip-flop’s indeterminate state.
+
+* **Toggle** or **T flip-flops**, a **single input version of the J-K flip-flop**, toggle the output with each clock pulse. Typically, T flip-flops are **used to develop counters, registers, and similar devices**.
+
 # Circuit Examples
 
 ## Voltage Regulator
