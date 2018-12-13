@@ -19,7 +19,7 @@ tbd
 
 ### Notes in this repository
 
-tbd
+* [ElectronicNotes](https://github.com/GitLeeRepo/ElectronicsNotes/blob/master/ElectronicsNotes.md#overview)
 
 ### Notes in Other Repositories
 
@@ -119,6 +119,8 @@ Refer to the [Datasheet](pdf/Datasheets/PIC/PIC16F1455DataSheet.pdf)
 
 #### Description
 
+From the eBay listing
+
 **Pic16F1455-I/P Microcontroller Mcu**, 8 Bit, Pic16, 48Mhz, Dip-14
 
 * CPU Speed:48MHz.
@@ -136,6 +138,34 @@ Refer to the [Datasheet](pdf/Datasheets/PIC/PIC16F1455DataSheet.pdf)
 * Program Memory Size:14KB.Program Memory Size:14KB.RAM Memory Size:1KB.SVHC:No SVHC (16-Dec-2013).
 * Supply Voltage Max:5.5V.
 * Supply Voltage Min:2.5V
+
+From [Microchip website description](https://www.microchip.com/wwwproducts/en/PIC16F1455#additional-features):
+
+* Enhanced Mid-range Core with 49 Instruction, 16 Stack Levels
+* Flash Program Memory with self read/write capability
+* 128 B of Non-volatile Data Storage
+* Internal 48MHz Oscillator
+* Universal Serial Bus 2.0 Module with clock recovery from USB host
+* 2x Standalone PWM Modules
+* 10 Channel 10-bit ADC with Voltage Reference
+* 2 Analog Comparators
+* 5-bit Digital to Analog Converter (DAC)
+* MI2C / SPI Module
+* Enhanced Addressable USART Module
+* 25mA Source/Sink current I/O
+* 2x 8-bit Timers (TMR0/TMR2)
+* 1x 16-bit Timer (TMR1)
+* Extended Watchdog Timer (WDT)
+* Enhanced Power-On/Off-Reset
+* Low-Power Brown-Out Reset (LPBOR)
+* Programmable Brown-Out Reset (BOR)
+* In Circuit Serial Programming (ICSP)
+* Integrated In-Circuit Debug Circuit
+* extreme Low Power (XLP) ‘LF’ Variant (1.8V – 3.6V)
+* PIC16F145x (1.8V – 5.5V)
+
+Refer to the [Datasheet](pdf/Datasheets/PIC/PIC16F1455DataSheet.pdf) for more features and details.
+
 
 ## Microcontroller Programmers
 

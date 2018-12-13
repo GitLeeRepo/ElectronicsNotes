@@ -28,6 +28,9 @@ tbd
 * [CircuitSimulators](https://github.com/GitLeeRepo/ElectronicsNotes/blob/master/CircuitSimulators.md#overview)
 * [EquipmentNotes](https://github.com/GitLeeRepo/ElectronicsNotes/blob/master/EquipmentNotes.md#overview)
 * [PartsNotes](https://github.com/GitLeeRepo/ElectronicsNotes/blob/master/PartsNotes.md#overview)
+* [ArduinoNotes](https://github.com/GitLeeRepo/ElectronicsNotes/blob/master/ArduinoNotes.md#overview)
+* [PICNotes](https://github.com/GitLeeRepo/ElectronicsNotes/blob/master/PICNotes.md#overview)
+
 
 
 ### Notes in Other Repositories
