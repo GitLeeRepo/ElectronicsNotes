@@ -635,10 +635,52 @@ Another view:
 
 * The **inverse**, referred to as the **compliment** is written with a **line (bar) over the variable**, for example, **A bar**.
 
-* **A AND B** is written algebraically as **A \* B** or as **AB**
+* **A AND B** is written algebraically as **A \* B** or as **AB**.  This is not pronounced as **A times B**, but rather as **A AND B**.
 
-* **A OR B** is written algebraically as **A + B**
+* **A OR B** is written algebraically as **A + B**.  This is not pronounced as **A plus B**, but rather as **A OR B**.
 
+* The **complement of AND is OR**
+
+* The **complement of OR is AND**.
+
+### OR Boolean Logic
+
+![LogicOR02.png](images/Components/Logic/LogicOR-02.png)
+
+### AND Boolean Logic
+
+![LogicAND02.png](images/Components/Logic/LogicAND-02.png)
+
+### NOR Boolean Logic
+
+![LogicNOR02.png](images/Components/Logic/LogicNOR-02.png)
+
+The above shows that **NOR** is the direct **inverse** of **OR**.
+
+### NAND Boolean Logic
+
+![LogicNAND02.png](images/Components/Logic/LogicNAND-02.png)
+
+The above shows that **NAND** is the direct **inverse** of **AND**.
+
+### XOR Boolean Logic
+
+![LogicXOR.png](images/Components/Logic/LogicXOR-02.png)
+
+### XNOR Gate
+
+![LogicXNOR02.png](images/Components/Logic/LogicXNOR-03.png)
+
+![LogicXNOR03.png](images/Components/Logic/LogicXNOR-02.png)
+
+
+The above shows that **XNOR** is the direct **inverse** of **XOR**
+
+### De Moran's Theorems
+
+![LogicDeMorganLaws-01.png](images/Components/Logic/LogicDeMorganLaws-01.png)
+
+The above shows that the **complement of AND is OR** and the **complement of OR is AND**.
 
 ## Gates
 
