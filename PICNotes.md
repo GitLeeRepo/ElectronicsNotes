@@ -13,7 +13,7 @@ tbd
 
 ## YouTube Refences
 
-tbd
+* [PICDEM™ Lab II Development Platform](https://www.youtube.com/watch?v=-pjT1YgeX-E&list=PL1204684BD203E0DC&index=47)
 
 ## My Other Notes
 
@@ -111,6 +111,28 @@ Refer to [Wikipedia](https://en.wikipedia.org/wiki/PIC_microcontrollers)
 
 ## Microcontrollers
 
+### PIC16F161
+
+* [PIC16F161 Info](https://www.microchip.com/wwwproducts/en/PIC16F1619)
+
+#### Specifications
+
+* Program Memory Type -- Flash
+* Program Memory Size (KB) -- 14
+* CPU Speed (MIPS/DMIPS) -- 8
+* SRAM Bytes -- 1,024
+* Digital Communication Peripherals -- 1-UART, 1-SPI, 1-I2C
+* Capture/Compare/PWM Peripherals -- 2 Input Capture, 2 CCP,
+* Timers -- 4 x 8-bit, 3 x 16-bit
+* ADC Input -- 12 ch, 10-bit
+* Number of Comparators -- 2
+* Temperature Range (C) -- -40 to 125
+* Operating Voltage Range (V) -- 1.8 to 5.5
+* Pin Count -- 20
+* Low Power --Yes
+
+
+
 ### Pic16F1455-I/P Microcontroller Mcu, 8 Bit, Pic16, 48Mhz
 
 Refer to the [Datasheet](pdf/Datasheets/PIC/PIC16F1455DataSheet.pdf)
@@ -167,6 +189,22 @@ From [Microchip website description](https://www.microchip.com/wwwproducts/en/PI
 Refer to the [Datasheet](pdf/Datasheets/PIC/PIC16F1455DataSheet.pdf) for more features and details.
 
 
+## Curiosity 8 Bit Development Board
+
+**Part Number: dm164137**
+
+Refer to:
+
+* [Curiosity Development Board](https://www.microchip.com/developmenttools/ProductDetails/dm164137#additional-summary)
+* [PDF Manual](pdf/Datasheets/PIC/Curiosity8BitDevBoardUserManual01.pdf)
+* [Curiosity 8bit Dev Board video](https://www.youtube.com/watch?v=LCecexuP2fU&index=46&list=PL1204684BD203E0DC) -- YouTube
+
+![Curiosity8bitBoard01.png](images/MyEquipParts/PIC/Curiosity8bitBoard01.png)
+
+![Curiosity8bitBoard02.png](images/MyEquipParts/PIC/Curiosity8bitBoard02.png)
+
+![Curiosity8bitBoard03.png](images/MyEquipParts/PIC/Curiosity8bitBoard03.png)
+
 ## Microcontroller Programmers
 
 
@@ -202,3 +240,8 @@ Refer to the [Datasheet](pdf/Datasheets/PIC/PIC16F1455DataSheet.pdf) for more fe
 * 1 x Ziff socket module
 * 1 x set of DuPont cable
 
+# MPLab
+
+## MPLabExpress Cloud Based
+
+* [mplabcloud/ide](https://mplabxpress.microchip.com/mplabcloud/ide)
