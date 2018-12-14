@@ -31,6 +31,59 @@ tbd
 
 # Concepts and Terminology
 
+## PIC Terminology
+
+* **ADC** -- **analog to digital converter**.  An **onboard peripheral** an various **PIC** chips
+
+* **ANSEL Register** -- **Analog Select Register** used to **enable/disable analog input functions on a specific pin**
+
+* **Brown-Out Reset** -- used to **detect brownout conditions**.  It holds the **microprocessor in reset** until the **power supply** returns to an **acceptable level**.
+
+* **CCP** -- **Capture/Compare** -- used in **timings**
+
+* **CLC** -- **Continuous Logic Cell** -- provides **onboard sequential and combinational logic functions**
+
+* **COG (Complimentary Output Generator)** -- takes **one PWM signal** and **converts it into two complimentary signals**
+
+* **Core Independent Peripherals** -- require **no intervention from the CPU**
+
+* **EUSART** -- **Enhanced Universal Synchonous Asynchronous Receiver Transmitter** -- used  for **serial communications**.
+
+* **HFB (High Endurance Flash Block)** -- replacement from **EEPROM**.  It can **withstand more write/delete cycles** than **regular Flash**
+
+* **INTOSC internal oscillator** -- block produces low, medium, and high-frequency clock sources. A **wide selection** of device **clock frequencies** may be derived from these **three clock sources**.: 
+  * **LFINTOSC** -- **low frequency internal oscillator**
+  * **MFINTOSC** -- **medium frequency internal oscillator**
+  * **HFINTOSC** -- **high frequency internal oscillator**
+
+* **I2C (Inter-Integrated Circuit)** -- a **serial protocol** that uses **frames** for communication.  Uses the **serial clock line (SCL)**  and **Serial Data Line (SDA)** for communication from the **master** to the **slave**.  Communicates at either **100kHz** or **400kHz**.
+
+* **LAT Register** -- **Latch Register**.  If available, it is **preferable over the PORT register for output**.  It is recommended to use **PORT for input**
+
+* **MSSP** -- **Master Synchronous Serial Port** -- provides **two modes of operation**:
+  * **SPI (Serial Peripheral Interface)** function
+  * **I2C (Inter-Integrated Circuit)** functions
+
+* **NCO (Numerically Controlled Oscillator)** -- used to provide **very precise and fine resolution frequency at a duty cycle**
+
+* **Onboard Operational Amplifiers** -- 
+
+* **Onboard peripheral** -- **on chip independent circuits** for performing **operations outside the CPU**.  This include **ADC**, **CCP**, **PWM**, **Timers**, **Comparators**.
+
+* **Ports** -- used to **interface** with the outside world through **pins**.  The **ports** are associated with **registers**.
+
+* **PWM module** -- used to generate **PWM waves (Pulse Wave Modulation)**
+
+* **SPI (Serial Peripheral Interface)** -- a type of **serial interface common on microcontrollers**.  Unlike **UART**, where very few applications require a **clock**, in **SPI** a **clock** is present in all applications since it uses **synchronous data transfer**.
+
+* **Timers** -- used for **time measurement**, **pulse generation**, **counters**, **delays**, etc.
+
+* **TRIS Register** -- **Tristate Register**.  It can be in one of **three states**: **output high, output low, or input**
+
+* **Watchdog Timer (WDT)** -- automatically **resets the processor** after a given **user-defined period**.  This allows programs to **escape from endless loops** 
+
+* **ZCD Zero Cross Detection) module** -- used to **detect when there is no voltage** on an **AC waveform**
+
 ## PIC Overview
 
 Excerpts from [Wikipedia](https://en.wikipedia.org/wiki/PIC_microcontrollers):
@@ -111,9 +164,26 @@ Refer to [Wikipedia](https://en.wikipedia.org/wiki/PIC_microcontrollers)
 
 ## Microcontrollers
 
-### PIC16F161
+### Microcontroller Classifications
 
-* [PIC16F161 Info](https://www.microchip.com/wwwproducts/en/PIC16F1619)
+Within the different **families: 8-bit, 16-bit, 32-bit)** the microcontrollers are subdivided into **classifications**.  Here are the ones for the **8-bit family**:
+
+* **Baseline PIC microcontrollers** -- the **low end** of the scale.  They have **low pin count** and **low power requirements**. The **PIC16F57** is an example in this **classification**.
+
+* **Mid-Range PIC microcontrollers** -- includes **more features over the Baseline**, such as **on board communications peripherals**, and the possibility of **core independent peripherals**.  The **PIC16F877**, **PIC16F84A** , **PIC16F887**are in this **classification**. 
+
+* **Enhanced Mid-Range PIC microcontrollers** -- adds **more peripherals**, **more program memory**, along with the **C optimized architecture**. My **PIC16F1619** and **PIC16F1455** controllers fall in this **classification**.
+
+* **High Performance PIC microcontrollers** -- these are the **highest performing** of the **8-bit PIC family**, specifically as member of the **18F family**. They include **large flash program memory**, **extended instruction set**, and **integrated protocol communications**, such as **USB**, **Ethernet**, and **CAN**.
+
+### Diagram of a Typical 8bit Chip (PIC16F1717)
+
+![PIC16F1717BlockDiagram01.png](images/MyEquipParts/PIC/PIC16F1717BlockDiagram01.png)
+
+
+### PIC16F1619
+
+* [PIC16F1619 Info](https://www.microchip.com/wwwproducts/en/PIC16F1619)
 
 #### Specifications
 
@@ -245,3 +315,23 @@ Refer to:
 ## MPLabExpress Cloud Based
 
 * [mplabcloud/ide](https://mplabxpress.microchip.com/mplabcloud/ide)
+
+# Architecture
+
+References:
+
+* [Begin Programming a PIC16F1xxx in C Like a Pro](https://www.youtube.com/watch?v=Lm6e3xSC8sg) -- excellent 2 hour YouTube class on programming the **PIC16F family in C**, with a lot of **architecture** related discussion.
+
+## Ports
+
+* **Ports** -- used to **interface** with the outside world through **pins**.  The **ports** are associated with **registers**.
+
+## Serial Protocols
+
+### I2C (I Squared C) -- Inter-Interface Communication
+
+Refer to:
+
+* [Practical I2C: Introduction, Implementation and Troubleshooting](https://www.youtube.com/watch?v=yM9OpRPMEAE) -- excellent YouTube overview
+
+* **I2C (Inter-Integrated Circuit)** -- a **serial protocol** that uses **frames** for communication.  Uses the **serial clock line (SCL)**  and **Serial Data Line (SDA)** for communication from the **master** to the **slave**.  Communicates at either **100kHz** or **400kHz**.

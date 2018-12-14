@@ -191,20 +191,7 @@ When calculating **current** in a circuit with **multiple resistors** that are *
 
 ![Current01.png](images/Current/Current01.png)
 
-## Current Sourcing and Sinking
-
-From: [current-sourcing-sinking](https://startingelectronics.org/articles/current-sourcing-sinking/)
-
-* A **current source** is when a **load** is **connected to a device** so that the **device supplies current to the load** (sources current) then the configuration is said to be **current sourcing**. An example is a series resistor and LED connected between a microcontroller pin and GND. When the microcontroller pin is switched high (logic 1) then the microcontroller will source current to the load. In this configuration a logic 1 will supply power to the load (switch the LED on) and a logic 0 will switch power to the load off (switch the LED off).
-
-* **Current sinking** is When a **load** is **connected to a device** so that **current flows from the power supply through the load and into the device**, then the configuration is said to be **current sinking**. When current flows into the device, it is said to be sinking current.
-
-![Current02.png](images/Current/Current02.png)
-
-Another view
-
-![Current03.png](images/Current/Current03.png)
-
+Refer to the **[Current Sourcing and Sinking](#current-Sourcing-and-sinking)** section for additional details
 
 # Voltage
 
@@ -268,6 +255,22 @@ With **batteries ground** is typically the **negative terminal** of the **batter
 * **Current Controlled Current Source (CCCS)** 
 
 * **Current Source** -- A **current source** is an electronic circuit that **delivers or absorbs an electric current** which is **independent of the voltage** across it.  There are **two types**. An **independent current source (or sink)** delivers a **constant current**. A **dependent current source** delivers a current which is **proportional** to some other **voltage** or **current** in the circuit. **Current-stable nonlinear implementation** is implemented by **active electronic components** (**transistors**) having **current-stable nonlinear output** characteristic when driven by **steady input quantity (current or voltage)**. These circuits behave as **dynamic resistors changing their present resistance to compensate current variations**. For example, if the **load increases its resistance**, the **transistor decreases** its present **output resistance** (and vice versa) to keep up a **constant total resistance in the circuit**. ([Wikipedia](https://en.wikipedia.org/wiki/Current_source))
+
+## Current Sourcing and Sinking
+
+From: [current-sourcing-sinking](https://startingelectronics.org/articles/current-sourcing-sinking/)
+
+* A **current source** is when a **load** is **connected to a device** so that the **device supplies current to the load** (sources current) then the configuration is said to be **current sourcing**. An example is a series resistor and LED connected between a microcontroller pin and GND. When the microcontroller pin is switched high (logic 1) then the microcontroller will source current to the load. In this configuration a logic 1 will supply power to the load (switch the LED on) and a logic 0 will switch power to the load off (switch the LED off).
+
+* **Current sinking** is When a **load** is **connected to a device** so that **current flows from the power supply through the load and into the device**, then the configuration is said to be **current sinking**. When current flows into the device, it is said to be sinking current.
+
+![Current02.png](images/Current/Current02.png)
+
+Another view
+
+![Current03.png](images/Current/Current03.png)
+
+
 
 ## Sourcing as related to Power
 
@@ -355,6 +358,8 @@ Refer to [Wikipedia](https://en.wikipedia.org/wiki/Inductor) for more info and *
 The letter **L** is used to represent **inductance**.
 
 ![Inductance01.png](images/Components/Inductor/Inductance01.png)
+
+**Inductors** are used to **resist changes in the current flowing through it**.  They are used as **filters** to **pass low frequency signals** and **resist high frequency signals**.
 
 An **inductor** consists of **wound wire**, either are around an **inductive material**, such as **iron ferrite**, or around **air**
 
@@ -446,6 +451,10 @@ TBD -- Decide how to merge/combine with diode and LED entry
 ## Diode
 
 TBD -- Decide how to merge/combine with diode and LED entry
+
+## Zener Diode
+
+**Zener diodes** are designed to operate in the **breakdown region**.  They are used for **voltage stabilization**, **voltage regulation** and as a **voltage reference**.
 
 ## LED
 
