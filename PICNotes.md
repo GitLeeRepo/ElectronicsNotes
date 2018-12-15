@@ -183,6 +183,7 @@ Within the different **families: 8-bit, 16-bit, 32-bit)** the microcontrollers a
 
 ### PIC16F1619
 
+* [PIC16F1619 Datasheet](pdf/Datasheets/PIC/PIC16F1619DataSheet.pdf)
 * [PIC16F1619 Info](https://www.microchip.com/wwwproducts/en/PIC16F1619)
 
 #### Specifications
