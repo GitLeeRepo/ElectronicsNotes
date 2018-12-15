@@ -79,6 +79,15 @@ tbd
 
 * **TTL chip** -- **Transistor Transistor Logic**
 
+* **Vcc** -- positive supply voltage where the **"c" stands for collector**.  Technically this applies to **BPJ (Bipolar Junction)** circuits.  It is **equivalent to Vdd** in **FET** circuits, and are sometimes the labels are used interchangeably.  See also **Vdd**, **Vee**, and **Vss**.
+
+* **Vdd** -- positive supply voltage where the **"d" stands for drain**.  Technically this applies to **FET (Field Effect Transistor)** circuits.  It is **equivalent to Vcc** in **PBJ** circuits, and are sometimes the labels are used interchangeably.  See also **Vcc**, **Vee**, and **Vss**.
+
+* **Vee** -- negative supply voltage where the **"e" stands for emitter**.  Technically this applies to **BPJ (Bipolar Junction)** circuits.  It is **equivalent to Vss** in **FET** circuits, and are sometimes the labels are used interchangeably.  See also **Vcc**, **Vdd**, and **Vss**.  More rarely used in diagrams than the others.
+
+* **Vss** -- negative supply voltage where the **"s" stands for source**.  Technically this applies to **FET (Field Effect Transistor)** circuits.  It is **equivalent to Vee** in **FET** circuits, and are sometimes the labels are used interchangeably.  See also **Vcc**, **Vdd**, and **Vee**.
+
+
 # Digital and Analog Electronics
 
 ## Analog Electronics
@@ -276,6 +285,13 @@ Another view
 
 ![Current03.png](images/VoltageCurrentSources/VoltageCurrentSources01.png)
 
+# VCC vs VSS vs VDD vs VEE
+
+From [StackExchange](https://electronics.stackexchange.com/questions/17382/what-is-the-difference-between-v-cc-v-dd-v-ee-v-ss)
+
+Back in the 1960s or earlier, logic was implemented with **bipolar transistors**. Even more specifically, they were **NPN** because for some reasons I'm not going to get into, NPN were faster. Back then it made sense to someone that the **positive supply voltage would be called Vcc** where the **"c" stands for collector**. Sometimes (but less commonly) the **negative supply was called Vee** where **"e" stands for emitter**.
+
+When **FET** logic came about, the same kind of naming was used, but now the **positive supply was Vdd (drain)** and the **negative Vss (source)**. With **CMOS** this makes no sense, but it persists anyway. Note that the **"C" in CMOS stands for "complementary"**. That means both N and P channel devices are used in about equal numbers. A **CMOS inverter** is just a P channel and a N channel MOSFET in its simplest form. With roughly equal numbers of N and P channel devices, drains aren't more likely to be positive than sources, and vice versa. However, the Vdd and Vss names have stuck for historical reasons. Technically **Vcc/Vee is for bipolar** and **Vdd/Vss for FETs**, but in practice today **Vcc and Vdd mean the same**, and **Vee and Vss mean the same**.
 
 # Semiconductors
 
