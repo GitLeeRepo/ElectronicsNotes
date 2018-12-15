@@ -20,6 +20,8 @@ tbd
 ### Notes in this repository
 
 * [ElectronicNotes](https://github.com/GitLeeRepo/ElectronicsNotes/blob/master/ElectronicsNotes.md#overview)
+* [PICArchitectAndAssemblyNotes](https://github.com/GitLeeRepo/ElectronicsNotes/blob/master/PICArchitectAndAssemblyNotes.md#overview)
+
 
 ### Notes in Other Repositories
 
@@ -188,21 +190,42 @@ Within the different **families: 8-bit, 16-bit, 32-bit)** the microcontrollers a
 
 #### Specifications
 
+* CPU Speed:32MHz.
 * Program Memory Type -- Flash
 * Program Memory Size (KB) -- 14
 * CPU Speed (MIPS/DMIPS) -- 8
 * SRAM Bytes -- 1,024
+* 16-Level Deep Hardware Stack
 * Digital Communication Peripherals -- 1-UART, 1-SPI, 1-I2C
 * Capture/Compare/PWM Peripherals -- 2 Input Capture, 2 CCP,
 * Timers -- 4 x 8-bit, 3 x 16-bit
 * ADC Input -- 12 ch, 10-bit
 * Number of Comparators -- 2
+* Configurable Logic Cells (CLC) -- 4
+* PMW 10 bit Pulse Width modules -- 2
+* 10-Bit Analog-to-Digital Converter (ADC)
+* 8-Bit Digital-to-Analog Converter (DAC)
 * Temperature Range (C) -- -40 to 125
 * Operating Voltage Range (V) -- 1.8 to 5.5
 * Pin Count -- 20
 * Low Power --Yes
 
+#### PIC16F1619 Pin Diagram
 
+![PIC16F1619Pinouts01.png](images/MyEquipParts/PIC/PIC16F1619Pinouts01.png)
+
+#### PIC16F1619 Block Diagrams
+
+![PIC16F1619BlockDiagram01.png](images/MyEquipParts/PIC/PIC16F1619BlockDiagram01.png)
+
+**Enhanced Midrange CPU Block Diagram** below:
+
+![PIC16F1619BlockDiagram02.png](images/MyEquipParts/PIC/PIC16F1619BlockDiagram02.png)
+
+
+#### PIC16F1619 Core Registers
+
+![PIC16F1619CoreRegisters01.png](images/MyEquipParts/PIC/PIC16F1619CoreRegisters01.png)
 
 ### Pic16F1455-I/P Microcontroller Mcu, 8 Bit, Pic16, 48Mhz
 
@@ -220,6 +243,7 @@ From the eBay listing
 * Controller Family/Series:PIC16F145x.Core 
 * Size:8bit.
 * Embedded Interface Type:EUSART, I2C, SPI, USB.
+* 16-Level Deep Hardware Stack with Optional Overflow/Underflow Reset
 * MCU Case Style: DIP.
 * MSL:-.
 * No. of I/O's: 11.
