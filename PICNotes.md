@@ -1,10 +1,18 @@
 # Overview
 
-tbd
+Notes on the PIC Microcontrollers
 
 # References
 
 * [Wikipedia](https://en.wikipedia.org/wiki/PIC_microcontrollers)
+
+## Microchip Technologies 
+
+* [Main site](https://www.microchip.com/)
+* [8-bit microcontrollers](https://www.microchip.com/design-centers/8-bit)
+* [MPLab site](https://www.microchip.com/mplab)
+* [MPLAB Express web info pg](https://www.microchip.com/mplab/mplab-xpress)
+* [[MPLAB Express web IDE](https://mplabxpress.microchip.com/mplabcloud/ide)
 
 ## Hardware, Software and Kits
 
@@ -370,6 +378,13 @@ Refer to:
 ![PICKit3Pinouts01.png](images/MyEquipParts/PIC/PICKit3Pinouts01.png)
 
 # MPLab
+
+Refer to:
+
+* [Installing the Microchip Software Tools](https://www.youtube.com/watch?v=T8tRqvkFZcw&t=311s) -- YouTube Microchip Minutes
+* [Setting Up a project in MPLAB](https://www.youtube.com/watch?v=pbH6d9Qdkws) -- YouTube Microchip Minutes
+* [Programming a PIC16F1xxx in C Like a Pro](https://www.youtube.com/watch?v=Lm6e3xSC8sg&t=3684s) -- YouTube Microchip Technologies
+* [Taming Embedded C - Pt 1](https://www.youtube.com/watch?v=BtXyvVy67Qs) -- YouTube Microchip Technologies
 
 ## MPLabExpress Cloud Based
 
