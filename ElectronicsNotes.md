@@ -61,6 +61,8 @@ tbd
 
 * **EPROM** -- **Erasable Programmable Read Only Memory**
 
+* **Floating** -- a **floating connection** is one that **isn't tied** to either a **voltage source** or **ground**.
+
 * **Gain** -- a measure of the ability of a **two-port circuit (often an amplifier)** to **increase the power or amplitude of a signal** from the **input to the output port** by **adding energy** converted from some **power supply** to the **signal**. It is usually defined as the **mean ratio** of the **signal amplitude** or **power** at the **output port** to the amplitude or power at the input port. It is often expressed using the **logarithmic decibel (dB) units** ("dB gain"). A **gain greater than one** (greater than zero dB), that is **amplification**, is the defining property of an **active component** or circuit, while a **passive circuit** will have a **gain of less than one**.
 
 * **Holes** -- create when an **electron** in a **conductor** moves to the **next atom**.  If the **current** is viewed as moving from **positive to negative**, say from **left to right**, the **holes** move in the **opposite** direction, from **right to left**.  The flow of **electrons** is referred to as **electron current** with the flow of the **holes** referred to as **conventional current**.
@@ -77,6 +79,10 @@ tbd
 
 * **Pitch** -- the **distance** between **component pins**.
 
+* **Pull Down and Pull Up Resistors** -- used in **digital circuits** to prevent **floating inputs** where the a **switch/gate/connection** is not connected to either **power** or **ground**, it is **indeterminate** and can bounce **between on and off** due to **extraneous signals and interference**.  Refer also to the **Pull Down and Pull Up Resistors** section for more information and diagrams.
+  * **Pull Up Resistor** is connected in **parallel** between a **switch** and a **logic circuit/microcontroller** and is connected to the **voltage source** (typically 3.3 or 5V).  When the **switch is open**, without the **pull up resistor**  it would be **floating**, but with it is connected through the **resistor** to the **voltage source** so the **pin** remains in a **high state (3.3V or 5V)** which is what is desired.  This is **inverting** in the sense that when the **switch is closed** the **pin is off**, i.e., pushing the switch turns it off.  **Pull up resistors** are **builtin** to a lot of **microcontrollers** and therefore don't need to be added to the outside circuit.
+  * **Pull Down Resistor** is connected in **parallel** between a **switch** and a **logic circuit/microcontroller** and is connected to **ground** .  When the **switch is open**, without the **pull down resistor**  it would be **floating**, but with it is connected through the **resistor** to  **ground** so the **pin** remains in a **low state (0V)** which is what is desired. This a a **non-inverting** in that when the **switch is closed** the **pin is on**.  **Pull down resistors** typically are **not builtin to microcontrollers** and therefore need to be **added to the external circuit**.  
+
 * **TTL chip** -- **Transistor Transistor Logic**
 
 * **Vcc** -- positive supply voltage where the **"c" stands for collector**.  Technically this applies to **BPJ (Bipolar Junction)** circuits.  It is **equivalent to Vdd** in **FET** circuits, and are sometimes the labels are used interchangeably.  See also **Vdd**, **Vee**, and **Vss**.
@@ -87,6 +93,7 @@ tbd
 
 * **Vss** -- negative supply voltage where the **"s" stands for source**.  Technically this applies to **FET (Field Effect Transistor)** circuits.  It is **equivalent to Vee** in **FET** circuits, and are sometimes the labels are used interchangeably.  See also **Vcc**, **Vdd**, and **Vee**.
 
+* **VCO** -- **Voltage Controlled Oscillator** -- **integrated circuit** that has **pins** for external **resistors** and **capacitors**, which are used to generate an **oscillated signal for timing** purposes.
 
 # Digital and Analog Electronics
 
@@ -748,6 +755,14 @@ Also referred to as the **compliment**.
 
 ![LogicXNOR.png](images/Components/Logic/LogicXNOR-01.png)
 
+### Digital Circuit Gates (NAND and NOR)
+
+**Digital circuits** such as in **microcontrollers** and **microprocessors** predominately use **NAND and NOR gates**.  One of the reasons for this is they work better with **NPN transistors** which **prefer these gates**, whereas **PNP transistors** work better with **AND and OR gats**.  All of the **other gates can be constructed with NAND and NOR gates**.
+
+![LogicNANDGateDerivatives01.png](images/Components/Logic/LogicNANDGateDerivatives-01.png)
+
+Refer to [Transistor Transistor Logic](https://www.youtube.com/watch?v=FvdgxOAjJ_U&index=4&list=PLFC56DF3A0E2B9756) YouTube video for examples of **building the gates** using nothing but **NOR gates**
+
 ## Flip-Flops
 
 Much of the information is from:
@@ -766,6 +781,22 @@ Several **types of flip-flops** are available:
 
 * **Toggle** or **T flip-flops**, a **single input version of the J-K flip-flop**, toggle the output with each clock pulse. Typically, T flip-flops are **used to develop counters, registers, and similar devices**.
 
+## Pull Up and Pull Down Resistors in Logical Circuits
+
+* **Pull Down and Pull Up Resistors** -- used in **digital circuits** to prevent **floating inputs** where the a **switch/gate/connection** is not connected to either **power** or **ground**, it is **indeterminate** and can bounce **between on and off** due to **extraneous signals and interference**.  
+
+### Pull Up Resistor
+
+* **Pull Up Resistor** is connected in **parallel** between a **switch** and a **logic circuit/microcontroller** and is connected to the **voltage source** (typically 3.3 or 5V).  When the **switch is open**, without the **pull up resistor**  it would be **floating**, but with it is connected through the **resistor** to the **voltage source** so the **pin** remains in a **high state (3.3V or 5V)** which is what is desired.  This is **inverting** in the sense that when the **switch is closed** the **pin is off**, i.e., pushing the switch turns it off.  **Pull up resistors** are **builtin** to a lot of **microcontrollers** and therefore don't need to be added to the outside circuit.
+
+![PullUpResistor01.png](images/Components/Logic/PullUpResistor01.png)
+
+### Pull Down Resistor
+
+* **Pull Down Resistor** is connected in **parallel** between a **switch** and a **logic circuit/microcontroller** and is connected to **ground** .  When the **switch is open**, without the **pull down resistor**  it would be **floating**, but with it is connected through the **resistor** to  **ground** so the **pin** remains in a **low state (0V)** which is what is desired. This a a **non-inverting** in that when the **switch is closed** the **pin is on**.  **Pull down resistors** typically are **not builtin to microcontrollers** and therefore need to be **added to the external circuit**.  
+
+![PullDownResistor01.png](images/Components/Logic/PullDownResistor01.png)
+
 ## Logisim
 
 Refer to:
@@ -775,6 +806,29 @@ Refer to:
 
 **Logisim** is a **Java based digital logic simulator**.  Refer to this repository's **electronics/Logisim directory** for example circuits.
 
+## Clocks and Oscillators
+
+### Oscillators
+
+An **oscillator** is a component that **oscillates at specific frequencies**.  It can either be based on the behaviors of natural materials, such as **crystals**, or generated from **electronic components** through **capacitance**, **inductance** and **resistance**.
+
+* **Crystal oscillators** have a **piezoelectric** properties, which when you apply an **electrical current** it **changes shape** causing it to **oscillate** and **emit an oscillating signal**.
+
+* **LC Inductors** consist of **capacitors** and **inductors** that  **oscillate** signals.  The **oscillation** is determined by **fr = 1 / sqrroot(LC)**.
+
+* **VCO** -- **Voltage Controlled Oscillator** -- **integrated circuit** that has **pins** for external **resistors** and **capacitors**, which are used to generate an **oscillated signal for timing** purposes.
+
+### Clocks
+
+**Clocks** are used in:
+* **Microprocessors**
+* **Integrated circuits**
+* **Communications** --  **SPI**, **I2C**, etc
+
+**Clocks** are systems used to **regulate various operations** that require consistent **timings**.  They can make use of **oscillators** for these consistent **timings**.
+
+Refer to [Oscillators and Clocks](https://www.youtube.com/watch?v=8P2oMYlk2UM&list=PLFC56DF3A0E2B9756&index=5) YouTube video.
+
 # Circuit Examples
 
 ## Voltage Regulator
@@ -782,7 +836,6 @@ Refer to:
 Circuit I created in CircuitLab with lots of meters to show what's going on.  The **50MΩ resistor** is equivalent to my **Fluke** which is allowing only a miniscule amount of **current**:
 
 ![VoltageDivider01.png](images/Voltage/VoltageDivider01.png)
-
 
 # Audio -- Side Notes (move later to a more audio specific document)
 
@@ -803,7 +856,6 @@ Piano:
 
 * Lowest C note on a standard 88-key piano is **32.7 H**
 * Highest note on a standard 88-key piano is **1.19 kH**
-
 
 ## Typical Electrical Specs
 
