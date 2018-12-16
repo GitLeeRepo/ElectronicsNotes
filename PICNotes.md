@@ -62,6 +62,8 @@ tbd
 
 * **LAT Register** -- **Latch Register**.  If available, it is **preferable over the PORT register for output**.  It is recommended to use **PORT for input**
 
+* **LVP (Low Voltage Programming)**
+
 * **MSSP** -- **Master Synchronous Serial Port** -- provides **two modes of operation**:
   * **SPI (Serial Peripheral Interface)** function
   * **I2C (Inter-Integrated Circuit)** functions
@@ -214,6 +216,13 @@ Within the different **families: 8-bit, 16-bit, 32-bit)** the microcontrollers a
 
 ![PIC16F1619Pinouts01.png](images/MyEquipParts/PIC/PIC16F1619Pinouts01.png)
 
+* **RA0** -- **Pin 19** -- **ICSPDAT** -- For **programming data line** (connect to **pin 4 on Pickit3**)
+* **RA1** -- **Pin 18** -- **ICSPCLK** -- For **programming clock line** (connect to **pin 5 on Pickit3**)
+* **RA3** -- **MCLR** -- For **master clear** (connect to **pin 1 on Pickit3**)
+* **VDD** -- **Pin 1** -- **Positive voltage** (connect to **pin 2 on Pickit3**)
+* **VSS** -- **Pin 20** -- **Ground** (connect to **pin 3 on Pickit3**)
+
+
 #### PIC16F1619 Block Diagrams
 
 ![PIC16F1619BlockDiagram01.png](images/MyEquipParts/PIC/PIC16F1619BlockDiagram01.png)
@@ -283,6 +292,27 @@ From [Microchip website description](https://www.microchip.com/wwwproducts/en/PI
 
 Refer to the [Datasheet](pdf/Datasheets/PIC/PIC16F1455DataSheet.pdf) for more features and details.
 
+#### PIC16F1455 Pin Diagram
+
+![PIC16F1455Pinouts01.png](images/MyEquipParts/PIC/PIC16F1455Pinouts01.png)
+
+* **RA0** -- **Pin 13** -- **ICSPDAT** -- For **programming data line** (connect to **pin 4 on Pickit3**)
+* **RA1** -- **Pin 12** -- **ICSPCLK** -- For **programming clock line** (connect to **pin 5 on Pickit3**)
+* **RA3** -- **Pin 4** --  **MCLR** -- For **master clear** (connect to **pin 1 on Pickit3**)
+* **VDD** -- **Pin 1** -- **Positive voltage** (connect to **pin 2 on Pickit3**)
+* **VSS** -- **Pin 14** -- **Ground** (connect to **pin 3 on Pickit3**)
+
+#### PIC16F1455 Block Diagrams
+
+![PIC16F1455BlockDiagram01.png](images/MyEquipParts/PIC/PIC16F1455BlockDiagram01.png)
+
+**Enhanced Midrange CPU Block Diagram** below:
+
+![PIC16F1455BlockDiagram02.png](images/MyEquipParts/PIC/PIC16F1455BlockDiagram02.png)
+
+#### PIC16F1619 Core Registers
+
+![PIC16F1619CoreRegisters01.png](images/MyEquipParts/PIC/PIC16F1619CoreRegisters01.png)
 
 ## Curiosity 8 Bit Development Board
 
@@ -334,6 +364,10 @@ Refer to:
 * 1x USB cable
 * 1 x Ziff socket module
 * 1 x set of DuPont cable
+
+#### Pickit3 Pinouts
+
+![PICKit3Pinouts01.png](images/MyEquipParts/PIC/PICKit3Pinouts01.png)
 
 # MPLab
 

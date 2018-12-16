@@ -766,6 +766,15 @@ Several **types of flip-flops** are available:
 
 * **Toggle** or **T flip-flops**, a **single input version of the J-K flip-flop**, toggle the output with each clock pulse. Typically, T flip-flops are **used to develop counters, registers, and similar devices**.
 
+## Logisim
+
+Refer to:
+
+* [Logisim Beginner's Tutorial](https://www.youtube.com/watch?v=cMz7wyY_PxE&t=187s) -- YouTube video
+* [Logisim Website](http://www.cburch.com/logisim/)
+
+**Logisim** is a **Java based digital logic simulator**.  Refer to this repository's **electronics/Logisim directory** for example circuits.
+
 # Circuit Examples
 
 ## Voltage Regulator
