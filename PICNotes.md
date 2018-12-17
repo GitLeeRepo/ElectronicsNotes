@@ -12,7 +12,7 @@ Notes on the PIC Microcontrollers
 * [8-bit microcontrollers](https://www.microchip.com/design-centers/8-bit)
 * [MPLab site](https://www.microchip.com/mplab)
 * [MPLAB Express web info pg](https://www.microchip.com/mplab/mplab-xpress)
-* [[MPLAB Express web IDE](https://mplabxpress.microchip.com/mplabcloud/ide)
+* [MPLAB Express web IDE](https://mplabxpress.microchip.com/mplabcloud/ide)
 
 ## Hardware, Software and Kits
 
