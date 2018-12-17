@@ -145,3 +145,100 @@ There are several **Configuration Word bits** that allow **direct oscillator and
 # Interrupts
 
 **Interrupts** allow certain **events to preempt normal program flow**.  They can be used for such things as **waking up the device** from **sleep mode**, among others.
+
+# Modules
+
+
+## Analog-to-Digital Converter (ADC) Module
+
+tbd
+
+## Angular Timer (AT) Module
+
+tbd
+
+## Capture/Compare/PWM (CCP) Modules
+
+tbd
+
+## CCP Module
+
+tbd
+
+## CLC Module
+
+tbd
+
+## Comparator Module
+
+tbd
+
+## Complimentary Waveform Generator (CWG) Module
+
+tbd
+
+## Cyclical Redundancy Check (CRC) Module
+
+## Digital-to-Analog Converter (DAC) Module
+
+tbd
+
+## Enhanced Universal Synchronous Asynchronous Receiver Transmitter (EUSART)
+
+tbd
+
+## Fixed Voltage Reference (FVR) Module
+
+tbd
+
+## Interrupt-On-Change-Module
+
+tbd
+
+## I2C Interface Module
+
+tbd
+
+## Master Synchronous Serial Port (MSSP) Module
+
+tbd
+
+## Math Accelerator Proportional-Integral-Derivative (PID) Module
+
+tbd
+
+## Oscillator Module
+
+tbd
+
+## Peripheral Pin Select (PPS) Module
+
+tbd
+
+## Pulse Width Modulation (PWM) Module 
+
+tbd
+
+## Signal Measurement Timer (SMT) Module
+
+tbd
+
+## SPI Module
+
+tbd
+
+## Temperature Indicator Module
+
+tbd
+
+## Timer Modules
+
+tbd
+
+## Watch Dog Timer (WDT) Module
+
+tbd
+
+## Zero-Cross-Detection (ZCD) Module
+
+tbd
