@@ -30,7 +30,6 @@ Notes on the PIC Microcontrollers
 * [ElectronicNotes](https://github.com/GitLeeRepo/ElectronicsNotes/blob/master/ElectronicsNotes.md#overview)
 * [PICArchitectAndAssemblyNotes](https://github.com/GitLeeRepo/ElectronicsNotes/blob/master/PICArchitectAndAssemblyNotes.md#overview)
 
-
 ### Notes in Other Repositories
 
 * [NotesGuidelines](https://github.com/GitLeeRepo/NotesGuidlines/blob/master/NotesGuidelines.md#overview)
@@ -343,7 +342,10 @@ Refer to:
 
 ### PICKit3 Microchip Programmer
 
- [PICKit3 Microchip Programmer w/ USB cable, wires Pic Kit 3 and ICSP Socket](https://www.ebay.com/itm/PICKit3-Microchip-Programmer-w-USB-cable-wires-Pic-Kit-3-and-ICSP-Socket/391965539252?ssPageName=STRK%3AMEBIDX%3AIT&_trksid=p2060353.m1438.l2649) -- eBay -- 
+Refer to:
+
+* [PICkit_3_User_Guide_51795A](pdf/Datasheets/PIC/PICkit_3_User_Guide_51795A.pdf)
+* [PICKit3 Microchip Programmer w/ USB cable, wires Pic Kit 3 and ICSP Socket](https://www.ebay.com/itm/PICKit3-Microchip-Programmer-w-USB-cable-wires-Pic-Kit-3-and-ICSP-Socket/391965539252?ssPageName=STRK%3AMEBIDX%3AIT&_trksid=p2060353.m1438.l2649) -- eBay -- 
 
 ![PICKit3Programmer01.png](images/MyEquipParts/PIC/PICKit3Programmer01.png)
 
