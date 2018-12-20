@@ -96,6 +96,10 @@ The **core registers** are **special registers** used for **basic operations** w
 * **STATUS**
 * **WREG** -- **Working Register**
 
+#### Analog to Digital/Digital to Analog
+
+* **ADCONx** -- **Analog to Digital Control**
+
 #### Internal Oscillator Registers
 
 * **BORCON**
@@ -127,12 +131,15 @@ The **core registers** are **special registers** used for **basic operations** w
 
 ### Device Configuration
 
-There are several **Configuration Word bits** that allow **direct oscillator and memory protection options**.  These are **stored in flash memory** and are therefore available after **restart**.
+There are several **Configuration Word bits** that allow **direct oscillator and memory protection options**.  These are **stored in flash memory** and are therefore available after **restart**.  
 
 * **CONFIG1**
 * **CONFIG2**
 * **CONFIG3**
 
+These **configuration word bits** in **flash memory** are sometimes referred to as **fuses**, because they used to be **burned directly on the chip**.
+
+They are accessible in the **MPLAB IDE** by either selecting the menu **Window >> PIC Memory Views >> Configuration Bits** or in the **MPLAB Code Configurator** on the **System Module panel**. The **Window >> PIC Memory Views >> Configuration Bits** option displays the **configuration options** in the lower panel.  After you make changes you need to **Generate Source Code to Output**, which will place **assembler directives** in the **output** that you can then **paste into your assembly code**.  With the **MPLAB Configurator** option, your changes also must be **generated**, but in this case it **generates the C source and header files** adding them to your project.
 
 ## Program Memory
 
@@ -165,9 +172,9 @@ tbd
 
 tbd
 
-## CLC Module
+## Configurable Logic Cell (CLC) Module
 
-tbd
+Use **configurable gates (AND, OR, XOR, etc)** to **reduce 16 input lines** to **4 logic lines**, along with **combinational logic (AND-OR, OR-XOR, Latches and Flip-Flops).  
 
 ## Comparator Module
 
@@ -242,3 +249,34 @@ tbd
 ## Zero-Cross-Detection (ZCD) Module
 
 tbd
+
+# Udemy Course Blinker Assembly Language Program Example 
+
+## Project Setup
+
+1. Create the project
+2. Select **Microchip Embedded** and **Standalone Project**
+3. Select your **microchip**, for example **PIC
+4. Select if you want a Debug Header (select No)
+5. Select the kind of **programmer** you are using, such as **Pickit 3**
+6. Select the Assembler **MPASM**
+7. Select and save the project
+
+## Setting Up the Program
+
+1. Select the **Projects Tab** and under the **project's name** **right-click** on the **Source Files** folder
+2. Select **New** and select one of the two **asm templates** (doesn't matter we will overwrite)
+3. Give the **asm file a name** and select **Finish**
+4. **Right-click** on the **Project's Name** and select **Properties**
+5. **Click** on **Pickit 3**, or whatever **programmer** your using
+6. From the **drop down** on the **right hand panel** select **Program Options**
+7. Check **Use Low Voltage Programming Mode**
+8. Select again from the **Program Options** and choose **Power**
+9. If necessary lower the **voltage** from **5V** to a **lower value**, such as **4.5V**.  This is necessary if you get errors during programming the device due to **insufficient voltage put out by the USB**.  This will vary between computers.
+10. In the **left hand panel** select **mpasm (Global Options)**
+11. **Check Build in Absolute Mode** and click **Ok**
+
+## Add the Assembly Code
+
+1. Open the **asm file** you created
+2. Replace the existing template code with the **Blinker.asm** example code
