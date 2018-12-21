@@ -337,6 +337,32 @@ Refer to:
 
 ![Curiosity8bitBoard03.png](images/MyEquipParts/PIC/Curiosity8bitBoard03.png)
 
+### PIC16F1619 Ports on Curiosity Board
+
+Pin # | PIC16F1619 Port | Peripheral
+------|-----------------|-----------
+1     | VDD             | VDD (5Vdc)
+2     | RA5             | LED_D4
+3     | RA4             | -
+4     | RA3/MCLR/VPP    | -
+5     | RC5             | LED_D7    
+6     | RC4             | SWITCH1
+7     | RC3             | -
+8     | RC6             | -
+9     | RC7             | -
+10    | RB7             | -
+11    | RB6             | -
+12    | RB5             | -
+13    | RB4             | -
+14    | RC2             | -
+15    | RC1             | -
+16    | RC0             | POT/AN4
+17    | RA2             | LED_D6
+18    | RA1/ICSPCLK     | LED_D5
+19    | RA0/ICSPDAT     | -
+20    | VSS             | VSS
+
+
 ## Microcontroller Programmers
 
 
