@@ -61,6 +61,15 @@ There are **two types** of **FETs**
 
 ### MOSFET
 
+* **MOSFETs** are **voltage controlled transistors**, as opposed to the **BPJ Transistors** which are **current controlled**
+* Because they are **voltage controlled** they **draw very little current**, which is beneficial to **battery controlled** circuits, providing longer battery life.
+* They are not as effective at **high speed/frequency switching** as **BJT transistors**, which make **BJTs** better for **radio and audio circuits**. NOTE: verify this, since this seems backward, since they are preferred in **high speed digital circuits**.
+* Connections include:
+  * **Source** -- similar to the **collector**
+  * **Drain** -- similar to the **emitter**
+  * **Gate** -- **voltage controlled** switch that turns it on or off.  Similar to the **base** on **BPJ Transistors**
+  * **Body** -- normally connected to the
+
 ![ch07-02-CircuitsAndSymbols](images/GreatCourses/ch07/ch07-02-Transistors.png) 
 
 In the above example:

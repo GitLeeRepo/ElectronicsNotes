@@ -22,6 +22,7 @@ Notes on the PIC Microcontrollers
 ## YouTube Refences
 
 * [PICDEM™ Lab II Development Platform](https://www.youtube.com/watch?v=-pjT1YgeX-E&list=PL1204684BD203E0DC&index=47)
+* [IO Ports](https://www.youtube.com/watch?v=33kgfbL3Sr0&list=PLD4A8D18E61434B1A&index=16) -- good MPLAB overview on Ports
 
 ## My Other Notes
 
