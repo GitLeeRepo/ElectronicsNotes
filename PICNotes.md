@@ -82,6 +82,8 @@ tbd
 
 * **Onboard peripheral** -- **on chip independent circuits** for performing **operations outside the CPU**.  This include **ADC**, **CCP**, **PWM**, **Timers**, **Comparators**.
 
+* **PLL** -- **Phase Locked Loop** -- works together with **oscillators** to generate a variety of **clock sources**.  For example, on the **PIC16F1619** it can be used with the **oscillators** to generate one of three **internal clocks**, the **HFINTOSC** at **16MHz**, the **MFINTOSC** at **500kHz**, and the **LFINTOSC** at **31kHZ**,
+
 * **Ports** -- used to **interface** with the outside world through **pins**.  The **ports** are associated with **registers**.
 
 * **PWM module** -- used to generate **PWM waves (Pulse Wave Modulation)**

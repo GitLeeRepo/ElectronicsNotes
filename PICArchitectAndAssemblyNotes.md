@@ -29,6 +29,8 @@ tbd
 
 # Concepts and Terminology
 
+* **ANSELx** -- **analog select registers**
+
 * **BOR** -- the **Brown Out Reset circuit** holds the device in **reset** when **VDD** reaches a **selectable minimum**.
 
 * **BOREN** -- **Brown Out Reset Enable bits**
@@ -39,22 +41,28 @@ tbd
 
 * **GPR (General Purpose Registers)**
 
+* **LATx** -- **latch registers** -- use this to **write to ports**.  Use **PORTx** to **read from ports**.
+
 * **LVP** -- **Low Voltage Programming**
 
 * **MCLR** -- an **external input** that can **reset the device**.  If it is **disabled**, its **pin** will function as a **general purpose input**
 
+* **PLL** -- **Phase Locked Loop** -- works together with **oscillators** to generate a variety of **clock sources**.  For example, on the **PIC16F1619** it can be used with the **oscillators** to generate one of three **internal clocks**, the **HFINTOSC** at **16MHz**, the **MFINTOSC** at **500kHz**, and the **LFINTOSC** at **31kHZ**,
+
 * **POR**  -- **Power On Reset**
+
+* **PORTx** -- **port registers** -- use this to **read from ports**.  Use **LATx** to **write to ports**.
 
 * **Program Memory** -- the **memory** that contains the **executable machine code** we program.  The **program counter** steps through this memory. 
 
 * **Special Registers** -- includes **Core Registers**, such as **Status** and **WReg**, along with **PORT/IO registers**, **Timer Registers**, among others.
 
+* **TRISx** -- setting the corresponding it to **1 enables input** on that **port**, setting it to **0 enables output** on the port.  For example, setting **TRISA2 = 0** sets **port A2 to output**.
+
 * **WDT (Watchdog Timer)** -- automatically **resets the processor** after a given **user-defined period**.  This allows programs to **escape from endless loops** 
 
 
 # PIC 8-Bit Memory Organization
-
-
 
 ## Data Memory
 
@@ -109,10 +117,14 @@ The **core registers** are **special registers** used for **basic operations** w
 
 #### IO/Port/Pin Registers
 
-* **ANSELx**
-* **LATx**
-* **TRISx**
-* **PORTx**
+* **ANSELx** -- **analog select bits**.  For those **ports** that support **analog** it **defaults to analog**, set to **zero to use as digital**.
+* **INLVLx**  register controls the **input voltage threshold** for each of the **input pins**.
+* **LATx** -- **latch registers** -- use this to **write to ports**.  Use **PORTx** to **read from ports**.
+* **ODCONx** -- controls the **Open Drain** feature of the **port**. When an **ODCONx bit is set**, the corresponding port output becomes an **open-drain driver** capable of **sinking current only**. When an **ODCONx bit is cleared**, the corresponding **port output pin** is the standard push-pull drive capable of **sourcing and sinking current**.
+* **PORTx** -- **port registers** -- use this to **read from ports**.  Use **LATx** to **write to ports**.
+* **SLRCONx** register controls the **slew rate** option (the **rate** at which a **signal changes**) for **each port pin**. When an **SLRCONx bit is set**, the corresponding **port pin** drive is **slew rate limited**. When an **SLRCONx bit is cleared**, the corresponding **port pin** drive **slews at the maximum** rate possible.
+* **TRISx** -- setting the corresponding it to **1 enables input** on that **port**, setting it to **0 enables output** on the port.  For example, setting **TRISA2 = 0** sets **port A2 to output**.
+* **WPUx** -- **weak pull-up** controls the individual **weak pull-ups** for **each port**.  **Weak pull-ups** are useful for **switches**, but are not desirable for **loads** in that they support **very little current**.
 
 #### Timer/Clock/Interrupt Related Registers
 
@@ -149,9 +161,49 @@ They are accessible in the **MPLAB IDE** by either selecting the menu **Window >
 
 * **EEPROM** -- **Electrically Erasable Program Read-Only Memory** -- used to **save memory values** when the **microcontroller is turned off** so that it is **availble when turned on** again.  See also **Program Memory** and **Data Memory**
 
+# Clock, Oscillators and Timers
+
+There are **two types** of **clock sources**
+
+* **External** -- relies on **external circuitry** for **clock source**.  Examples include **ECH (high power 4 to 20MHz)**, **ECM (medium power 0.5 to 4MHz**, and **ECL modes (low power 0 to 8.5MHz)** and **quartz crystal resonators** or **ceramic resonators** **(HS Mode)**.
+
+* **Internal** -- contained within the **internal oscillator module**.  On the **PIC1619** the **internal oscillator block** contains **two internal oscillators** and a dedicated **phase lock loop (HFPLL)**.
+
+## OSCCON Register and its System Clock Select (SCS) Bits
+
+The **external** or **internal clock** is selected with the **System Clock Select (SCS) bits** in the **OSCCON register**.
+
+Note that on the **MCC code configurator** in **MPLAB X**, under the **System Module Internal Oscillator** you can choose between **FOSC** and **INTOSC**.  By selecting **FOSC** it tells the compiler to use the **FOSC bits** in the **Configuration Words** to **select the clock**, with both **external and internal modes**.
+
+## FOSC Bits
+
+**Clock source modes** are selected with the **FOSC bits** in the **Configuration Words**. The **FOSC bits**
+determine the **type of oscillator** that will be used when the device is first powered.
+
+**Modes** selectable in the **FOSC bits**
+
+* **ECH** -- external high power **4 to 20MHz**
+* **ECM** -- external medium power **0.5 to 4MHz**
+* **ECL** -- external low power **0 to 0.5MHz**
+* **HS** -- external high gain crystal or ceramic resonator mode (**4 MHz to 10 MHz**)
+* **INTOSC** -- internal oscillators **HFINTOSC** at **16MHz**, the **MFINTOSC** at **500kHz**, and the **LFINTOSC** at **31kHZ**
+
+## PLL -- Phase Lock Loop
+
+* **PLL** -- **Phase Locked Loop** -- works together with **oscillators** to generate a variety of **clock sources**.  **PLLs** are used to **generate a multiple of the input frequency**.  A **4x PLL** will generate an **output frequency 4x the input frequency**.  In the **MCC code configurator**, on the **System Module** you can see which **frequencies support PLL**.  On the **PIC16F1619**, which has a **4x PLL**, you can use either **8MHz** or **16MHz** for a **maximum of 32MHz** (so I assume with 16MHz it operates as a 2x PLL, whereas with 8MHz it is a 4x PLL)
+
+For example, on the **PIC16F1619** it can be used with the **oscillators** to generate one of three **internal clocks**, the **HFINTOSC** at **16MHz**, the **MFINTOSC** at **500kHz**, and the **LFINTOSC** at **31kHZ**.
+
 # Interrupts
 
 **Interrupts** allow certain **events to preempt normal program flow**.  They can be used for such things as **waking up the device** from **sleep mode**, among others.
+
+# UART/EUSART
+
+## Serial to USB
+
+![SerialToUsb01.png](images/MyEquipParts/PIC/SerialToUsb01.png)
+
 
 # Modules
 
