@@ -30,6 +30,7 @@ Notes on the PIC Microcontrollers
 
 * [ElectronicNotes](https://github.com/GitLeeRepo/ElectronicsNotes/blob/master/ElectronicsNotes.md#overview)
 * [PICArchitectAndAssemblyNotes](https://github.com/GitLeeRepo/ElectronicsNotes/blob/master/PICArchitectAndAssemblyNotes.md#overview)
+* [USB2Notes](https://github.com/GitLeeRepo/ElectronicsNotes/blob/master/USB2Notes.md#overview)
 
 ### Notes in Other Repositories
 

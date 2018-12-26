@@ -30,8 +30,7 @@ tbd
 * [PartsNotes](https://github.com/GitLeeRepo/ElectronicsNotes/blob/master/PartsNotes.md#overview)
 * [ArduinoNotes](https://github.com/GitLeeRepo/ElectronicsNotes/blob/master/ArduinoNotes.md#overview)
 * [PICNotes](https://github.com/GitLeeRepo/ElectronicsNotes/blob/master/PICNotes.md#overview)
-
-
+* [USB2Notes](https://github.com/GitLeeRepo/ElectronicsNotes/blob/master/USB2Notes.md#overview)
 
 ### Notes in Other Repositories
 
