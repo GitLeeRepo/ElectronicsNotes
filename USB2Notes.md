@@ -151,7 +151,26 @@ The **USB-IF** defines **device topologies** or **classes** based on **transfer 
 
 ![DeviceEnumeration01.png](images/Components/USB/DeviceEnumeration01.png)
 
+## Device Enumeration Descriptors
+
+![DeviceEnumeration02.png](images/Components/USB/DeviceEnumeration02.png)
+
 # Windows Drivers
+
+## Kernel Mode
+
+![WindowsUSBDrivers01.png](images/Components/USB/WindowsUSBDrivers01.png)
+
+## User Mode
+
+![WindowsUSBDrivers02.png](images/Components/USB/WindowsUSBDrivers02.png)
+
+## INF File
+
+![WindowsUSBDrivers03.png](images/Components/USB/WindowsUSBDrivers03.png)
 
 # Device Certification
 
+![USBCertification01.png](images/Components/USB/USBCertification01.png)
+
+![USBCertification02.png](images/Components/USB/USBCertification02.png)
