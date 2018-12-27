@@ -203,6 +203,7 @@ For example, on the **PIC16F1619** it can be used with the **oscillators** to ge
 
 Refer to:
 
+* [USB2Notes](https://github.com/GitLeeRepo/ElectronicsNotes/blob/master/USB2Notes.md#overview)
 * [Set up EUSART to display ADC value](https://www.youtube.com/watch?v=9kzu_eoKQKo) -- YouTube video
 * [WINGONEER USB 2.0 to TTL UART 6PIN CP2102 Module Serial Converter](https://www.amazon.com/WINGONEER-CP2102-Module-Serial-Converter/dp/B01LRVQIFQ/ref=cm_cr_arp_d_product_top?ie=UTF8)
 * [Drivers for USB to UART bridge](https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers)
