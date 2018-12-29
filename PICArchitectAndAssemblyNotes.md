@@ -212,6 +212,13 @@ Refer to:
 
 ![SerialToUsb01.png](images/MyEquipParts/PIC/SerialToUsb01.png)
 
+# I2C Protocol
+
+* **Synchronous**
+* Up to **3.4MHz Clock (High-Speed mode)**
+* **Master-Slave type bus** with **Master providing the clock**
+* **Serial bus** with two lines for **Serial Clock (SCL)** and **Serial Data (SDA)**
+* **Pull-up resistors** are required, typically **3.3KΩ for 3.3V** and **4.7KΩ for 5V**
 
 # Modules
 
@@ -264,7 +271,7 @@ tbd
 
 ## I2C Interface Module
 
-tbd
+Refer to **I2C Protocol** section
 
 ## Master Synchronous Serial Port (MSSP) Module
 
