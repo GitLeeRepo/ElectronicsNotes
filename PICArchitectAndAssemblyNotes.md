@@ -214,6 +214,16 @@ Refer to:
 
 # I2C Protocol
 
+Refer to:
+
+* [Practical I2C: Introduction, Implementation and Troubleshooting](https://www.youtube.com/watch?v=yM9OpRPMEAE) -- excellent YouTube overview
+
+**I2C (Inter-Integrated Circuit)** -- a **serial protocol** that uses **frames** for communication.  Uses the **serial clock line (SCL)**  and **Serial Data Line (SDA)** for communication from the **master** to the **slave**.  Communicates at either **100kHz** or **400kHz**.
+
+Characteristics:
+
+* I2C (I Squared C) -- **Inter-Interface Communication**
+* Frequently used for **onboard communications**
 * **Synchronous**
 * Up to **3.4MHz Clock (High-Speed mode)**
 * **Master-Slave type bus** with **Master providing the clock**
@@ -259,7 +269,7 @@ tbd
 
 ## Enhanced Universal Synchronous Asynchronous Receiver Transmitter (EUSART)
 
-tbd
+Refer to the **UART/EUSART** section
 
 ## Fixed Voltage Reference (FVR) Module
 
