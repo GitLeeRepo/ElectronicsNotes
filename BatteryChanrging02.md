@@ -1,3 +1,7 @@
+# Six Truths About Your Phones Battery Life
+
+From: [CNet](https://www.cnet.com/how-to/six-truths-about-your-phones-battery-life-fast-charging-overcharging-and-overheating/)
+
 Samsung does it. So do Huawei, Google, OnePlus and now even Apple. Packaging a fast charger inside your new phone box is an increasingly common practice, at least for high-end devices. But do we pay a price for the convenience of charging our phones with a quick charger?Battery life has become a primary concern for phone owners. As we do more with our phones over more hours, the importance of all-day battery life on a single charge has become one of the key features that an average buyer looks for, after screen size. Battery life is even more important than an excellent camera, according to Kantar's Worldpanel ComTech Q3 2019 study. The same concern applies to battery longevity over the entire lifetime of your device.
 
 The growing emphasis on battery life is one reason why fast chargers are so ubiquitous. If the battery threatens to drain before the end of the day, refilling the battery fast is the next best thing. A 10-minute charge could make the difference between having to go into an austere power-saving mode or losing power completely before you get home.
