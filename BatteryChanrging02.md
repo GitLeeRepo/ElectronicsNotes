@@ -6,17 +6,14 @@ Samsung does it. So do Huawei, Google, OnePlus and now even Apple. Packaging a f
 
 The growing emphasis on battery life is one reason why fast chargers are so ubiquitous. If the battery threatens to drain before the end of the day, refilling the battery fast is the next best thing. A 10-minute charge could make the difference between having to go into an austere power-saving mode or losing power completely before you get home.
 
-MORE ON PHONES
-Top foldable phones: Motorola Razr, Galaxy Fold, Huawei Mate X and more
-Best phones of 2019: iPhone, Samsung, Pixel, Motorola...
-Pixel 3A vs. Moto G7: What's the best budget phone?
 Now that fast charging is so readily available for phones, we have questions: What does a high-capacity charger do to a phone's battery and is there a chance that rapid charging can degrade your phone's power-storing capability over time?
 
 And while we're asking, we'd like to know what else we're doing when we charge our phones that might cause unnecessary wear and tear on your phone's battery over time.
 
 To discover the answers to our questions, we spoke with several battery researchers and engineers about the effects of quick charging on your phone's battery life. Here's what we learned.
 
-Your phone battery isn't changing anytime soon
+## Your phone battery isn't changing anytime soon
+
 All mobile phones -- and most personal electronics and electric vehicles -- use lithium-ion (li-ion) rechargeable batteries. It's a tough slog to create batteries that last longer, because battery technology hasn't changed in decades. Instead, much of the recent progress in battery life has come from power-saving features built into devices and from making the software that manages charging and discharging more efficiently, so you sip power rather than guzzle it. 
 
 Unfortunately for mobile phones, the focus on extending battery life is generally on cars, satellites and your home's power system, areas where industrial batteries need to function far beyond the two or three years we expect from our mobile devices.
@@ -25,14 +22,14 @@ Another force working against our phones is their battery size. Compared to an e
 
 The math gets a little complex because phone batteries are measured in milliampere-hours, while electric vehicle batteries are measured in watt-hours. But it's possible to draw equivalents. For instance, the Pixel 4 has a 2,800-mAh battery (or 10.6 Wh), and the iPhone 11 Pro Max reportedly comes with a 3,969-mAh battery (15.04 Wh). Meanwhile, the Chevy Volt uses an 18,400-Wh battery and a midrange Tesla Model 3 flaunts a 62,000-Wh battery.
 
-Nick Miotke/Roadshow
 That matters because the larger a battery is, the more battery-saving tricks there are to extend its life. For example, as you charge a battery, the voltage rises, putting it under stress, especially during the last 20% of the charge. To avoid this stress, electric car makers may charge new batteries just to 80%. Because of that larger battery capacity, the electric car still can still go an acceptable distance, while avoiding the stress of higher voltages. This can double the total lifetime of the car's battery.
 
 Larger phone batteries can give you an all-day run time from a charge, but typically only at the full 100%. And while that lets the battery last for an acceptable time between charges, it also puts the battery under more stress from the higher voltage required to top it off.
 
 Short of a major breakthrough in battery technology, improvements to our phone batteries will come from making  the devices more energy-thrifty overall. (Here's a more detailed look at what's holding up the battery revolution.)
 
-Fast-charging won't damage your battery
+## Fast-charging won't damage your battery
+
 A conventional charger has an output of 5 to 10 watts. A faster charger can improve that by up to eight times. For example, the iPhone 11 Pro and Pro Max come with an 18-watt fast charger, the Galaxy Note 10 and Note 10 Plus have 25-watt chargers in their boxes. Samsung will sell you an extra-speedy 45-watt charger for $50.
 
 Unless there's some technical flaw with your battery or charger electronics, however, using a fast charger won't do your phone's battery any long-term damage.
@@ -53,7 +50,8 @@ Damage is rare if everything's well-managed inside. A battery's management syste
 
 The case of the Samsung Galaxy Note 7's tragically exploding battery resulted from battery design flaws rather than from the phone software's battery management techniques.
 
-You can't overcharge your phone battery
+## You can't overcharge your phone battery
+
 Overcharging used to cause anxiety among phone owners. The fear was that keeping a phone constantly plugged in could charge a battery beyond its capacity, making the battery unstable, which could degrade overall battery life or build up too much internal heat and cause the battery to burst or catch fire. 
 
 According to the experts we spoke with, however, a battery's management system is designed to shut off the electrical charge once a battery reaches 100%, before it can overcharge. 
@@ -71,14 +69,16 @@ If you frequently keep your iPhone plugged in during the day or while you sleep,
 
 For a manual approach, you can also unplug your phone when it hits an 80% charge, but the trade-off is you might miss out on additional hours of use that you'd get from a fully charged phone.
 
-You shouldn't let your battery drain to zero
+## You shouldn't let your battery drain to zero
+
 At one time, you may have wanted to let your phone discharge all the way down once in a while to help the battery recalibrate its state of charge. But that's not so much of a problem with modern phone batteries. 
 
 In fact, discharging a battery all the way down can cause chemical reactions that over time can shorten a battery's life. To avoid a complete discharge, a battery's management system includes safety features that power down a phone when it reaches an energy level safely above empty. You only think you've hit zero when you see that last low-battery warning.
 
 If you want to take a more active hand in your battery's health, plug in your phone when its battery level gets down around 30%, well above the stressfully low battery levels.
 
-High temperatures can damage your battery
+## High temperatures can damage your battery
+
 Heat is a true enemy to your battery. High temperatures are known to reduce a battery's lifespan over time. 
 
 You'll want to keep your phone out of strong sun, away from window sills and off the dashboard of your car to prevent overheating, which can make the battery less efficient over time. In extreme cases, an overheated battery could explode. 
@@ -87,20 +87,18 @@ Temperatures as high as 86 degrees Fahrenheit (30C) can decrease a battery's eff
 
 Does that mean you want to store your phone in an ice chest? No. But as much as you can, keep it away from high temperatures. If you're out in the sun for long periods of time, try draping a towel or T-shirt over it, or put it in a bag along with your cool water bottle. The idea is to keep the phone's internal temperature from rising.
 
-Mismatched chargers and cables won't harm your battery
+## Mismatched chargers and cables won't harm your battery
+
 Unless you're using counterfeit or damaged chargers and cables, mixing and matching cables and chargers is not going to harm your battery. However, you may not be charging up quickly as possible as when you use the ones that came with your device.
 
 Some phones, such as those from Huawei and OnePlus, use a proprietary charging design -- with part of the circuitry responsible for rapid charging built into the charger. To take full advantage of the device's proprietary fast charging, you need to use its compatible charger.
 
-oneplus-7t-pro-24
-OnePlus employs a proprietary charging design for its phones, including the OnePlus 7T Pro.
-
-Andrew Hoyle/CNET
 Other phone makers, such as Samsung and Apple, stick closer to industry-standard rules for fast charging and let you fast-charge effectively with a variety of compatible cables and chargers. 
 
 The safest bet is to use the chargers and cables that come in the box, because when mixing and matching chargers and cables with your phone, the device could default to the lowest possible charging speed.
 
-How else can I conserve my phone's battery power?
+## How else can I conserve my phone's battery power?
+
 To squeeze more life out of your battery, you can use the usual energy-saving tricks to conserve your battery's power, such as dimming your display's brightness, turning off Wi-Fi and Bluetooth when you're not using them, restricting background data usage through settings and keeping an eye on apps that use GPS.
 
 But the truth is, no matter how careful we are, our phone batteries will last only so long. The trick is to get as many months as we can from our battery without being in a constant state of anxiety about its charge.
