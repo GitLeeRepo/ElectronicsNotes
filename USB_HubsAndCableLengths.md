@@ -18,7 +18,7 @@ tbd
 
 ### Notes in Other Repositories
 
-* [Hardware Info Repositior - USBNotes](https://github.com/GitLeeRepo/HardwareInfoNotes/blob/master/USBNotes.md#overview)
+* [Hardware Info Repository - USBNotes](https://github.com/GitLeeRepo/HardwareInfoNotes/blob/master/USBNotes.md#overview)
 * [NotesGuidelines](https://github.com/GitLeeRepo/NotesGuidlines/blob/master/NotesGuidelines.md#overview)
 
 # Contents
