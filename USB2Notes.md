@@ -22,7 +22,7 @@ tbd
 
 ### Notes in Other Repositories
 
-* [Hardware Info Repositiory - USBNotes](https://github.com/GitLeeRepo/HardwareInfoNotes/blob/master/USBNotes.md#overview)
+* [Hardware Info Repository - USBNotes](https://github.com/GitLeeRepo/HardwareInfoNotes/blob/master/USBNotes.md#overview)
 * [NotesGuidelines](https://github.com/GitLeeRepo/NotesGuidlines/blob/master/NotesGuidelines.md#overview)
 
 # Contents
@@ -55,6 +55,7 @@ tbd
 Refer to:
 
 * [USB Hubs and Cable Lengths](https://github.com/GitLeeRepo/ElectronicsNotes/blob/master/USB_HubsAndCableLengths.md#overview)
+* [Hardware Info Repository - USBNotes](https://github.com/GitLeeRepo/HardwareInfoNotes/blob/master/USBNotes.md#overview)
 
 Brief Info:
 
