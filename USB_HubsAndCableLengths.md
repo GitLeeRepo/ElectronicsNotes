@@ -14,7 +14,7 @@ tbd
 
 ### Notes in this repository
 
-tbd
+* [USB2 Techinical Notes](https://github.com/GitLeeRepo/ElectronicsNotes/blob/master/USB2Notes.md#overview)
 
 ### Notes in Other Repositories
 
