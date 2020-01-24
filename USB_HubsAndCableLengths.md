@@ -27,7 +27,6 @@ tbd
 # Concepts and Terminology
 
 * **Cable Lengths** -- 5 meters is the maximum USB cable
-
 * **Hubs (Maximums)** -- There is a maximum of 5 hubs serially chained together, with a maximum of 5 meters between each
 
 
