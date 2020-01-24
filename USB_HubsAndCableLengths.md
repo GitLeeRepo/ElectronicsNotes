@@ -35,7 +35,7 @@ tbd
 
 ## From SuperUser Forum Posting
 
-* [Link](https://superuser.com/questions/64744/maximum-length-of-a-usb-cable)
+* [SuperUser Formu Posting](https://superuser.com/questions/64744/maximum-length-of-a-usb-cable)
 
 5 meters is the maximum USB cable. You can get further by connecting USB hubs serially (maximum of 5 hubs chained this way). You can't just use USB extension cables due to timing issues.
 
