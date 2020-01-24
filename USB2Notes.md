@@ -56,6 +56,8 @@ Refer to:
 
 * [USB Hubs and Cable Lengths](https://github.com/GitLeeRepo/ElectronicsNotes/blob/master/USB_HubsAndCableLengths.md#overview)
 
+Brief Info:
+
 * **Cable Lengths** -- **5 meters** is the maximum USB cable
 * **Hubs (Maximums)** -- There is a **maximum of 5 hubs** serially chained together, with a maximum of **5 meters between each**
 
