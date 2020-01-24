@@ -31,12 +31,13 @@ tbd
 # Concepts and Terminology
 
 * **Bulk Transfer Type** -- includes **Mass Storage device** and **Communication Device Class (CDC)**.  It has **high throughput**, but **low priority**.  It provides **guaranteed delivery with error checking**.
+* **Cable Lengths** -- **5 meters** is the maximum USB cable
 * **Descriptor** -- a **structure** in the **firmware** that contains **USB Information**, such as what **type of device** and what **interfaces it supports**.
 * **Device** -- also called **peripheral** is the **slave device** that connects to the **host**.
 * **Enumeration** -- the **handshaking** process **between device and host**. The **beep** you hear in **Windows** is the begining of the **enumeration process**
 * **Frame** -- **time based grouping** with **fixed timing**. It is the **basis of all USB communication**.  It is made up of **multiple packets**.
 * **Host** -- the organizer and **master** of all **traffic on the bus**
-* **Hub** -- **expands the number of devices** that can attach to a **host**, along with acting as a **repeater** extending the distance to the device.
+* **Hub** -- **expands the number of devices** that can attach to a **host**, along with acting as a **repeater** extending the distance to the device. There is a **maximum of 5 hubs** serially chained together, with a **maximum of 5 meters between each**
 * **In transfer** -- moves from the **device to the host**
 * **Interrupt Transfer Type** -- **low throughput** with **high priority** and **guaranteed latency**.  It includes **Human Interface Devices (HID)** such as **mouse** and **keyboard**.
 * **Isochronous Transfer Type** -- used for **audio** and **video**.  It provides **no guarantee of delivery** with **high throughput**.  Used when **dropped packets** are **not critical**.
@@ -53,6 +54,9 @@ tbd
 Refer to:
 
 * [USB Hubs and Cable Lengths](https://github.com/GitLeeRepo/ElectronicsNotes/blob/master/USB_HubsAndCableLengths.md#overview)
+
+* **Cable Lengths** -- **5 meters** is the maximum USB cable
+* **Hubs (Maximums)** -- There is a **maximum of 5 hubs** serially chained together, with a maximum of **5 meters between each**
 
 # USB 2.0 Basic Concepts
 
