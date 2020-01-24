@@ -15,6 +15,7 @@ tbd
 
 ### Notes in this repository
 
+* [USB Hubs and Cable Lengths](https://github.com/GitLeeRepo/ElectronicsNotes/blob/master/USB_HubsAndCableLengths.md#overview)
 * [ElectronicNotes](https://github.com/GitLeeRepo/ElectronicsNotes/blob/master/ElectronicsNotes.md#overview)
 * [PICNotes](https://github.com/GitLeeRepo/ElectronicsNotes/blob/master/PICNotes.md#overview)
 * [PICArchitectAndAssemblyNotes](https://github.com/GitLeeRepo/ElectronicsNotes/blob/master/PICArchitectAndAssemblyNotes.md#overview)
@@ -44,6 +45,14 @@ tbd
 * **Packet** -- a bundle of **data** organized into a **group for transmission**.
 * **Root Hub** -- the **base hub** on the **host** that all **devices** and **additional hubs** attach to.
 * **USB** -- **Universal Serial Bus**.
+
+# General USB
+
+## USB Hubs and Cable Lengths
+
+Refer to:
+
+* [USB Hubs and Cable Lengths](https://github.com/GitLeeRepo/ElectronicsNotes/blob/master/USB_HubsAndCableLengths.md#overview)
 
 # USB 2.0 Basic Concepts
 
