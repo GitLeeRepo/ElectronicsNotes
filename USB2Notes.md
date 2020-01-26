@@ -1,6 +1,6 @@
 # Overview
 
-Notes on USB 2.0 technology and Specifications.
+Notes on USB 2.0 technology from a general view point.  For the more technical, as in when programming microprocessors for USB 2/0 refer to the [USB2TechNotesAndSpecifications](https://github.com/GitLeeRepo/ElectronicsNotes/blob/master/USB2TechNotesAndSpecifications.md#overview) document
 
 # References
 
@@ -8,7 +8,6 @@ tbd
 
 ## YouTube Refences
 
-* [USB 2.0 Embedded Host and Device Concepts](https://www.youtube.com/watch?v=Sh2rds-jiGk) -- Microchip Technology Seminar
 * [USB 101](https://www.youtube.com/watch?v=5S6ZPmtPzRA) -- Silicon Labs presentation -- short but good overview
 
 ## My Other Notes
@@ -16,6 +15,7 @@ tbd
 ### Notes in this repository
 
 * [USB Hubs and Cable Lengths](https://github.com/GitLeeRepo/ElectronicsNotes/blob/master/USB_HubsAndCableLengths.md#overview)
+* [USB2TechNotesAndSpecifications](https://github.com/GitLeeRepo/ElectronicsNotes/blob/master/USB2TechNotesAndSpecifications.md#overview) document
 * [ElectronicNotes](https://github.com/GitLeeRepo/ElectronicsNotes/blob/master/ElectronicsNotes.md#overview)
 * [PICNotes](https://github.com/GitLeeRepo/ElectronicsNotes/blob/master/PICNotes.md#overview)
 * [PICArchitectAndAssemblyNotes](https://github.com/GitLeeRepo/ElectronicsNotes/blob/master/PICArchitectAndAssemblyNotes.md#overview)
