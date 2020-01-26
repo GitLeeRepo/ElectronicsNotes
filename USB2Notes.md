@@ -50,6 +50,10 @@ tbd
 
 # General USB
 
+Refer to:
+
+* [Hardware Info Repository - USBNotes](https://github.com/GitLeeRepo/HardwareInfoNotes/blob/master/USBNotes.md#overview)
+
 ## USB Hubs and Cable Lengths
 
 Refer to:
